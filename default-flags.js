@@ -7,6 +7,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_strict
+   * @private
    * @returns {bool}
    */
   use_strict: {  
@@ -19,6 +20,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name es_staging
+   * @private
    * @returns {bool}
    */
   es_staging: {  
@@ -31,6 +33,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_typeof
+   * @private
    * @returns {bool}
    */
   harmony_typeof: {  
@@ -43,6 +46,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_scoping
+   * @private
    * @returns {bool}
    */
   harmony_scoping: {  
@@ -55,6 +59,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_proxies
+   * @private
    * @returns {bool}
    */
   harmony_proxies: {  
@@ -67,6 +72,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_generators
+   * @private
    * @returns {bool}
    */
   harmony_generators: {  
@@ -79,6 +85,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_iteration
+   * @private
    * @returns {bool}
    */
   harmony_iteration: {  
@@ -91,6 +98,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_strings
+   * @private
    * @returns {bool}
    */
   harmony_strings: {  
@@ -103,6 +111,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_arrays
+   * @private
    * @returns {bool}
    */
   harmony_arrays: {  
@@ -115,6 +124,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_maths
+   * @private
    * @returns {bool}
    */
   harmony_maths: {  
@@ -127,6 +137,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony_promises
+   * @private
    * @returns {bool}
    */
   harmony_promises: {  
@@ -139,6 +150,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name harmony
+   * @private
    * @returns {bool}
    */
   harmony: {  
@@ -151,6 +163,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name packed_arrays
+   * @private
    * @returns {bool}
    */
   packed_arrays: {  
@@ -163,6 +176,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name smi_only_arrays
+   * @private
    * @returns {bool}
    */
   smi_only_arrays: {  
@@ -175,6 +189,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name pretenuring
+   * @private
    * @returns {bool}
    */
   pretenuring: {  
@@ -187,6 +202,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name pretenuring_call_new
+   * @private
    * @returns {bool}
    */
   pretenuring_call_new: {  
@@ -199,6 +215,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name track_fields
+   * @private
    * @returns {bool}
    */
   track_fields: {  
@@ -211,6 +228,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name track_double_fields
+   * @private
    * @returns {bool}
    */
   track_double_fields: {  
@@ -223,6 +241,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name track_heap_object_fields
+   * @private
    * @returns {bool}
    */
   track_heap_object_fields: {  
@@ -235,6 +254,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name track_computed_fields
+   * @private
    * @returns {bool}
    */
   track_computed_fields: {  
@@ -247,6 +267,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name track_field_types
+   * @private
    * @returns {bool}
    */
   track_field_types: {  
@@ -257,6 +278,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name smi_binop
+   * @private
    * @returns {bool}
    */
   smi_binop: {  
@@ -269,6 +291,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name unbox_double_arrays
+   * @private
    * @returns {bool}
    */
   unbox_double_arrays: {  
@@ -281,6 +304,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name string_slices
+   * @private
    * @returns {bool}
    */
   string_slices: {  
@@ -291,6 +315,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name crankshaft
+   * @private
    * @returns {bool}
    */
   crankshaft: {  
@@ -301,6 +326,7 @@ module.exports = {
    * Default: `*`
    * 
    * @name hydrogen_filter
+   * @private
    * @returns {string}
    */
   hydrogen_filter: {  
@@ -313,6 +339,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_gvn
+   * @private
    * @returns {bool}
    */
   use_gvn: {  
@@ -325,6 +352,7 @@ module.exports = {
    * Default: `3`
    * 
    * @name gvn_iterations
+   * @private
    * @returns {int}
    */
   gvn_iterations: {  
@@ -337,6 +365,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_canonicalizing
+   * @private
    * @returns {bool}
    */
   use_canonicalizing: {  
@@ -349,6 +378,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_inlining
+   * @private
    * @returns {bool}
    */
   use_inlining: {  
@@ -361,6 +391,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_escape_analysis
+   * @private
    * @returns {bool}
    */
   use_escape_analysis: {  
@@ -373,6 +404,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_allocation_folding
+   * @private
    * @returns {bool}
    */
   use_allocation_folding: {  
@@ -385,6 +417,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_local_allocation_folding
+   * @private
    * @returns {bool}
    */
   use_local_allocation_folding: {  
@@ -397,6 +430,7 @@ module.exports = {
    * Default: `5`
    * 
    * @name max_inlining_levels
+   * @private
    * @returns {int}
    */
   max_inlining_levels: {  
@@ -409,6 +443,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name loop_invariant_code_motion
+   * @private
    * @returns {bool}
    */
   loop_invariant_code_motion: {  
@@ -421,6 +456,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name fast_math
+   * @private
    * @returns {bool}
    */
   fast_math: {  
@@ -433,6 +469,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name hydrogen_stats
+   * @private
    * @returns {bool}
    */
   hydrogen_stats: {  
@@ -445,6 +482,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_check_elimination
+   * @private
    * @returns {bool}
    */
   trace_check_elimination: {  
@@ -457,6 +495,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_hydrogen
+   * @private
    * @returns {bool}
    */
   trace_hydrogen: {  
@@ -469,6 +508,7 @@ module.exports = {
    * Default: `*`
    * 
    * @name trace_hydrogen_filter
+   * @private
    * @returns {string}
    */
   trace_hydrogen_filter: {  
@@ -481,6 +521,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_hydrogen_stubs
+   * @private
    * @returns {bool}
    */
   trace_hydrogen_stubs: {  
@@ -493,6 +534,7 @@ module.exports = {
    * Default: `null`
    * 
    * @name trace_hydrogen_file
+   * @private
    * @returns {string}
    */
   trace_hydrogen_file: {  
@@ -505,6 +547,7 @@ module.exports = {
    * Default: `HLZ`
    * 
    * @name trace_phase
+   * @private
    * @returns {string}
    */
   trace_phase: {  
@@ -517,6 +560,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_inlining
+   * @private
    * @returns {bool}
    */
   trace_inlining: {  
@@ -529,6 +573,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_load_elimination
+   * @private
    * @returns {bool}
    */
   trace_load_elimination: {  
@@ -541,6 +586,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_store_elimination
+   * @private
    * @returns {bool}
    */
   trace_store_elimination: {  
@@ -553,6 +599,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_alloc
+   * @private
    * @returns {bool}
    */
   trace_alloc: {  
@@ -565,6 +612,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_all_uses
+   * @private
    * @returns {bool}
    */
   trace_all_uses: {  
@@ -577,6 +625,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_range
+   * @private
    * @returns {bool}
    */
   trace_range: {  
@@ -589,6 +638,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_gvn
+   * @private
    * @returns {bool}
    */
   trace_gvn: {  
@@ -601,6 +651,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_representation
+   * @private
    * @returns {bool}
    */
   trace_representation: {  
@@ -613,6 +664,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_escape_analysis
+   * @private
    * @returns {bool}
    */
   trace_escape_analysis: {  
@@ -625,6 +677,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_allocation_folding
+   * @private
    * @returns {bool}
    */
   trace_allocation_folding: {  
@@ -637,6 +690,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_migration
+   * @private
    * @returns {bool}
    */
   trace_migration: {  
@@ -649,6 +703,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_generalization
+   * @private
    * @returns {bool}
    */
   trace_generalization: {  
@@ -661,6 +716,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name stress_pointer_maps
+   * @private
    * @returns {bool}
    */
   stress_pointer_maps: {  
@@ -673,6 +729,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name stress_environments
+   * @private
    * @returns {bool}
    */
   stress_environments: {  
@@ -685,6 +742,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_deopt_stress
+   * @private
    * @returns {bool}
    */
   print_deopt_stress: {  
@@ -697,6 +755,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trap_on_deopt
+   * @private
    * @returns {bool}
    */
   trap_on_deopt: {  
@@ -709,6 +768,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name deoptimize_uncommon_cases
+   * @private
    * @returns {bool}
    */
   deoptimize_uncommon_cases: {  
@@ -721,6 +781,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name polymorphic_inlining
+   * @private
    * @returns {bool}
    */
   polymorphic_inlining: {  
@@ -733,6 +794,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_osr
+   * @private
    * @returns {bool}
    */
   use_osr: {  
@@ -745,6 +807,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_bce
+   * @private
    * @returns {bool}
    */
   trace_bce: {  
@@ -757,6 +820,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name load_elimination
+   * @private
    * @returns {bool}
    */
   load_elimination: {  
@@ -769,6 +833,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name check_elimination
+   * @private
    * @returns {bool}
    */
   check_elimination: {  
@@ -781,6 +846,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name store_elimination
+   * @private
    * @returns {bool}
    */
   store_elimination: {  
@@ -793,6 +859,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name dead_code_elimination
+   * @private
    * @returns {bool}
    */
   dead_code_elimination: {  
@@ -805,6 +872,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name fold_constants
+   * @private
    * @returns {bool}
    */
   fold_constants: {  
@@ -817,6 +885,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_dead_code_elimination
+   * @private
    * @returns {bool}
    */
   trace_dead_code_elimination: {  
@@ -829,6 +898,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name unreachable_code_elimination
+   * @private
    * @returns {bool}
    */
   unreachable_code_elimination: {  
@@ -841,6 +911,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_osr
+   * @private
    * @returns {bool}
    */
   trace_osr: {  
@@ -853,6 +924,7 @@ module.exports = {
    * Default: `0`
    * 
    * @name stress_runs
+   * @private
    * @returns {int}
    */
   stress_runs: {  
@@ -863,6 +935,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name optimize_closures
+   * @private
    * @returns {bool}
    */
   optimize_closures: {  
@@ -873,6 +946,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name inline_construct
+   * @private
    * @returns {bool}
    */
   inline_construct: {  
@@ -885,6 +959,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name inline_arguments
+   * @private
    * @returns {bool}
    */
   inline_arguments: {  
@@ -897,6 +972,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name inline_accessors
+   * @private
    * @returns {bool}
    */
   inline_accessors: {  
@@ -909,6 +985,7 @@ module.exports = {
    * Default: `1`
    * 
    * @name frame_count
+   * @private
    * @returns {int}
    */
   frame_count: {  
@@ -921,6 +998,7 @@ module.exports = {
    * Default: `130`
    * 
    * @name self_opt_count
+   * @private
    * @returns {int}
    */
   self_opt_count: {  
@@ -933,6 +1011,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_opt_verbose
+   * @private
    * @returns {bool}
    */
   trace_opt_verbose: {  
@@ -945,6 +1024,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name code_comments
+   * @private
    * @returns {bool}
    */
   code_comments: {  
@@ -957,6 +1037,7 @@ module.exports = {
    * Default: `null`
    * 
    * @name expose_natives_as
+   * @private
    * @returns {string}
    */
   expose_natives_as: {  
@@ -969,6 +1050,7 @@ module.exports = {
    * Default: `null`
    * 
    * @name expose_debug_as
+   * @private
    * @returns {string}
    */
   expose_debug_as: {  
@@ -981,6 +1063,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name expose_free_buffer
+   * @private
    * @returns {bool}
    */
   expose_free_buffer: {  
@@ -993,6 +1076,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name expose_gc
+   * @private
    * @returns {bool}
    */
   expose_gc: {  
@@ -1005,6 +1089,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name expose_trigger_failure
+   * @private
    * @returns {bool}
    */
   expose_trigger_failure: {  
@@ -1017,6 +1102,7 @@ module.exports = {
    * Default: `10`
    * 
    * @name stack_trace_limit
+   * @private
    * @returns {int}
    */
   stack_trace_limit: {  
@@ -1029,6 +1115,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name disable_native_files
+   * @private
    * @returns {bool}
    */
   disable_native_files: {  
@@ -1041,6 +1128,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name inline_new
+   * @private
    * @returns {bool}
    */
   inline_new: {  
@@ -1053,6 +1141,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace
+   * @private
    * @returns {bool}
    */
   trace: {  
@@ -1065,6 +1154,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name lazy
+   * @private
    * @returns {bool}
    */
   lazy: {  
@@ -1077,6 +1167,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_opt
+   * @private
    * @returns {bool}
    */
   trace_opt: {  
@@ -1089,6 +1180,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_opt_stats
+   * @private
    * @returns {bool}
    */
   trace_opt_stats: {  
@@ -1101,6 +1193,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name opt
+   * @private
    * @returns {bool}
    */
   opt: {  
@@ -1113,6 +1206,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name always_opt
+   * @private
    * @returns {bool}
    */
   always_opt: {  
@@ -1125,6 +1219,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name always_osr
+   * @private
    * @returns {bool}
    */
   always_osr: {  
@@ -1137,6 +1232,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name prepare_always_opt
+   * @private
    * @returns {bool}
    */
   prepare_always_opt: {  
@@ -1149,6 +1245,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_deopt
+   * @private
    * @returns {bool}
    */
   trace_deopt: {  
@@ -1161,6 +1258,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name compilation_cache
+   * @private
    * @returns {bool}
    */
   compilation_cache: {  
@@ -1173,6 +1271,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name cache_prototype_transitions
+   * @private
    * @returns {bool}
    */
   cache_prototype_transitions: {  
@@ -1185,6 +1284,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_debug_json
+   * @private
    * @returns {bool}
    */
   trace_debug_json: {  
@@ -1197,6 +1297,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name enable_liveedit
+   * @private
    * @returns {bool}
    */
   enable_liveedit: {  
@@ -1209,6 +1310,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name hard_abort
+   * @private
    * @returns {bool}
    */
   hard_abort: {  
@@ -1219,6 +1321,7 @@ module.exports = {
    * Default: `0`
    * 
    * @name max_old_space_size
+   * @private
    * @returns {int}
    */
   max_old_space_size: {  
@@ -1231,6 +1334,7 @@ module.exports = {
    * Default: `0`
    * 
    * @name max_executable_size
+   * @private
    * @returns {int}
    */
   max_executable_size: {  
@@ -1243,6 +1347,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name gc_global
+   * @private
    * @returns {bool}
    */
   gc_global: {  
@@ -1255,6 +1360,7 @@ module.exports = {
    * Default: `-1`
    * 
    * @name gc_interval
+   * @private
    * @returns {int}
    */
   gc_interval: {  
@@ -1267,6 +1373,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_code_flushing
+   * @private
    * @returns {bool}
    */
   trace_code_flushing: {  
@@ -1279,6 +1386,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name incremental_marking
+   * @private
    * @returns {bool}
    */
   incremental_marking: {  
@@ -1291,6 +1399,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name incremental_marking_steps
+   * @private
    * @returns {bool}
    */
   incremental_marking_steps: {  
@@ -1303,6 +1412,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name parallel_sweeping
+   * @private
    * @returns {bool}
    */
   parallel_sweeping: {  
@@ -1315,6 +1425,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name concurrent_sweeping
+   * @private
    * @returns {bool}
    */
   concurrent_sweeping: {  
@@ -1327,6 +1438,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name job_based_sweeping
+   * @private
    * @returns {bool}
    */
   job_based_sweeping: {  
@@ -1339,6 +1451,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name verify_heap
+   * @private
    * @returns {bool}
    */
   verify_heap: {  
@@ -1351,6 +1464,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_ic
+   * @private
    * @returns {bool}
    */
   use_ic: {  
@@ -1363,6 +1477,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name always_compact
+   * @private
    * @returns {bool}
    */
   always_compact: {  
@@ -1375,6 +1490,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name use_verbose_printer
+   * @private
    * @returns {bool}
    */
   use_verbose_printer: {  
@@ -1387,6 +1503,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name allow_natives_syntax
+   * @private
    * @returns {bool}
    */
   allow_natives_syntax: {  
@@ -1399,6 +1516,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_parse
+   * @private
    * @returns {bool}
    */
   trace_parse: {  
@@ -1411,6 +1529,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_sim
+   * @private
    * @returns {bool}
    */
   trace_sim: {  
@@ -1423,6 +1542,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name debug_sim
+   * @private
    * @returns {bool}
    */
   debug_sim: {  
@@ -1435,6 +1555,7 @@ module.exports = {
    * Default: `0`
    * 
    * @name stop_sim_at
+   * @private
    * @returns {int}
    */
   stop_sim_at: {  
@@ -1447,6 +1568,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name regexp_optimization
+   * @private
    * @returns {bool}
    */
   regexp_optimization: {  
@@ -1459,6 +1581,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name testing_bool_flag
+   * @private
    * @returns {bool}
    */
   testing_bool_flag: {  
@@ -1469,6 +1592,7 @@ module.exports = {
    * Default: `13`
    * 
    * @name testing_int_flag
+   * @private
    * @returns {int}
    */
   testing_int_flag: {  
@@ -1479,6 +1603,7 @@ module.exports = {
    * Default: `.`
    * 
    * @name testing_float_flag
+   * @private
    * @returns {float}
    */
   testing_float_flag: {  
@@ -1489,6 +1614,7 @@ module.exports = {
    * Default: `42`
    * 
    * @name testing_prng_seed
+   * @private
    * @returns {int}
    */
   testing_prng_seed: {  
@@ -1501,6 +1627,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name predictable
+   * @private
    * @returns {bool}
    */
   predictable: {  
@@ -1513,6 +1640,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name help
+   * @private
    * @returns {bool}
    */
   help: {  
@@ -1525,6 +1653,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name dump_counters
+   * @private
    * @returns {bool}
    */
   dump_counters: {  
@@ -1537,6 +1666,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name debugger
+   * @private
    * @returns {bool}
    */
   debugger: {  
@@ -1549,6 +1679,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name debugger_agent
+   * @private
    * @returns {bool}
    */
   debugger_agent: {  
@@ -1561,6 +1692,7 @@ module.exports = {
    * Default: `5858`
    * 
    * @name debugger_port
+   * @private
    * @returns {int}
    */
   debugger_port: {  
@@ -1573,6 +1705,7 @@ module.exports = {
    * Default: ``
    * 
    * @name map_counters
+   * @private
    * @returns {string}
    */
   map_counters: {  
@@ -1585,6 +1718,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name debug_compile_events
+   * @private
    * @returns {bool}
    */
   debug_compile_events: {  
@@ -1597,6 +1731,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name gdbjit
+   * @private
    * @returns {bool}
    */
   gdbjit: {  
@@ -1609,6 +1744,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name gdbjit_full
+   * @private
    * @returns {bool}
    */
   gdbjit_full: {  
@@ -1621,6 +1757,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name gdbjit_dump
+   * @private
    * @returns {bool}
    */
   gdbjit_dump: {  
@@ -1633,6 +1770,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_source
+   * @private
    * @returns {bool}
    */
   print_source: {  
@@ -1645,6 +1783,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_ast
+   * @private
    * @returns {bool}
    */
   print_ast: {  
@@ -1655,6 +1794,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_builtin_ast
+   * @private
    * @returns {bool}
    */
   print_builtin_ast: {  
@@ -1667,6 +1807,7 @@ module.exports = {
    * Default: ``
    * 
    * @name stop_at
+   * @private
    * @returns {string}
    */
   stop_at: {  
@@ -1679,6 +1820,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trap_on_abort
+   * @private
    * @returns {bool}
    */
   trap_on_abort: {  
@@ -1691,6 +1833,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_builtin_scopes
+   * @private
    * @returns {bool}
    */
   print_builtin_scopes: {  
@@ -1703,6 +1846,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_scopes
+   * @private
    * @returns {bool}
    */
   print_scopes: {  
@@ -1713,6 +1857,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_contexts
+   * @private
    * @returns {bool}
    */
   trace_contexts: {  
@@ -1725,6 +1870,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name gc_verbose
+   * @private
    * @returns {bool}
    */
   gc_verbose: {  
@@ -1737,6 +1883,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name heap_stats
+   * @private
    * @returns {bool}
    */
   heap_stats: {  
@@ -1749,6 +1896,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name code_stats
+   * @private
    * @returns {bool}
    */
   code_stats: {  
@@ -1761,6 +1909,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_handles
+   * @private
    * @returns {bool}
    */
   print_handles: {  
@@ -1773,6 +1922,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_global_handles
+   * @private
    * @returns {bool}
    */
   print_global_handles: {  
@@ -1785,6 +1935,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_ic
+   * @private
    * @returns {bool}
    */
   trace_ic: {  
@@ -1797,6 +1948,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_interfaces
+   * @private
    * @returns {bool}
    */
   print_interfaces: {  
@@ -1807,6 +1959,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name print_interface_details
+   * @private
    * @returns {bool}
    */
   print_interface_details: {  
@@ -1819,6 +1972,7 @@ module.exports = {
    * Default: `5`
    * 
    * @name print_interface_depth
+   * @private
    * @returns {int}
    */
   print_interface_depth: {  
@@ -1831,6 +1985,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_lazy
+   * @private
    * @returns {bool}
    */
   trace_lazy: {  
@@ -1843,6 +1998,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_isolates
+   * @private
    * @returns {bool}
    */
   trace_isolates: {  
@@ -1855,6 +2011,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name trace_regexp_bytecodes
+   * @private
    * @returns {bool}
    */
   trace_regexp_bytecodes: {  
@@ -1867,6 +2024,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_all
+   * @private
    * @returns {bool}
    */
   log_all: {  
@@ -1879,6 +2037,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_api
+   * @private
    * @returns {bool}
    */
   log_api: {  
@@ -1891,6 +2050,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_handles
+   * @private
    * @returns {bool}
    */
   log_handles: {  
@@ -1903,6 +2063,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_suspect
+   * @private
    * @returns {bool}
    */
   log_suspect: {  
@@ -1915,6 +2076,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_regexp
+   * @private
    * @returns {bool}
    */
   log_regexp: {  
@@ -1927,6 +2089,7 @@ module.exports = {
    * Default: `v8.log`
    * 
    * @name logfile
+   * @private
    * @returns {string}
    */
   logfile: {  
@@ -1939,6 +2102,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name logfile_per_isolate
+   * @private
    * @returns {bool}
    */
   logfile_per_isolate: {  
@@ -1951,6 +2115,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name ll_prof
+   * @private
    * @returns {bool}
    */
   ll_prof: {  
@@ -1963,6 +2128,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_internal_timer_events
+   * @private
    * @returns {bool}
    */
   log_internal_timer_events: {  
@@ -1975,6 +2141,7 @@ module.exports = {
    * Default: `true`
    * 
    * @name log_instruction_stats
+   * @private
    * @returns {bool}
    */
   log_instruction_stats: {  

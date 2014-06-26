@@ -8,6 +8,13 @@ function inspect(obj, depth) {
   console.error(require('util').inspect(obj, false, depth || 5, true));
 }
 
+// The following flags aren't configurable after startup since they activate (or don't) during the bootstrapping process
+// https://github.com/v8/v8/blob/146bf7bec2518cf664994a658dfc4a72a9c6bb10/src/bootstrapper.cc#L86-L97
+var notConfigurable = [
+    'expose_gc'
+  , 'expose_gc_as'
+]
+
 var defsFile = path.join(__dirname, '..', 'v8', 'flag-definitions.h');
 var defsSrc = fs.readFileSync(defsFile, 'utf8');
 var allDefs = defsSrc.split('\n')
@@ -24,7 +31,7 @@ var regex = /^ *DEFINE_(\w+)\(([^,]+), *([^,]+), *"([^"]+)"\)/;
 function getDefault(type, val) {
   switch(type) {
     case 'bool':
-      return Boolean(val)
+      return JSON.parse(val)
     case 'int':
       return parseInt(val, 10);
     default:
@@ -83,6 +90,15 @@ var api = Object.keys(flags)
   .reduce(function (acc, k) {
     var val = flags[k];
     var arg = k === 'debugger' ? 'debugr' : k;
+    var set;
+    switch(val.type) {
+      case 'bool':
+        set = arg + ' ? \'--' + k + '\' : \'--no' + k + '\''
+        break;
+      default:
+        set = '\'--' + k + '=\' + ' + arg;
+    }
+
     return acc.concat([
         '/**'
       , ' * ' + val.description
@@ -94,7 +110,10 @@ var api = Object.keys(flags)
       , ' * @returns {' + val.type + '} the current value of ' + k 
       , ' */'
       , 'proto.' + k + ' = function (' + arg + ') {  '
-      , '  if (typeof ' + arg + ' !== \'undefined\') self._' + k + ' = ' + arg + ';'
+      , '  if (typeof ' + arg + ' !== \'undefined\')  {'
+      , '    this._' + k + ' = ' + arg + ';'
+      , '    v8_flags.set(' + set + ');'
+      , '  }'
       , '  return this._' + k + ';'
       , '}'
       , ''
@@ -104,6 +123,7 @@ var api = Object.keys(flags)
 var apiCode = [
     '\'use strict\';'
   , ''
+  , 'var v8_flags = require(\'./build/Release/v8_flags\');'
   , 'var defaultFlags = require(\'./default-flags\');'
   , ''
   , 'module.exports = Flags;' 
@@ -111,7 +131,7 @@ var apiCode = [
   , 'function Flags() {'
   , '  if (!(this instanceof Flags)) return new Flags();'
   , '  var self = this;'
-  , '  Object.keys(defaultFlags).forEach(function (k) { this[\'_\' + k] = defaultFlags[k] });'
+  , '  Object.keys(defaultFlags).forEach(function (k) { self[\'_\' + k] = defaultFlags[k].default });'
   , '}'
   , ''
   , 'var proto = Flags.prototype;'
@@ -119,7 +139,9 @@ var apiCode = [
   ].concat(api)
   .join('\n')
 
+// TODO: try to use %SetFlags if we are in the browser and thus don't have v8_flags compiles (in the hopes that --allow-natives-syntax was passed)
 // TODO: handle implication and neg. implication
+// TODO: get smart about command line flags, i.e. query process.argv for v8 flags or better get to actual v8 arguments
 
 fs.writeFileSync(path.join(__dirname, '..', 'default-flags.js'), defaultFlagsCode, 'utf8');
 fs.writeFileSync(path.join(__dirname, '..', 'index.js'), apiCode, 'utf8');

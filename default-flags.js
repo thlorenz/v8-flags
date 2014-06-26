@@ -4,7 +4,7 @@ module.exports = {
 
   /**
    * enforce strict mode
-   * Default: `true`
+   * Default: `false`
    * 
    * @name use_strict
    * @private
@@ -12,12 +12,12 @@ module.exports = {
    */
   use_strict: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enforce strict mode' },
 
   /**
    * enable upcoming ES6+ features
-   * Default: `true`
+   * Default: `false`
    * 
    * @name es_staging
    * @private
@@ -25,12 +25,12 @@ module.exports = {
    */
   es_staging: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable upcoming ES6+ features' },
 
   /**
    * enable harmony semantics for typeof
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_typeof
    * @private
@@ -38,12 +38,12 @@ module.exports = {
    */
   harmony_typeof: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony semantics for typeof' },
 
   /**
    * enable harmony block scoping
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_scoping
    * @private
@@ -51,12 +51,12 @@ module.exports = {
    */
   harmony_scoping: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony block scoping' },
 
   /**
    * enable harmony proxies
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_proxies
    * @private
@@ -64,12 +64,12 @@ module.exports = {
    */
   harmony_proxies: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony proxies' },
 
   /**
    * enable harmony generators
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_generators
    * @private
@@ -77,12 +77,12 @@ module.exports = {
    */
   harmony_generators: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony generators' },
 
   /**
    * enable harmony iteration (for-of)
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_iteration
    * @private
@@ -90,12 +90,12 @@ module.exports = {
    */
   harmony_iteration: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony iteration (for-of)' },
 
   /**
    * enable harmony string
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_strings
    * @private
@@ -103,12 +103,12 @@ module.exports = {
    */
   harmony_strings: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony string' },
 
   /**
    * enable harmony arrays
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_arrays
    * @private
@@ -116,12 +116,12 @@ module.exports = {
    */
   harmony_arrays: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony arrays' },
 
   /**
    * enable harmony math functions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony_maths
    * @private
@@ -129,7 +129,7 @@ module.exports = {
    */
   harmony_maths: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable harmony math functions' },
 
   /**
@@ -147,7 +147,7 @@ module.exports = {
 
   /**
    * enable all harmony features (except typeof)
-   * Default: `true`
+   * Default: `false`
    * 
    * @name harmony
    * @private
@@ -155,7 +155,7 @@ module.exports = {
    */
   harmony: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable all harmony features (except typeof)' },
 
   /**
@@ -199,7 +199,7 @@ module.exports = {
 
   /**
    * pretenure call new
-   * Default: `true`
+   * Default: `false`
    * 
    * @name pretenuring_call_new
    * @private
@@ -207,7 +207,7 @@ module.exports = {
    */
   pretenuring_call_new: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'pretenure call new' },
 
   /**
@@ -414,7 +414,7 @@ module.exports = {
 
   /**
    * only fold in basic blocks
-   * Default: `true`
+   * Default: `false`
    * 
    * @name use_local_allocation_folding
    * @private
@@ -422,7 +422,7 @@ module.exports = {
    */
   use_local_allocation_folding: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'only fold in basic blocks' },
 
   /**
@@ -466,7 +466,7 @@ module.exports = {
 
   /**
    * print statistics for hydrogen
-   * Default: `true`
+   * Default: `false`
    * 
    * @name hydrogen_stats
    * @private
@@ -474,12 +474,12 @@ module.exports = {
    */
   hydrogen_stats: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print statistics for hydrogen' },
 
   /**
    * trace check elimination phase
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_check_elimination
    * @private
@@ -487,12 +487,12 @@ module.exports = {
    */
   trace_check_elimination: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace check elimination phase' },
 
   /**
    * trace generated hydrogen to file
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_hydrogen
    * @private
@@ -500,7 +500,7 @@ module.exports = {
    */
   trace_hydrogen: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace generated hydrogen to file' },
 
   /**
@@ -518,7 +518,7 @@ module.exports = {
 
   /**
    * trace generated hydrogen for stubs
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_hydrogen_stubs
    * @private
@@ -526,7 +526,7 @@ module.exports = {
    */
   trace_hydrogen_stubs: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace generated hydrogen for stubs' },
 
   /**
@@ -557,7 +557,7 @@ module.exports = {
 
   /**
    * trace inlining decisions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_inlining
    * @private
@@ -565,12 +565,12 @@ module.exports = {
    */
   trace_inlining: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace inlining decisions' },
 
   /**
    * trace load elimination
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_load_elimination
    * @private
@@ -578,12 +578,12 @@ module.exports = {
    */
   trace_load_elimination: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace load elimination' },
 
   /**
    * trace store elimination
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_store_elimination
    * @private
@@ -591,12 +591,12 @@ module.exports = {
    */
   trace_store_elimination: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace store elimination' },
 
   /**
    * trace register allocator
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_alloc
    * @private
@@ -604,12 +604,12 @@ module.exports = {
    */
   trace_alloc: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace register allocator' },
 
   /**
    * trace all use positions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_all_uses
    * @private
@@ -617,12 +617,12 @@ module.exports = {
    */
   trace_all_uses: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace all use positions' },
 
   /**
    * trace range analysis
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_range
    * @private
@@ -630,12 +630,12 @@ module.exports = {
    */
   trace_range: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace range analysis' },
 
   /**
    * trace global value numbering
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_gvn
    * @private
@@ -643,12 +643,12 @@ module.exports = {
    */
   trace_gvn: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace global value numbering' },
 
   /**
    * trace representation types
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_representation
    * @private
@@ -656,12 +656,12 @@ module.exports = {
    */
   trace_representation: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace representation types' },
 
   /**
    * trace hydrogen escape analysis
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_escape_analysis
    * @private
@@ -669,12 +669,12 @@ module.exports = {
    */
   trace_escape_analysis: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace hydrogen escape analysis' },
 
   /**
    * trace allocation folding
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_allocation_folding
    * @private
@@ -682,12 +682,12 @@ module.exports = {
    */
   trace_allocation_folding: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace allocation folding' },
 
   /**
    * trace object migration
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_migration
    * @private
@@ -695,12 +695,12 @@ module.exports = {
    */
   trace_migration: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace object migration' },
 
   /**
    * trace map generalization
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_generalization
    * @private
@@ -708,12 +708,12 @@ module.exports = {
    */
   trace_generalization: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace map generalization' },
 
   /**
    * pointer map for every instruction
-   * Default: `true`
+   * Default: `false`
    * 
    * @name stress_pointer_maps
    * @private
@@ -721,12 +721,12 @@ module.exports = {
    */
   stress_pointer_maps: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'pointer map for every instruction' },
 
   /**
    * environment for every instruction
-   * Default: `true`
+   * Default: `false`
    * 
    * @name stress_environments
    * @private
@@ -734,12 +734,12 @@ module.exports = {
    */
   stress_environments: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'environment for every instruction' },
 
   /**
    * print number of possible deopt points
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_deopt_stress
    * @private
@@ -747,12 +747,12 @@ module.exports = {
    */
   print_deopt_stress: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print number of possible deopt points' },
 
   /**
    * put a break point before deoptimizing
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trap_on_deopt
    * @private
@@ -760,7 +760,7 @@ module.exports = {
    */
   trap_on_deopt: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'put a break point before deoptimizing' },
 
   /**
@@ -804,7 +804,7 @@ module.exports = {
 
   /**
    * trace array bounds check elimination
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_bce
    * @private
@@ -812,7 +812,7 @@ module.exports = {
    */
   trace_bce: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace array bounds check elimination' },
 
   /**
@@ -843,7 +843,7 @@ module.exports = {
 
   /**
    * use store elimination
-   * Default: `true`
+   * Default: `false`
    * 
    * @name store_elimination
    * @private
@@ -851,7 +851,7 @@ module.exports = {
    */
   store_elimination: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'use store elimination' },
 
   /**
@@ -882,7 +882,7 @@ module.exports = {
 
   /**
    * trace dead code elimination
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_dead_code_elimination
    * @private
@@ -890,7 +890,7 @@ module.exports = {
    */
   trace_dead_code_elimination: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace dead code elimination' },
 
   /**
@@ -908,7 +908,7 @@ module.exports = {
 
   /**
    * trace on-stack replacement
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_osr
    * @private
@@ -916,7 +916,7 @@ module.exports = {
    */
   trace_osr: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace on-stack replacement' },
 
   /**
@@ -1008,7 +1008,7 @@ module.exports = {
 
   /**
    * extra verbose compilation tracing
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_opt_verbose
    * @private
@@ -1016,12 +1016,12 @@ module.exports = {
    */
   trace_opt_verbose: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'extra verbose compilation tracing' },
 
   /**
    * emit comments in code disassembly
-   * Default: `true`
+   * Default: `false`
    * 
    * @name code_comments
    * @private
@@ -1029,7 +1029,7 @@ module.exports = {
    */
   code_comments: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'emit comments in code disassembly' },
 
   /**
@@ -1060,7 +1060,7 @@ module.exports = {
 
   /**
    * expose freeBuffer extension
-   * Default: `true`
+   * Default: `false`
    * 
    * @name expose_free_buffer
    * @private
@@ -1068,12 +1068,12 @@ module.exports = {
    */
   expose_free_buffer: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'expose freeBuffer extension' },
 
   /**
    * expose gc extension
-   * Default: `true`
+   * Default: `false`
    * 
    * @name expose_gc
    * @private
@@ -1081,12 +1081,12 @@ module.exports = {
    */
   expose_gc: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'expose gc extension' },
 
   /**
    * expose trigger-failure extension
-   * Default: `true`
+   * Default: `false`
    * 
    * @name expose_trigger_failure
    * @private
@@ -1094,7 +1094,7 @@ module.exports = {
    */
   expose_trigger_failure: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'expose trigger-failure extension' },
 
   /**
@@ -1112,7 +1112,7 @@ module.exports = {
 
   /**
    * disable builtin natives files
-   * Default: `true`
+   * Default: `false`
    * 
    * @name disable_native_files
    * @private
@@ -1120,7 +1120,7 @@ module.exports = {
    */
   disable_native_files: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'disable builtin natives files' },
 
   /**
@@ -1138,7 +1138,7 @@ module.exports = {
 
   /**
    * trace function calls
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace
    * @private
@@ -1146,7 +1146,7 @@ module.exports = {
    */
   trace: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace function calls' },
 
   /**
@@ -1164,7 +1164,7 @@ module.exports = {
 
   /**
    * trace lazy optimization
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_opt
    * @private
@@ -1172,12 +1172,12 @@ module.exports = {
    */
   trace_opt: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace lazy optimization' },
 
   /**
    * trace lazy optimization statistics
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_opt_stats
    * @private
@@ -1185,7 +1185,7 @@ module.exports = {
    */
   trace_opt_stats: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace lazy optimization statistics' },
 
   /**
@@ -1203,7 +1203,7 @@ module.exports = {
 
   /**
    * always try to optimize functions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name always_opt
    * @private
@@ -1211,12 +1211,12 @@ module.exports = {
    */
   always_opt: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'always try to optimize functions' },
 
   /**
    * always try to OSR functions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name always_osr
    * @private
@@ -1224,12 +1224,12 @@ module.exports = {
    */
   always_osr: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'always try to OSR functions' },
 
   /**
    * prepare for turning on always opt
-   * Default: `true`
+   * Default: `false`
    * 
    * @name prepare_always_opt
    * @private
@@ -1237,12 +1237,12 @@ module.exports = {
    */
   prepare_always_opt: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'prepare for turning on always opt' },
 
   /**
    * trace optimize function deoptimization
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_deopt
    * @private
@@ -1250,7 +1250,7 @@ module.exports = {
    */
   trace_deopt: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace optimize function deoptimization' },
 
   /**
@@ -1281,7 +1281,7 @@ module.exports = {
 
   /**
    * trace debugging JSON request/response
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_debug_json
    * @private
@@ -1289,7 +1289,7 @@ module.exports = {
    */
   trace_debug_json: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace debugging JSON request/response' },
 
   /**
@@ -1344,7 +1344,7 @@ module.exports = {
 
   /**
    * always perform global GCs
-   * Default: `true`
+   * Default: `false`
    * 
    * @name gc_global
    * @private
@@ -1352,7 +1352,7 @@ module.exports = {
    */
   gc_global: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'always perform global GCs' },
 
   /**
@@ -1370,7 +1370,7 @@ module.exports = {
 
   /**
    * trace code flushing progress
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_code_flushing
    * @private
@@ -1378,7 +1378,7 @@ module.exports = {
    */
   trace_code_flushing: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace code flushing progress' },
 
   /**
@@ -1409,7 +1409,7 @@ module.exports = {
 
   /**
    * enable parallel sweeping
-   * Default: `true`
+   * Default: `false`
    * 
    * @name parallel_sweeping
    * @private
@@ -1417,7 +1417,7 @@ module.exports = {
    */
   parallel_sweeping: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable parallel sweeping' },
 
   /**
@@ -1435,7 +1435,7 @@ module.exports = {
 
   /**
    * enable job based sweeping
-   * Default: `true`
+   * Default: `false`
    * 
    * @name job_based_sweeping
    * @private
@@ -1443,12 +1443,12 @@ module.exports = {
    */
   job_based_sweeping: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable job based sweeping' },
 
   /**
    * verify heap pointers before and after GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name verify_heap
    * @private
@@ -1456,7 +1456,7 @@ module.exports = {
    */
   verify_heap: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'verify heap pointers before and after GC' },
 
   /**
@@ -1474,7 +1474,7 @@ module.exports = {
 
   /**
    * Perform compaction on every full GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name always_compact
    * @private
@@ -1482,7 +1482,7 @@ module.exports = {
    */
   always_compact: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Perform compaction on every full GC' },
 
   /**
@@ -1500,7 +1500,7 @@ module.exports = {
 
   /**
    * allow natives syntax
-   * Default: `true`
+   * Default: `false`
    * 
    * @name allow_natives_syntax
    * @private
@@ -1508,12 +1508,12 @@ module.exports = {
    */
   allow_natives_syntax: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'allow natives syntax' },
 
   /**
    * trace parsing and preparsing
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_parse
    * @private
@@ -1521,12 +1521,12 @@ module.exports = {
    */
   trace_parse: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace parsing and preparsing' },
 
   /**
    * Trace simulator execution
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_sim
    * @private
@@ -1534,12 +1534,12 @@ module.exports = {
    */
   trace_sim: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Trace simulator execution' },
 
   /**
    * Enable debugging the simulator
-   * Default: `true`
+   * Default: `false`
    * 
    * @name debug_sim
    * @private
@@ -1547,7 +1547,7 @@ module.exports = {
    */
   debug_sim: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Enable debugging the simulator' },
 
   /**
@@ -1624,7 +1624,7 @@ module.exports = {
 
   /**
    * enable predictable mode
-   * Default: `true`
+   * Default: `false`
    * 
    * @name predictable
    * @private
@@ -1632,12 +1632,12 @@ module.exports = {
    */
   predictable: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable predictable mode' },
 
   /**
    * Print usage message, including flags, on console
-   * Default: `true`
+   * Default: `false`
    * 
    * @name help
    * @private
@@ -1645,12 +1645,12 @@ module.exports = {
    */
   help: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Print usage message, including flags, on console' },
 
   /**
    * Dump counters on exit
-   * Default: `true`
+   * Default: `false`
    * 
    * @name dump_counters
    * @private
@@ -1658,12 +1658,12 @@ module.exports = {
    */
   dump_counters: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Dump counters on exit' },
 
   /**
    * Enable JavaScript debugger
-   * Default: `true`
+   * Default: `false`
    * 
    * @name debugger
    * @private
@@ -1671,12 +1671,12 @@ module.exports = {
    */
   debugger: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Enable JavaScript debugger' },
 
   /**
    * Enable debugger agent
-   * Default: `true`
+   * Default: `false`
    * 
    * @name debugger_agent
    * @private
@@ -1684,7 +1684,7 @@ module.exports = {
    */
   debugger_agent: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Enable debugger agent' },
 
   /**
@@ -1728,7 +1728,7 @@ module.exports = {
 
   /**
    * enable GDBJIT interface (disables compacting GC)
-   * Default: `true`
+   * Default: `false`
    * 
    * @name gdbjit
    * @private
@@ -1736,12 +1736,12 @@ module.exports = {
    */
   gdbjit: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable GDBJIT interface (disables compacting GC)' },
 
   /**
    * enable GDBJIT interface for all code objects
-   * Default: `true`
+   * Default: `false`
    * 
    * @name gdbjit_full
    * @private
@@ -1749,12 +1749,12 @@ module.exports = {
    */
   gdbjit_full: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'enable GDBJIT interface for all code objects' },
 
   /**
    * dump elf objects with debug info to disk
-   * Default: `true`
+   * Default: `false`
    * 
    * @name gdbjit_dump
    * @private
@@ -1762,12 +1762,12 @@ module.exports = {
    */
   gdbjit_dump: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'dump elf objects with debug info to disk' },
 
   /**
    * pretty print source code
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_source
    * @private
@@ -1775,23 +1775,23 @@ module.exports = {
    */
   print_source: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'pretty print source code' },
 
   /**
    * print source AST
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_ast
    * @private
    * @returns {bool}
    */
   print_ast: {  
-    type: 'bool', default: true, description: 'print source AST' },
+    type: 'bool', default: false, description: 'print source AST' },
 
   /**
    * print source AST for builtins
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_builtin_ast
    * @private
@@ -1799,7 +1799,7 @@ module.exports = {
    */
   print_builtin_ast: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print source AST for builtins' },
 
   /**
@@ -1817,7 +1817,7 @@ module.exports = {
 
   /**
    * replace aborts by breakpoints
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trap_on_abort
    * @private
@@ -1825,12 +1825,12 @@ module.exports = {
    */
   trap_on_abort: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'replace aborts by breakpoints' },
 
   /**
    * print scopes for builtins
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_builtin_scopes
    * @private
@@ -1838,23 +1838,23 @@ module.exports = {
    */
   print_builtin_scopes: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print scopes for builtins' },
 
   /**
    * print scopes
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_scopes
    * @private
    * @returns {bool}
    */
   print_scopes: {  
-    type: 'bool', default: true, description: 'print scopes' },
+    type: 'bool', default: false, description: 'print scopes' },
 
   /**
    * trace contexts operations
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_contexts
    * @private
@@ -1862,12 +1862,12 @@ module.exports = {
    */
   trace_contexts: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace contexts operations' },
 
   /**
    * print stuff during garbage collection
-   * Default: `true`
+   * Default: `false`
    * 
    * @name gc_verbose
    * @private
@@ -1875,12 +1875,12 @@ module.exports = {
    */
   gc_verbose: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print stuff during garbage collection' },
 
   /**
    * report heap statistics before and after GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name heap_stats
    * @private
@@ -1888,12 +1888,12 @@ module.exports = {
    */
   heap_stats: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'report heap statistics before and after GC' },
 
   /**
    * report code statistics after GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name code_stats
    * @private
@@ -1901,12 +1901,12 @@ module.exports = {
    */
   code_stats: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'report code statistics after GC' },
 
   /**
    * report handles after GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_handles
    * @private
@@ -1914,12 +1914,12 @@ module.exports = {
    */
   print_handles: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'report handles after GC' },
 
   /**
    * report global handles after GC
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_global_handles
    * @private
@@ -1927,12 +1927,12 @@ module.exports = {
    */
   print_global_handles: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'report global handles after GC' },
 
   /**
    * trace inline cache state transitions
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_ic
    * @private
@@ -1940,23 +1940,23 @@ module.exports = {
    */
   trace_ic: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace inline cache state transitions' },
 
   /**
    * print interfaces
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_interfaces
    * @private
    * @returns {bool}
    */
   print_interfaces: {  
-    type: 'bool', default: true, description: 'print interfaces' },
+    type: 'bool', default: false, description: 'print interfaces' },
 
   /**
    * print interface inference details
-   * Default: `true`
+   * Default: `false`
    * 
    * @name print_interface_details
    * @private
@@ -1964,7 +1964,7 @@ module.exports = {
    */
   print_interface_details: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'print interface inference details' },
 
   /**
@@ -1982,7 +1982,7 @@ module.exports = {
 
   /**
    * trace lazy compilation
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_lazy
    * @private
@@ -1990,12 +1990,12 @@ module.exports = {
    */
   trace_lazy: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace lazy compilation' },
 
   /**
    * trace isolate state changes
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_isolates
    * @private
@@ -2003,12 +2003,12 @@ module.exports = {
    */
   trace_isolates: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace isolate state changes' },
 
   /**
    * trace regexp bytecode execution
-   * Default: `true`
+   * Default: `false`
    * 
    * @name trace_regexp_bytecodes
    * @private
@@ -2016,12 +2016,12 @@ module.exports = {
    */
   trace_regexp_bytecodes: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'trace regexp bytecode execution' },
 
   /**
    * Log all events to the log file.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_all
    * @private
@@ -2029,12 +2029,12 @@ module.exports = {
    */
   log_all: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log all events to the log file.' },
 
   /**
    * Log API events to the log file.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_api
    * @private
@@ -2042,12 +2042,12 @@ module.exports = {
    */
   log_api: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log API events to the log file.' },
 
   /**
    * Log global handle events.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_handles
    * @private
@@ -2055,12 +2055,12 @@ module.exports = {
    */
   log_handles: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log global handle events.' },
 
   /**
    * Log suspect operations.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_suspect
    * @private
@@ -2068,12 +2068,12 @@ module.exports = {
    */
   log_suspect: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log suspect operations.' },
 
   /**
    * Log regular expression execution.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_regexp
    * @private
@@ -2081,7 +2081,7 @@ module.exports = {
    */
   log_regexp: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log regular expression execution.' },
 
   /**
@@ -2112,7 +2112,7 @@ module.exports = {
 
   /**
    * Enable low-level linux profiler.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name ll_prof
    * @private
@@ -2120,12 +2120,12 @@ module.exports = {
    */
   ll_prof: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Enable low-level linux profiler.' },
 
   /**
    * Time internal events.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_internal_timer_events
    * @private
@@ -2133,12 +2133,12 @@ module.exports = {
    */
   log_internal_timer_events: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Time internal events.' },
 
   /**
    * Log AArch64 instruction statistics.
-   * Default: `true`
+   * Default: `false`
    * 
    * @name log_instruction_stats
    * @private
@@ -2146,7 +2146,7 @@ module.exports = {
    */
   log_instruction_stats: {  
     type: 'bool',
-    default: true,
+    default: false,
     description: 'Log AArch64 instruction statistics.' },
 
 }

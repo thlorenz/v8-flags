@@ -3,7 +3,7 @@
 var v8_flags = require('./build/Release/v8_flags');
 var defaultFlags = require('./default-flags');
 
-module.exports = Flags;
+module.exports = new Flags();
 
 function Flags() {
   if (!(this instanceof Flags)) return new Flags();

@@ -127,7 +127,7 @@ var apiCode = [
   , 'var v8_flags = require(\'./build/Release/v8_flags\');'
   , 'var defaultFlags = require(\'./default-flags\');'
   , ''
-  , 'module.exports = Flags;' 
+  , 'module.exports = new Flags();' 
   , ''
   , 'function Flags() {'
   , '  if (!(this instanceof Flags)) return new Flags();'
@@ -141,8 +141,17 @@ var apiCode = [
   .join('\n')
 
 // TODO: try to use %SetFlags if we are in the browser and thus don't have v8_flags compiles (in the hopes that --allow-natives-syntax was passed)
-// TODO: handle implication and neg. implication
+// TODO: parse out implication and neg. implication and add that info to comments
 // TODO: get smart about command line flags, i.e. query process.argv for v8 flags or better get to actual v8 arguments
+// TODO: separate out debug-only flags like code_stats between
+    //
+    // Debug only flags
+    //
+// and 
+    //
+    // Logging and profiling flags
+    //
+// since they only work when compiled with debug flag?
 
 fs.writeFileSync(path.join(__dirname, '..', 'default-flags.js'), defaultFlagsCode, 'utf8');
 fs.writeFileSync(path.join(__dirname, '..', 'index.js'), apiCode, 'utf8');

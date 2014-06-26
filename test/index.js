@@ -13,30 +13,27 @@ function refresh(p) {
   return require(p);
 }
 
-test('\nexpose gc', function (t) {
-  var gc = require('./fixtures/gc');
+test('\nexpose_gc -- NOT CONFIGURABLE', function (t) {
+  var p = './fixtures/expose_gc'
+  var gc = require(p);
 
-  t.ok(!flags.expose_gc(), 'not on by default')
+  t.ok(!flags.expose_gc(), 'not enabled by default')
   t.ok(!gc(), 'not exposed by default')
 
-  t.ok(flags.expose_gc(true), 'turning on works')
-  t.ok(!refresh('./fixtures/gc')(), 'BUT does not expose it')
-  t.end();
+  flags.expose_gc(true)
+  t.ok(!refresh(p)(), 'enabling does NOT expose it')
+  t.end()
 })
 
-test('\nruntime functions', function (t) {
-  var p = './fixtures/runtime-functions';
-  t.plan(4)
+test('\nallow_natives_syntax', function (t) {
+  var p = './fixtures/allow_natives_syntax';
 
-  t.ok(!flags.allow_natives_syntax(), 'not on by default')
-  try {
-   require(p)
-  } catch (e) {
-    t.pass('and are not allowed')
-  }
+  t.ok(!flags.allow_natives_syntax(), 'not enabled by default')
+  t.throws(require.bind(null, p), { name: 'SyntaxError', message: 'Unexpected token %' }, 'and are not allowed')
 
-  t.ok(flags.allow_natives_syntax(true), 'turning on works')
+  flags.allow_natives_syntax(true)
   
   var heap = require(p)();
-  t.ok(heap > 0, 'and allows native syntax')
+  t.ok(heap.before > 0 && heap.after < heap.before, 'enabling allows native syntax to get heap and trigger garbage collection')
+  t.end()
 })

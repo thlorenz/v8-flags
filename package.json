@@ -22,7 +22,8 @@
   "devDependencies": {
     "nan": "~1.2.0",
     "nave": "~0.4.3",
-    "tap": "~0.4.3"
+    "semver": "~2.3.1",
+    "tap": "~0.4.11"
   },
   "keywords": [],
   "author": {

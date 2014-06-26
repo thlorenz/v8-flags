@@ -210,8 +210,8 @@ Configures v8 flags at runtime.
 </dt>
 <dd>
 <div class="description">
-<p>allow natives syntax
-Default: <code>true</code></p>
+<p>allow natives syntax</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -242,7 +242,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1639">lineno 1639</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2104">lineno 2104</a>
 </li>
 </ul></dd>
 </dl>
@@ -264,8 +264,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Perform compaction on every full GC
-Default: <code>true</code></p>
+<p>Perform compaction on every full GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -296,7 +296,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1611">lineno 1611</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2068">lineno 2068</a>
 </li>
 </ul></dd>
 </dl>
@@ -318,8 +318,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>always try to optimize functions
-Default: <code>true</code></p>
+<p>always try to optimize functions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -350,7 +350,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1317">lineno 1317</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1690">lineno 1690</a>
 </li>
 </ul></dd>
 </dl>
@@ -372,8 +372,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>always try to OSR functions
-Default: <code>true</code></p>
+<p>always try to OSR functions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -404,7 +404,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1331">lineno 1331</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1708">lineno 1708</a>
 </li>
 </ul></dd>
 </dl>
@@ -426,8 +426,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>cache prototype transitions
-Default: <code>true</code></p>
+<p>cache prototype transitions</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -458,7 +458,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1387">lineno 1387</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1780">lineno 1780</a>
 </li>
 </ul></dd>
 </dl>
@@ -480,8 +480,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use check elimination
-Default: <code>true</code></p>
+<p>use check elimination</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -512,7 +512,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L911">lineno 911</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1168">lineno 1168</a>
 </li>
 </ul></dd>
 </dl>
@@ -534,8 +534,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>emit comments in code disassembly
-Default: <code>true</code></p>
+<p>emit comments in code disassembly</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -566,7 +566,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1121">lineno 1121</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1438">lineno 1438</a>
 </li>
 </ul></dd>
 </dl>
@@ -588,8 +588,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>report code statistics after GC
-Default: <code>true</code></p>
+<p>report code statistics after GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -620,7 +620,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2073">lineno 2073</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2662">lineno 2662</a>
 </li>
 </ul></dd>
 </dl>
@@ -642,8 +642,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable compilation cache
-Default: <code>true</code></p>
+<p>enable compilation cache</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -674,7 +674,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1373">lineno 1373</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1762">lineno 1762</a>
 </li>
 </ul></dd>
 </dl>
@@ -696,8 +696,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable concurrent sweeping
-Default: <code>true</code></p>
+<p>enable concurrent sweeping</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -728,7 +728,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1555">lineno 1555</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1996">lineno 1996</a>
 </li>
 </ul></dd>
 </dl>
@@ -750,8 +750,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use crankshaft
-Default: <code>true</code></p>
+<p>use crankshaft</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -782,7 +782,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L351">lineno 351</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L448">lineno 448</a>
 </li>
 </ul></dd>
 </dl>
@@ -804,8 +804,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use dead code elimination
-Default: <code>true</code></p>
+<p>use dead code elimination</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -836,7 +836,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L939">lineno 939</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1204">lineno 1204</a>
 </li>
 </ul></dd>
 </dl>
@@ -858,8 +858,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Enable debugger compile events
-Default: <code>true</code></p>
+<p>Enable debugger compile events</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -890,7 +890,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1877">lineno 1877</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2410">lineno 2410</a>
 </li>
 </ul></dd>
 </dl>
@@ -912,8 +912,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Enable debugging the simulator
-Default: <code>true</code></p>
+<p>Enable debugging the simulator</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -944,7 +944,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1681">lineno 1681</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2158">lineno 2158</a>
 </li>
 </ul></dd>
 </dl>
@@ -966,8 +966,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Enable JavaScript debugger
-Default: <code>true</code></p>
+<p>Enable JavaScript debugger</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -998,7 +998,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1821">lineno 1821</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2338">lineno 2338</a>
 </li>
 </ul></dd>
 </dl>
@@ -1020,8 +1020,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Enable debugger agent
-Default: <code>true</code></p>
+<p>Enable debugger agent</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1052,7 +1052,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1835">lineno 1835</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2356">lineno 2356</a>
 </li>
 </ul></dd>
 </dl>
@@ -1074,8 +1074,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Port to use for remote debugging
-Default: <code>5858</code></p>
+<p>Port to use for remote debugging</p>
+<p><em>default</em>: <code>5858</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1106,7 +1106,7 @@ Default: <code>5858</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1849">lineno 1849</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2374">lineno 2374</a>
 </li>
 </ul></dd>
 </dl>
@@ -1128,8 +1128,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>deoptimize uncommon cases
-Default: <code>true</code></p>
+<p>deoptimize uncommon cases</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1160,7 +1160,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L841">lineno 841</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1078">lineno 1078</a>
 </li>
 </ul></dd>
 </dl>
@@ -1182,8 +1182,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>disable builtin natives files
-Default: <code>true</code></p>
+<p>disable builtin natives files</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1214,7 +1214,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1219">lineno 1219</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1564">lineno 1564</a>
 </li>
 </ul></dd>
 </dl>
@@ -1236,8 +1236,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Dump counters on exit
-Default: <code>true</code></p>
+<p>Dump counters on exit</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1268,7 +1268,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1807">lineno 1807</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2320">lineno 2320</a>
 </li>
 </ul></dd>
 </dl>
@@ -1290,8 +1290,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable liveedit experimental feature
-Default: <code>true</code></p>
+<p>enable liveedit experimental feature</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1322,7 +1322,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1415">lineno 1415</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1816">lineno 1816</a>
 </li>
 </ul></dd>
 </dl>
@@ -1344,8 +1344,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable upcoming ES6+ features
-Default: <code>true</code></p>
+<p>enable upcoming ES6+ features</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1376,7 +1376,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L29">lineno 29</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L34">lineno 34</a>
 </li>
 </ul></dd>
 </dl>
@@ -1398,8 +1398,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>expose debug in global object
-Default: <code>null</code></p>
+<p>expose debug in global object</p>
+<p><em>default</em>: <code>null</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1430,7 +1430,7 @@ Default: <code>null</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1149">lineno 1149</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1474">lineno 1474</a>
 </li>
 </ul></dd>
 </dl>
@@ -1452,8 +1452,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>expose freeBuffer extension
-Default: <code>true</code></p>
+<p>expose freeBuffer extension</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1484,7 +1484,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1163">lineno 1163</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1492">lineno 1492</a>
 </li>
 </ul></dd>
 </dl>
@@ -1506,8 +1506,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>expose gc extension
-Default: <code>true</code></p>
+<p>expose gc extension</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1538,7 +1538,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1177">lineno 1177</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1510">lineno 1510</a>
 </li>
 </ul></dd>
 </dl>
@@ -1560,8 +1560,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>expose natives in global object
-Default: <code>null</code></p>
+<p>expose natives in global object</p>
+<p><em>default</em>: <code>null</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1592,7 +1592,7 @@ Default: <code>null</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1135">lineno 1135</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1456">lineno 1456</a>
 </li>
 </ul></dd>
 </dl>
@@ -1614,8 +1614,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>expose trigger-failure extension
-Default: <code>true</code></p>
+<p>expose trigger-failure extension</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1646,7 +1646,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1191">lineno 1191</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1528">lineno 1528</a>
 </li>
 </ul></dd>
 </dl>
@@ -1668,8 +1668,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>faster (but maybe less accurate) math functions
-Default: <code>true</code></p>
+<p>faster (but maybe less accurate) math functions</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1700,7 +1700,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L505">lineno 505</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L646">lineno 646</a>
 </li>
 </ul></dd>
 </dl>
@@ -1722,8 +1722,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use constant folding
-Default: <code>true</code></p>
+<p>use constant folding</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1754,7 +1754,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L953">lineno 953</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1222">lineno 1222</a>
 </li>
 </ul></dd>
 </dl>
@@ -1776,8 +1776,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>number of stack frames inspected by the profiler
-Default: <code>1</code></p>
+<p>number of stack frames inspected by the profiler</p>
+<p><em>default</em>: <code>1</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1808,7 +1808,7 @@ Default: <code>1</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1079">lineno 1079</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1384">lineno 1384</a>
 </li>
 </ul></dd>
 </dl>
@@ -1830,8 +1830,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>always perform global GCs
-Default: <code>true</code></p>
+<p>always perform global GCs</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1862,7 +1862,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1471">lineno 1471</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1888">lineno 1888</a>
 </li>
 </ul></dd>
 </dl>
@@ -1884,8 +1884,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>garbage collect after <n> allocations
-Default: <code>-1</code></n></p>
+<p>garbage collect after <n> allocations</n></p>
+<p><em>default</em>: <code>-1</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1916,7 +1916,7 @@ Default: <code>-1</code></n></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1485">lineno 1485</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1906">lineno 1906</a>
 </li>
 </ul></dd>
 </dl>
@@ -1938,8 +1938,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print stuff during garbage collection
-Default: <code>true</code></p>
+<p>print stuff during garbage collection</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1970,7 +1970,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2045">lineno 2045</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2626">lineno 2626</a>
 </li>
 </ul></dd>
 </dl>
@@ -1992,8 +1992,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable GDBJIT interface (disables compacting GC)
-Default: <code>true</code></p>
+<p>enable GDBJIT interface (disables compacting GC)</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2024,7 +2024,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1891">lineno 1891</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2428">lineno 2428</a>
 </li>
 </ul></dd>
 </dl>
@@ -2046,8 +2046,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>dump elf objects with debug info to disk
-Default: <code>true</code></p>
+<p>dump elf objects with debug info to disk</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2078,7 +2078,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1919">lineno 1919</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2464">lineno 2464</a>
 </li>
 </ul></dd>
 </dl>
@@ -2100,8 +2100,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable GDBJIT interface for all code objects
-Default: <code>true</code></p>
+<p>enable GDBJIT interface for all code objects</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2132,7 +2132,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1905">lineno 1905</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2446">lineno 2446</a>
 </li>
 </ul></dd>
 </dl>
@@ -2154,8 +2154,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>maximum number of GVN fix-point iterations
-Default: <code>3</code></p>
+<p>maximum number of GVN fix-point iterations</p>
+<p><em>default</em>: <code>3</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2186,7 +2186,7 @@ Default: <code>3</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L393">lineno 393</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L502">lineno 502</a>
 </li>
 </ul></dd>
 </dl>
@@ -2208,8 +2208,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>abort by crashing
-Default: <code>true</code></p>
+<p>abort by crashing</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2240,7 +2240,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1429">lineno 1429</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1834">lineno 1834</a>
 </li>
 </ul></dd>
 </dl>
@@ -2262,8 +2262,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable all harmony features (except typeof)
-Default: <code>true</code></p>
+<p>enable all harmony features (except typeof)</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2294,7 +2294,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L169">lineno 169</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L214">lineno 214</a>
 </li>
 </ul></dd>
 </dl>
@@ -2316,8 +2316,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony arrays
-Default: <code>true</code></p>
+<p>enable harmony arrays</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2348,7 +2348,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L127">lineno 127</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L160">lineno 160</a>
 </li>
 </ul></dd>
 </dl>
@@ -2370,8 +2370,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony generators
-Default: <code>true</code></p>
+<p>enable harmony generators</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2402,7 +2402,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L85">lineno 85</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L106">lineno 106</a>
 </li>
 </ul></dd>
 </dl>
@@ -2424,8 +2424,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony iteration (for-of)
-Default: <code>true</code></p>
+<p>enable harmony iteration (for-of)</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2456,7 +2456,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L99">lineno 99</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L124">lineno 124</a>
 </li>
 </ul></dd>
 </dl>
@@ -2478,8 +2478,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony math functions
-Default: <code>true</code></p>
+<p>enable harmony math functions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2510,7 +2510,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L141">lineno 141</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L178">lineno 178</a>
 </li>
 </ul></dd>
 </dl>
@@ -2532,8 +2532,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>(dummy flag, has no effect)
-Default: <code>true</code></p>
+<p>(dummy flag, has no effect)</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2564,7 +2564,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L155">lineno 155</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L196">lineno 196</a>
 </li>
 </ul></dd>
 </dl>
@@ -2586,8 +2586,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony proxies
-Default: <code>true</code></p>
+<p>enable harmony proxies</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2618,7 +2618,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L71">lineno 71</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L88">lineno 88</a>
 </li>
 </ul></dd>
 </dl>
@@ -2640,8 +2640,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony block scoping
-Default: <code>true</code></p>
+<p>enable harmony block scoping</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2672,7 +2672,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L57">lineno 57</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L70">lineno 70</a>
 </li>
 </ul></dd>
 </dl>
@@ -2694,8 +2694,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony string
-Default: <code>true</code></p>
+<p>enable harmony string</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2726,7 +2726,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L113">lineno 113</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L142">lineno 142</a>
 </li>
 </ul></dd>
 </dl>
@@ -2748,8 +2748,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable harmony semantics for typeof
-Default: <code>true</code></p>
+<p>enable harmony semantics for typeof</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2780,7 +2780,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L43">lineno 43</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L52">lineno 52</a>
 </li>
 </ul></dd>
 </dl>
@@ -2802,8 +2802,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>report heap statistics before and after GC
-Default: <code>true</code></p>
+<p>report heap statistics before and after GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2834,7 +2834,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2059">lineno 2059</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2644">lineno 2644</a>
 </li>
 </ul></dd>
 </dl>
@@ -2856,8 +2856,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Print usage message, including flags, on console
-Default: <code>true</code></p>
+<p>Print usage message, including flags, on console</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2888,7 +2888,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1793">lineno 1793</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2302">lineno 2302</a>
 </li>
 </ul></dd>
 </dl>
@@ -2910,8 +2910,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>optimization filter
-Default: <code>*</code></p>
+<p>optimization filter</p>
+<p><em>default</em>: <code>*</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2942,7 +2942,7 @@ Default: <code>*</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L365">lineno 365</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L466">lineno 466</a>
 </li>
 </ul></dd>
 </dl>
@@ -2964,8 +2964,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print statistics for hydrogen
-Default: <code>true</code></p>
+<p>print statistics for hydrogen</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -2996,7 +2996,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L519">lineno 519</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L664">lineno 664</a>
 </li>
 </ul></dd>
 </dl>
@@ -3018,8 +3018,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use incremental marking
-Default: <code>true</code></p>
+<p>use incremental marking</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3050,7 +3050,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1513">lineno 1513</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1942">lineno 1942</a>
 </li>
 </ul></dd>
 </dl>
@@ -3072,8 +3072,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>do incremental marking steps
-Default: <code>true</code></p>
+<p>do incremental marking steps</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3104,7 +3104,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1527">lineno 1527</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1960">lineno 1960</a>
 </li>
 </ul></dd>
 </dl>
@@ -3126,8 +3126,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>inline JavaScript accessors
-Default: <code>true</code></p>
+<p>inline JavaScript accessors</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3158,7 +3158,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1065">lineno 1065</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1366">lineno 1366</a>
 </li>
 </ul></dd>
 </dl>
@@ -3180,8 +3180,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>inline functions with arguments object
-Default: <code>true</code></p>
+<p>inline functions with arguments object</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3212,7 +3212,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1051">lineno 1051</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1348">lineno 1348</a>
 </li>
 </ul></dd>
 </dl>
@@ -3234,8 +3234,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>inline constructor calls
-Default: <code>true</code></p>
+<p>inline constructor calls</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3266,7 +3266,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1037">lineno 1037</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1330">lineno 1330</a>
 </li>
 </ul></dd>
 </dl>
@@ -3288,8 +3288,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use fast inline allocation
-Default: <code>true</code></p>
+<p>use fast inline allocation</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3320,7 +3320,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1233">lineno 1233</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1582">lineno 1582</a>
 </li>
 </ul></dd>
 </dl>
@@ -3342,8 +3342,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable job based sweeping
-Default: <code>true</code></p>
+<p>enable job based sweeping</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3374,7 +3374,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1569">lineno 1569</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2014">lineno 2014</a>
 </li>
 </ul></dd>
 </dl>
@@ -3396,8 +3396,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use lazy compilation
-Default: <code>true</code></p>
+<p>use lazy compilation</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3428,7 +3428,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1261">lineno 1261</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1618">lineno 1618</a>
 </li>
 </ul></dd>
 </dl>
@@ -3450,8 +3450,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Enable low-level linux profiler.
-Default: <code>true</code></p>
+<p>Enable low-level linux profiler.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3482,7 +3482,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2311">lineno 2311</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2968">lineno 2968</a>
 </li>
 </ul></dd>
 </dl>
@@ -3504,8 +3504,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use load elimination
-Default: <code>true</code></p>
+<p>use load elimination</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3536,7 +3536,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L897">lineno 897</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1150">lineno 1150</a>
 </li>
 </ul></dd>
 </dl>
@@ -3558,8 +3558,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log all events to the log file.
-Default: <code>true</code></p>
+<p>Log all events to the log file.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3590,7 +3590,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2213">lineno 2213</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2842">lineno 2842</a>
 </li>
 </ul></dd>
 </dl>
@@ -3612,8 +3612,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log API events to the log file.
-Default: <code>true</code></p>
+<p>Log API events to the log file.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3644,7 +3644,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2227">lineno 2227</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2860">lineno 2860</a>
 </li>
 </ul></dd>
 </dl>
@@ -3666,8 +3666,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log global handle events.
-Default: <code>true</code></p>
+<p>Log global handle events.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3698,7 +3698,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2241">lineno 2241</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2878">lineno 2878</a>
 </li>
 </ul></dd>
 </dl>
@@ -3720,8 +3720,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log AArch64 instruction statistics.
-Default: <code>true</code></p>
+<p>Log AArch64 instruction statistics.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3752,7 +3752,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2339">lineno 2339</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3004">lineno 3004</a>
 </li>
 </ul></dd>
 </dl>
@@ -3774,8 +3774,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Time internal events.
-Default: <code>true</code></p>
+<p>Time internal events.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3806,7 +3806,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2325">lineno 2325</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2986">lineno 2986</a>
 </li>
 </ul></dd>
 </dl>
@@ -3828,8 +3828,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log regular expression execution.
-Default: <code>true</code></p>
+<p>Log regular expression execution.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3860,7 +3860,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2269">lineno 2269</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2914">lineno 2914</a>
 </li>
 </ul></dd>
 </dl>
@@ -3882,8 +3882,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Log suspect operations.
-Default: <code>true</code></p>
+<p>Log suspect operations.</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3914,7 +3914,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2255">lineno 2255</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2896">lineno 2896</a>
 </li>
 </ul></dd>
 </dl>
@@ -3936,8 +3936,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Specify the name of the log file.
-Default: <code>v8.log</code></p>
+<p>Specify the name of the log file.</p>
+<p><em>default</em>: <code>v8.log</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -3968,7 +3968,7 @@ Default: <code>v8.log</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2283">lineno 2283</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2932">lineno 2932</a>
 </li>
 </ul></dd>
 </dl>
@@ -3990,8 +3990,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Separate log files for each isolate.
-Default: <code>true</code></p>
+<p>Separate log files for each isolate.</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4022,7 +4022,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2297">lineno 2297</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2950">lineno 2950</a>
 </li>
 </ul></dd>
 </dl>
@@ -4044,8 +4044,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>loop invariant code motion
-Default: <code>true</code></p>
+<p>loop invariant code motion</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4076,7 +4076,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L491">lineno 491</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L628">lineno 628</a>
 </li>
 </ul></dd>
 </dl>
@@ -4098,8 +4098,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Map counters to a file
-Default: ``</p>
+<p>Map counters to a file</p>
+<p><em>default</em>: ``</p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4130,7 +4130,7 @@ Default: ``</p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1863">lineno 1863</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2392">lineno 2392</a>
 </li>
 </ul></dd>
 </dl>
@@ -4152,8 +4152,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>max size of executable memory (in Mbytes)
-Default: <code>0</code></p>
+<p>max size of executable memory (in Mbytes)</p>
+<p><em>default</em>: <code>0</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4184,7 +4184,7 @@ Default: <code>0</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1457">lineno 1457</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1870">lineno 1870</a>
 </li>
 </ul></dd>
 </dl>
@@ -4206,8 +4206,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>maximum number of inlining levels
-Default: <code>5</code></p>
+<p>maximum number of inlining levels</p>
+<p><em>default</em>: <code>5</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4238,7 +4238,7 @@ Default: <code>5</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L477">lineno 477</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L610">lineno 610</a>
 </li>
 </ul></dd>
 </dl>
@@ -4260,8 +4260,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>max size of the old space (in Mbytes)
-Default: <code>0</code></p>
+<p>max size of the old space (in Mbytes)</p>
+<p><em>default</em>: <code>0</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4292,7 +4292,7 @@ Default: <code>0</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1443">lineno 1443</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1852">lineno 1852</a>
 </li>
 </ul></dd>
 </dl>
@@ -4314,8 +4314,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use adaptive optimizations
-Default: <code>true</code></p>
+<p>use adaptive optimizations</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4346,7 +4346,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1303">lineno 1303</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1672">lineno 1672</a>
 </li>
 </ul></dd>
 </dl>
@@ -4368,8 +4368,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>optimize closures
-Default: <code>true</code></p>
+<p>optimize closures</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4400,7 +4400,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1023">lineno 1023</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1312">lineno 1312</a>
 </li>
 </ul></dd>
 </dl>
@@ -4422,8 +4422,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>optimizes arrays that have no holes
-Default: <code>true</code></p>
+<p>optimizes arrays that have no holes</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4454,7 +4454,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L183">lineno 183</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L232">lineno 232</a>
 </li>
 </ul></dd>
 </dl>
@@ -4476,8 +4476,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable parallel sweeping
-Default: <code>true</code></p>
+<p>enable parallel sweeping</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4508,7 +4508,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1541">lineno 1541</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1978">lineno 1978</a>
 </li>
 </ul></dd>
 </dl>
@@ -4530,8 +4530,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>polymorphic inlining
-Default: <code>true</code></p>
+<p>polymorphic inlining</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4562,7 +4562,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L855">lineno 855</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1096">lineno 1096</a>
 </li>
 </ul></dd>
 </dl>
@@ -4584,8 +4584,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enable predictable mode
-Default: <code>true</code></p>
+<p>enable predictable mode</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4616,7 +4616,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1779">lineno 1779</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2284">lineno 2284</a>
 </li>
 </ul></dd>
 </dl>
@@ -4638,8 +4638,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>prepare for turning on always opt
-Default: <code>true</code></p>
+<p>prepare for turning on always opt</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4670,7 +4670,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1345">lineno 1345</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1726">lineno 1726</a>
 </li>
 </ul></dd>
 </dl>
@@ -4692,8 +4692,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>allocate objects in old space
-Default: <code>true</code></p>
+<p>allocate objects in old space</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4724,7 +4724,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L211">lineno 211</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L268">lineno 268</a>
 </li>
 </ul></dd>
 </dl>
@@ -4746,8 +4746,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>pretenure call new
-Default: <code>true</code></p>
+<p>pretenure call new</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4778,7 +4778,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L225">lineno 225</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L286">lineno 286</a>
 </li>
 </ul></dd>
 </dl>
@@ -4800,8 +4800,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print source AST
-Default: <code>true</code></p>
+<p>print source AST</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4832,7 +4832,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1947">lineno 1947</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2500">lineno 2500</a>
 </li>
 </ul></dd>
 </dl>
@@ -4854,8 +4854,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print source AST for builtins
-Default: <code>true</code></p>
+<p>print source AST for builtins</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4886,7 +4886,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1961">lineno 1961</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2518">lineno 2518</a>
 </li>
 </ul></dd>
 </dl>
@@ -4908,8 +4908,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print scopes for builtins
-Default: <code>true</code></p>
+<p>print scopes for builtins</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4940,7 +4940,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2003">lineno 2003</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2572">lineno 2572</a>
 </li>
 </ul></dd>
 </dl>
@@ -4962,8 +4962,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print number of possible deopt points
-Default: <code>true</code></p>
+<p>print number of possible deopt points</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -4994,7 +4994,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L813">lineno 813</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1042">lineno 1042</a>
 </li>
 </ul></dd>
 </dl>
@@ -5016,8 +5016,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>report global handles after GC
-Default: <code>true</code></p>
+<p>report global handles after GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5048,7 +5048,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2101">lineno 2101</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2698">lineno 2698</a>
 </li>
 </ul></dd>
 </dl>
@@ -5070,8 +5070,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>report handles after GC
-Default: <code>true</code></p>
+<p>report handles after GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5102,7 +5102,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2087">lineno 2087</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2680">lineno 2680</a>
 </li>
 </ul></dd>
 </dl>
@@ -5124,8 +5124,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>depth for printing interfaces
-Default: <code>5</code></p>
+<p>depth for printing interfaces</p>
+<p><em>default</em>: <code>5</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5156,7 +5156,7 @@ Default: <code>5</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2157">lineno 2157</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2770">lineno 2770</a>
 </li>
 </ul></dd>
 </dl>
@@ -5178,8 +5178,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print interface inference details
-Default: <code>true</code></p>
+<p>print interface inference details</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5210,7 +5210,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2143">lineno 2143</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2752">lineno 2752</a>
 </li>
 </ul></dd>
 </dl>
@@ -5232,8 +5232,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print interfaces
-Default: <code>true</code></p>
+<p>print interfaces</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5264,7 +5264,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2129">lineno 2129</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2734">lineno 2734</a>
 </li>
 </ul></dd>
 </dl>
@@ -5286,8 +5286,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>print scopes
-Default: <code>true</code></p>
+<p>print scopes</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5318,7 +5318,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2017">lineno 2017</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2590">lineno 2590</a>
 </li>
 </ul></dd>
 </dl>
@@ -5340,8 +5340,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>pretty print source code
-Default: <code>true</code></p>
+<p>pretty print source code</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5372,7 +5372,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1933">lineno 1933</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2482">lineno 2482</a>
 </li>
 </ul></dd>
 </dl>
@@ -5394,8 +5394,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>generate optimized regexp code
-Default: <code>true</code></p>
+<p>generate optimized regexp code</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5426,7 +5426,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1709">lineno 1709</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2194">lineno 2194</a>
 </li>
 </ul></dd>
 </dl>
@@ -5448,8 +5448,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>call count before self-optimization
-Default: <code>130</code></p>
+<p>call count before self-optimization</p>
+<p><em>default</em>: <code>130</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5480,7 +5480,7 @@ Default: <code>130</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1093">lineno 1093</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1402">lineno 1402</a>
 </li>
 </ul></dd>
 </dl>
@@ -5502,8 +5502,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>support smi representation in binary operations
-Default: <code>true</code></p>
+<p>support smi representation in binary operations</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5534,7 +5534,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L309">lineno 309</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L394">lineno 394</a>
 </li>
 </ul></dd>
 </dl>
@@ -5556,8 +5556,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>tracks arrays with only smi values
-Default: <code>true</code></p>
+<p>tracks arrays with only smi values</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5588,7 +5588,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L197">lineno 197</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L250">lineno 250</a>
 </li>
 </ul></dd>
 </dl>
@@ -5610,8 +5610,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>number of stack frames to capture
-Default: <code>10</code></p>
+<p>number of stack frames to capture</p>
+<p><em>default</em>: <code>10</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5642,7 +5642,7 @@ Default: <code>10</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1205">lineno 1205</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1546">lineno 1546</a>
 </li>
 </ul></dd>
 </dl>
@@ -5664,8 +5664,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>function name where to insert a breakpoint
-Default: ``</p>
+<p>function name where to insert a breakpoint</p>
+<p><em>default</em>: ``</p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5696,7 +5696,7 @@ Default: ``</p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1975">lineno 1975</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2536">lineno 2536</a>
 </li>
 </ul></dd>
 </dl>
@@ -5718,8 +5718,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Simulator stop after x number of instructions
-Default: <code>0</code></p>
+<p>Simulator stop after x number of instructions</p>
+<p><em>default</em>: <code>0</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5750,7 +5750,7 @@ Default: <code>0</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1695">lineno 1695</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2176">lineno 2176</a>
 </li>
 </ul></dd>
 </dl>
@@ -5772,8 +5772,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use store elimination
-Default: <code>true</code></p>
+<p>use store elimination</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5804,7 +5804,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L925">lineno 925</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1186">lineno 1186</a>
 </li>
 </ul></dd>
 </dl>
@@ -5826,8 +5826,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>environment for every instruction
-Default: <code>true</code></p>
+<p>environment for every instruction</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5858,7 +5858,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L799">lineno 799</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1024">lineno 1024</a>
 </li>
 </ul></dd>
 </dl>
@@ -5880,8 +5880,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>pointer map for every instruction
-Default: <code>true</code></p>
+<p>pointer map for every instruction</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5912,7 +5912,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L785">lineno 785</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1006">lineno 1006</a>
 </li>
 </ul></dd>
 </dl>
@@ -5934,8 +5934,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>number of stress runs
-Default: <code>0</code></p>
+<p>number of stress runs</p>
+<p><em>default</em>: <code>0</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -5966,7 +5966,7 @@ Default: <code>0</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1009">lineno 1009</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1294">lineno 1294</a>
 </li>
 </ul></dd>
 </dl>
@@ -5988,8 +5988,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use string slices
-Default: <code>true</code></p>
+<p>use string slices</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6020,7 +6020,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L337">lineno 337</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L430">lineno 430</a>
 </li>
 </ul></dd>
 </dl>
@@ -6042,8 +6042,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>testing_bool_flag
-Default: <code>true</code></p>
+<p>testing_bool_flag</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6074,7 +6074,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1723">lineno 1723</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2212">lineno 2212</a>
 </li>
 </ul></dd>
 </dl>
@@ -6096,8 +6096,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>float-flag
-Default: <code>.</code></p>
+<p>float-flag</p>
+<p><em>default</em>: <code>.</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6128,7 +6128,7 @@ Default: <code>.</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1751">lineno 1751</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2248">lineno 2248</a>
 </li>
 </ul></dd>
 </dl>
@@ -6150,8 +6150,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>testing_int_flag
-Default: <code>13</code></p>
+<p>testing_int_flag</p>
+<p><em>default</em>: <code>13</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6182,7 +6182,7 @@ Default: <code>13</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1737">lineno 1737</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2230">lineno 2230</a>
 </li>
 </ul></dd>
 </dl>
@@ -6204,8 +6204,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Seed used for threading test randomness
-Default: <code>42</code></p>
+<p>Seed used for threading test randomness</p>
+<p><em>default</em>: <code>42</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6236,7 +6236,7 @@ Default: <code>42</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1765">lineno 1765</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2266">lineno 2266</a>
 </li>
 </ul></dd>
 </dl>
@@ -6258,8 +6258,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace function calls
-Default: <code>true</code></p>
+<p>trace function calls</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6290,7 +6290,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1247">lineno 1247</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1600">lineno 1600</a>
 </li>
 </ul></dd>
 </dl>
@@ -6312,8 +6312,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace all use positions
-Default: <code>true</code></p>
+<p>trace all use positions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6344,7 +6344,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L673">lineno 673</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L862">lineno 862</a>
 </li>
 </ul></dd>
 </dl>
@@ -6366,8 +6366,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace register allocator
-Default: <code>true</code></p>
+<p>trace register allocator</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6398,7 +6398,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L659">lineno 659</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L844">lineno 844</a>
 </li>
 </ul></dd>
 </dl>
@@ -6420,8 +6420,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace allocation folding
-Default: <code>true</code></p>
+<p>trace allocation folding</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6452,7 +6452,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L743">lineno 743</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L952">lineno 952</a>
 </li>
 </ul></dd>
 </dl>
@@ -6474,8 +6474,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace array bounds check elimination
-Default: <code>true</code></p>
+<p>trace array bounds check elimination</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6506,7 +6506,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L883">lineno 883</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1132">lineno 1132</a>
 </li>
 </ul></dd>
 </dl>
@@ -6528,8 +6528,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace check elimination phase
-Default: <code>true</code></p>
+<p>trace check elimination phase</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6560,7 +6560,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L533">lineno 533</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L682">lineno 682</a>
 </li>
 </ul></dd>
 </dl>
@@ -6582,8 +6582,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace code flushing progress
-Default: <code>true</code></p>
+<p>trace code flushing progress</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6614,7 +6614,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1499">lineno 1499</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1924">lineno 1924</a>
 </li>
 </ul></dd>
 </dl>
@@ -6636,8 +6636,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace contexts operations
-Default: <code>true</code></p>
+<p>trace contexts operations</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6668,7 +6668,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2031">lineno 2031</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2608">lineno 2608</a>
 </li>
 </ul></dd>
 </dl>
@@ -6690,8 +6690,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace dead code elimination
-Default: <code>true</code></p>
+<p>trace dead code elimination</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6722,7 +6722,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L967">lineno 967</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1240">lineno 1240</a>
 </li>
 </ul></dd>
 </dl>
@@ -6744,8 +6744,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace debugging JSON request/response
-Default: <code>true</code></p>
+<p>trace debugging JSON request/response</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6776,7 +6776,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1401">lineno 1401</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1798">lineno 1798</a>
 </li>
 </ul></dd>
 </dl>
@@ -6798,8 +6798,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace optimize function deoptimization
-Default: <code>true</code></p>
+<p>trace optimize function deoptimization</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6830,7 +6830,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1359">lineno 1359</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1744">lineno 1744</a>
 </li>
 </ul></dd>
 </dl>
@@ -6852,8 +6852,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace hydrogen escape analysis
-Default: <code>true</code></p>
+<p>trace hydrogen escape analysis</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6884,7 +6884,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L729">lineno 729</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L934">lineno 934</a>
 </li>
 </ul></dd>
 </dl>
@@ -6906,8 +6906,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace map generalization
-Default: <code>true</code></p>
+<p>trace map generalization</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6938,7 +6938,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L771">lineno 771</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L988">lineno 988</a>
 </li>
 </ul></dd>
 </dl>
@@ -6960,8 +6960,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace global value numbering
-Default: <code>true</code></p>
+<p>trace global value numbering</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -6992,7 +6992,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L701">lineno 701</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L898">lineno 898</a>
 </li>
 </ul></dd>
 </dl>
@@ -7014,8 +7014,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace generated hydrogen to file
-Default: <code>true</code></p>
+<p>trace generated hydrogen to file</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7046,7 +7046,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L547">lineno 547</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L700">lineno 700</a>
 </li>
 </ul></dd>
 </dl>
@@ -7068,8 +7068,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace hydrogen to given file name
-Default: <code>null</code></p>
+<p>trace hydrogen to given file name</p>
+<p><em>default</em>: <code>null</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7100,7 +7100,7 @@ Default: <code>null</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L589">lineno 589</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L754">lineno 754</a>
 </li>
 </ul></dd>
 </dl>
@@ -7122,8 +7122,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>hydrogen tracing filter
-Default: <code>*</code></p>
+<p>hydrogen tracing filter</p>
+<p><em>default</em>: <code>*</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7154,7 +7154,7 @@ Default: <code>*</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L561">lineno 561</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L718">lineno 718</a>
 </li>
 </ul></dd>
 </dl>
@@ -7176,8 +7176,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace generated hydrogen for stubs
-Default: <code>true</code></p>
+<p>trace generated hydrogen for stubs</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7208,7 +7208,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L575">lineno 575</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L736">lineno 736</a>
 </li>
 </ul></dd>
 </dl>
@@ -7230,8 +7230,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace inline cache state transitions
-Default: <code>true</code></p>
+<p>trace inline cache state transitions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7262,7 +7262,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2115">lineno 2115</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2716">lineno 2716</a>
 </li>
 </ul></dd>
 </dl>
@@ -7284,8 +7284,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace inlining decisions
-Default: <code>true</code></p>
+<p>trace inlining decisions</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7316,7 +7316,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L617">lineno 617</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L790">lineno 790</a>
 </li>
 </ul></dd>
 </dl>
@@ -7338,8 +7338,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace isolate state changes
-Default: <code>true</code></p>
+<p>trace isolate state changes</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7370,7 +7370,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2185">lineno 2185</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2806">lineno 2806</a>
 </li>
 </ul></dd>
 </dl>
@@ -7392,8 +7392,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace lazy compilation
-Default: <code>true</code></p>
+<p>trace lazy compilation</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7424,7 +7424,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2171">lineno 2171</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2788">lineno 2788</a>
 </li>
 </ul></dd>
 </dl>
@@ -7446,8 +7446,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace load elimination
-Default: <code>true</code></p>
+<p>trace load elimination</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7478,7 +7478,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L631">lineno 631</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L808">lineno 808</a>
 </li>
 </ul></dd>
 </dl>
@@ -7500,8 +7500,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace object migration
-Default: <code>true</code></p>
+<p>trace object migration</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7532,7 +7532,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L757">lineno 757</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L970">lineno 970</a>
 </li>
 </ul></dd>
 </dl>
@@ -7554,8 +7554,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace lazy optimization
-Default: <code>true</code></p>
+<p>trace lazy optimization</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7586,7 +7586,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1275">lineno 1275</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1636">lineno 1636</a>
 </li>
 </ul></dd>
 </dl>
@@ -7608,8 +7608,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace lazy optimization statistics
-Default: <code>true</code></p>
+<p>trace lazy optimization statistics</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7640,7 +7640,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1289">lineno 1289</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1654">lineno 1654</a>
 </li>
 </ul></dd>
 </dl>
@@ -7662,8 +7662,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>extra verbose compilation tracing
-Default: <code>true</code></p>
+<p>extra verbose compilation tracing</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7694,7 +7694,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1107">lineno 1107</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1420">lineno 1420</a>
 </li>
 </ul></dd>
 </dl>
@@ -7716,8 +7716,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace on-stack replacement
-Default: <code>true</code></p>
+<p>trace on-stack replacement</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7748,7 +7748,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L995">lineno 995</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1276">lineno 1276</a>
 </li>
 </ul></dd>
 </dl>
@@ -7770,8 +7770,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace parsing and preparsing
-Default: <code>true</code></p>
+<p>trace parsing and preparsing</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7802,7 +7802,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1653">lineno 1653</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2122">lineno 2122</a>
 </li>
 </ul></dd>
 </dl>
@@ -7824,8 +7824,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace generated IR for specified phases
-Default: <code>HLZ</code></p>
+<p>trace generated IR for specified phases</p>
+<p><em>default</em>: <code>HLZ</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7856,7 +7856,7 @@ Default: <code>HLZ</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L603">lineno 603</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L772">lineno 772</a>
 </li>
 </ul></dd>
 </dl>
@@ -7878,8 +7878,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace range analysis
-Default: <code>true</code></p>
+<p>trace range analysis</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7910,7 +7910,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L687">lineno 687</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L880">lineno 880</a>
 </li>
 </ul></dd>
 </dl>
@@ -7932,8 +7932,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace regexp bytecode execution
-Default: <code>true</code></p>
+<p>trace regexp bytecode execution</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -7964,7 +7964,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2199">lineno 2199</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2824">lineno 2824</a>
 </li>
 </ul></dd>
 </dl>
@@ -7986,8 +7986,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace representation types
-Default: <code>true</code></p>
+<p>trace representation types</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8018,7 +8018,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L715">lineno 715</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L916">lineno 916</a>
 </li>
 </ul></dd>
 </dl>
@@ -8040,8 +8040,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>Trace simulator execution
-Default: <code>true</code></p>
+<p>Trace simulator execution</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8072,7 +8072,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1667">lineno 1667</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2140">lineno 2140</a>
 </li>
 </ul></dd>
 </dl>
@@ -8094,8 +8094,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>trace store elimination
-Default: <code>true</code></p>
+<p>trace store elimination</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8126,7 +8126,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L645">lineno 645</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L826">lineno 826</a>
 </li>
 </ul></dd>
 </dl>
@@ -8148,8 +8148,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>track computed boilerplate fields
-Default: <code>true</code></p>
+<p>track computed boilerplate fields</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8180,7 +8180,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L281">lineno 281</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L358">lineno 358</a>
 </li>
 </ul></dd>
 </dl>
@@ -8202,8 +8202,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>track fields with double values
-Default: <code>true</code></p>
+<p>track fields with double values</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8234,7 +8234,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L253">lineno 253</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L322">lineno 322</a>
 </li>
 </ul></dd>
 </dl>
@@ -8256,8 +8256,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>track field types
-Default: <code>true</code></p>
+<p>track field types</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8288,7 +8288,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L295">lineno 295</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L376">lineno 376</a>
 </li>
 </ul></dd>
 </dl>
@@ -8310,8 +8310,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>track fields with only smi values
-Default: <code>true</code></p>
+<p>track fields with only smi values</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8342,7 +8342,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L239">lineno 239</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L304">lineno 304</a>
 </li>
 </ul></dd>
 </dl>
@@ -8364,8 +8364,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>track fields with heap values
-Default: <code>true</code></p>
+<p>track fields with heap values</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8396,7 +8396,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L267">lineno 267</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L340">lineno 340</a>
 </li>
 </ul></dd>
 </dl>
@@ -8418,8 +8418,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>replace aborts by breakpoints
-Default: <code>true</code></p>
+<p>replace aborts by breakpoints</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8450,7 +8450,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1989">lineno 1989</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2554">lineno 2554</a>
 </li>
 </ul></dd>
 </dl>
@@ -8472,8 +8472,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>put a break point before deoptimizing
-Default: <code>true</code></p>
+<p>put a break point before deoptimizing</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8504,7 +8504,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L827">lineno 827</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1060">lineno 1060</a>
 </li>
 </ul></dd>
 </dl>
@@ -8526,8 +8526,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>automatically unbox arrays of doubles
-Default: <code>true</code></p>
+<p>automatically unbox arrays of doubles</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8558,7 +8558,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L323">lineno 323</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L412">lineno 412</a>
 </li>
 </ul></dd>
 </dl>
@@ -8580,8 +8580,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>eliminate unreachable code
-Default: <code>true</code></p>
+<p>eliminate unreachable code</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8612,7 +8612,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L981">lineno 981</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1258">lineno 1258</a>
 </li>
 </ul></dd>
 </dl>
@@ -8634,8 +8634,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use allocation folding
-Default: <code>true</code></p>
+<p>use allocation folding</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8666,7 +8666,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L449">lineno 449</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L574">lineno 574</a>
 </li>
 </ul></dd>
 </dl>
@@ -8688,8 +8688,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use hydrogen instruction canonicalizing
-Default: <code>true</code></p>
+<p>use hydrogen instruction canonicalizing</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8720,7 +8720,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L407">lineno 407</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L520">lineno 520</a>
 </li>
 </ul></dd>
 </dl>
@@ -8742,8 +8742,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use hydrogen escape analysis
-Default: <code>true</code></p>
+<p>use hydrogen escape analysis</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8774,7 +8774,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L435">lineno 435</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L556">lineno 556</a>
 </li>
 </ul></dd>
 </dl>
@@ -8796,8 +8796,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use hydrogen global value numbering
-Default: <code>true</code></p>
+<p>use hydrogen global value numbering</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8828,7 +8828,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L379">lineno 379</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L484">lineno 484</a>
 </li>
 </ul></dd>
 </dl>
@@ -8850,8 +8850,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use inline caching
-Default: <code>true</code></p>
+<p>use inline caching</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8882,7 +8882,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1597">lineno 1597</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2050">lineno 2050</a>
 </li>
 </ul></dd>
 </dl>
@@ -8904,8 +8904,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use function inlining
-Default: <code>true</code></p>
+<p>use function inlining</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8936,7 +8936,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L421">lineno 421</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L538">lineno 538</a>
 </li>
 </ul></dd>
 </dl>
@@ -8958,8 +8958,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>only fold in basic blocks
-Default: <code>true</code></p>
+<p>only fold in basic blocks</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -8990,7 +8990,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L463">lineno 463</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L592">lineno 592</a>
 </li>
 </ul></dd>
 </dl>
@@ -9012,8 +9012,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>use on-stack replacement
-Default: <code>true</code></p>
+<p>use on-stack replacement</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -9044,7 +9044,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L869">lineno 869</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1114">lineno 1114</a>
 </li>
 </ul></dd>
 </dl>
@@ -9066,8 +9066,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>enforce strict mode
-Default: <code>true</code></p>
+<p>enforce strict mode</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -9098,7 +9098,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L15">lineno 15</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L16">lineno 16</a>
 </li>
 </ul></dd>
 </dl>
@@ -9120,8 +9120,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>allows verbose printing
-Default: <code>true</code></p>
+<p>allows verbose printing</p>
+<p><em>default</em>: <code>true</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -9152,7 +9152,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1625">lineno 1625</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2086">lineno 2086</a>
 </li>
 </ul></dd>
 </dl>
@@ -9174,8 +9174,8 @@ Type
 </dt>
 <dd>
 <div class="description">
-<p>verify heap pointers before and after GC
-Default: <code>true</code></p>
+<p>verify heap pointers before and after GC</p>
+<p><em>default</em>: <code>false</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -9206,7 +9206,7 @@ Default: <code>true</code></p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1583">lineno 1583</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2032">lineno 2032</a>
 </li>
 </ul></dd>
 </dl>

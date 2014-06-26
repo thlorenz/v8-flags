@@ -10,7 +10,8 @@
     "test-0.11": "nave use 0.11 npm install && nave use 0.11 npm run test-main",
     "test-all": "npm run test-main && npm run test-0.8 && npm run test-0.10 && npm run test-0.11",
     "test": "if [ -e $TRAVIS ]; then npm run test-all; else npm run test-main; fi",
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild",
+    "docme": "docme README.md -- --configure .jsdocrc"
   },
   "repository": {
     "type": "git",

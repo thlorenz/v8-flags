@@ -15,7 +15,8 @@ var proto = Flags.prototype;
 
 /**
  * enforce strict mode
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name use_strict
  * @param {bool=} use_strict when supplied it sets use_strict
@@ -32,7 +33,8 @@ proto.use_strict = function (use_strict) {
 
 /**
  * enable upcoming ES6+ features
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name es_staging
  * @param {bool=} es_staging when supplied it sets es_staging
@@ -49,7 +51,8 @@ proto.es_staging = function (es_staging) {
 
 /**
  * enable harmony semantics for typeof
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_typeof
  * @param {bool=} harmony_typeof when supplied it sets harmony_typeof
@@ -66,7 +69,8 @@ proto.harmony_typeof = function (harmony_typeof) {
 
 /**
  * enable harmony block scoping
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_scoping
  * @param {bool=} harmony_scoping when supplied it sets harmony_scoping
@@ -83,7 +87,8 @@ proto.harmony_scoping = function (harmony_scoping) {
 
 /**
  * enable harmony proxies
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_proxies
  * @param {bool=} harmony_proxies when supplied it sets harmony_proxies
@@ -100,7 +105,8 @@ proto.harmony_proxies = function (harmony_proxies) {
 
 /**
  * enable harmony generators
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_generators
  * @param {bool=} harmony_generators when supplied it sets harmony_generators
@@ -117,7 +123,8 @@ proto.harmony_generators = function (harmony_generators) {
 
 /**
  * enable harmony iteration (for-of)
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_iteration
  * @param {bool=} harmony_iteration when supplied it sets harmony_iteration
@@ -134,7 +141,8 @@ proto.harmony_iteration = function (harmony_iteration) {
 
 /**
  * enable harmony string
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_strings
  * @param {bool=} harmony_strings when supplied it sets harmony_strings
@@ -151,7 +159,8 @@ proto.harmony_strings = function (harmony_strings) {
 
 /**
  * enable harmony arrays
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_arrays
  * @param {bool=} harmony_arrays when supplied it sets harmony_arrays
@@ -168,7 +177,8 @@ proto.harmony_arrays = function (harmony_arrays) {
 
 /**
  * enable harmony math functions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony_maths
  * @param {bool=} harmony_maths when supplied it sets harmony_maths
@@ -185,7 +195,8 @@ proto.harmony_maths = function (harmony_maths) {
 
 /**
  * (dummy flag, has no effect)
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name harmony_promises
  * @param {bool=} harmony_promises when supplied it sets harmony_promises
@@ -202,7 +213,8 @@ proto.harmony_promises = function (harmony_promises) {
 
 /**
  * enable all harmony features (except typeof)
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name harmony
  * @param {bool=} harmony when supplied it sets harmony
@@ -219,7 +231,8 @@ proto.harmony = function (harmony) {
 
 /**
  * optimizes arrays that have no holes
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name packed_arrays
  * @param {bool=} packed_arrays when supplied it sets packed_arrays
@@ -236,7 +249,8 @@ proto.packed_arrays = function (packed_arrays) {
 
 /**
  * tracks arrays with only smi values
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name smi_only_arrays
  * @param {bool=} smi_only_arrays when supplied it sets smi_only_arrays
@@ -253,7 +267,8 @@ proto.smi_only_arrays = function (smi_only_arrays) {
 
 /**
  * allocate objects in old space
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name pretenuring
  * @param {bool=} pretenuring when supplied it sets pretenuring
@@ -270,7 +285,8 @@ proto.pretenuring = function (pretenuring) {
 
 /**
  * pretenure call new
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name pretenuring_call_new
  * @param {bool=} pretenuring_call_new when supplied it sets pretenuring_call_new
@@ -287,7 +303,8 @@ proto.pretenuring_call_new = function (pretenuring_call_new) {
 
 /**
  * track fields with only smi values
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name track_fields
  * @param {bool=} track_fields when supplied it sets track_fields
@@ -304,7 +321,8 @@ proto.track_fields = function (track_fields) {
 
 /**
  * track fields with double values
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name track_double_fields
  * @param {bool=} track_double_fields when supplied it sets track_double_fields
@@ -321,7 +339,8 @@ proto.track_double_fields = function (track_double_fields) {
 
 /**
  * track fields with heap values
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name track_heap_object_fields
  * @param {bool=} track_heap_object_fields when supplied it sets track_heap_object_fields
@@ -338,7 +357,8 @@ proto.track_heap_object_fields = function (track_heap_object_fields) {
 
 /**
  * track computed boilerplate fields
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name track_computed_fields
  * @param {bool=} track_computed_fields when supplied it sets track_computed_fields
@@ -355,7 +375,8 @@ proto.track_computed_fields = function (track_computed_fields) {
 
 /**
  * track field types
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name track_field_types
  * @param {bool=} track_field_types when supplied it sets track_field_types
@@ -372,7 +393,8 @@ proto.track_field_types = function (track_field_types) {
 
 /**
  * support smi representation in binary operations
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name smi_binop
  * @param {bool=} smi_binop when supplied it sets smi_binop
@@ -389,7 +411,8 @@ proto.smi_binop = function (smi_binop) {
 
 /**
  * automatically unbox arrays of doubles
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name unbox_double_arrays
  * @param {bool=} unbox_double_arrays when supplied it sets unbox_double_arrays
@@ -406,7 +429,8 @@ proto.unbox_double_arrays = function (unbox_double_arrays) {
 
 /**
  * use string slices
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name string_slices
  * @param {bool=} string_slices when supplied it sets string_slices
@@ -423,7 +447,8 @@ proto.string_slices = function (string_slices) {
 
 /**
  * use crankshaft
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name crankshaft
  * @param {bool=} crankshaft when supplied it sets crankshaft
@@ -440,7 +465,8 @@ proto.crankshaft = function (crankshaft) {
 
 /**
  * optimization filter
- * Default: `*`
+ * 
+ * *default*: `*`
  * 
  * @name hydrogen_filter
  * @param {string=} hydrogen_filter when supplied it sets hydrogen_filter
@@ -457,7 +483,8 @@ proto.hydrogen_filter = function (hydrogen_filter) {
 
 /**
  * use hydrogen global value numbering
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_gvn
  * @param {bool=} use_gvn when supplied it sets use_gvn
@@ -474,7 +501,8 @@ proto.use_gvn = function (use_gvn) {
 
 /**
  * maximum number of GVN fix-point iterations
- * Default: `3`
+ * 
+ * *default*: `3`
  * 
  * @name gvn_iterations
  * @param {int=} gvn_iterations when supplied it sets gvn_iterations
@@ -491,7 +519,8 @@ proto.gvn_iterations = function (gvn_iterations) {
 
 /**
  * use hydrogen instruction canonicalizing
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_canonicalizing
  * @param {bool=} use_canonicalizing when supplied it sets use_canonicalizing
@@ -508,7 +537,8 @@ proto.use_canonicalizing = function (use_canonicalizing) {
 
 /**
  * use function inlining
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_inlining
  * @param {bool=} use_inlining when supplied it sets use_inlining
@@ -525,7 +555,8 @@ proto.use_inlining = function (use_inlining) {
 
 /**
  * use hydrogen escape analysis
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_escape_analysis
  * @param {bool=} use_escape_analysis when supplied it sets use_escape_analysis
@@ -542,7 +573,8 @@ proto.use_escape_analysis = function (use_escape_analysis) {
 
 /**
  * use allocation folding
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_allocation_folding
  * @param {bool=} use_allocation_folding when supplied it sets use_allocation_folding
@@ -559,7 +591,8 @@ proto.use_allocation_folding = function (use_allocation_folding) {
 
 /**
  * only fold in basic blocks
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name use_local_allocation_folding
  * @param {bool=} use_local_allocation_folding when supplied it sets use_local_allocation_folding
@@ -576,7 +609,8 @@ proto.use_local_allocation_folding = function (use_local_allocation_folding) {
 
 /**
  * maximum number of inlining levels
- * Default: `5`
+ * 
+ * *default*: `5`
  * 
  * @name max_inlining_levels
  * @param {int=} max_inlining_levels when supplied it sets max_inlining_levels
@@ -593,7 +627,8 @@ proto.max_inlining_levels = function (max_inlining_levels) {
 
 /**
  * loop invariant code motion
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name loop_invariant_code_motion
  * @param {bool=} loop_invariant_code_motion when supplied it sets loop_invariant_code_motion
@@ -610,7 +645,8 @@ proto.loop_invariant_code_motion = function (loop_invariant_code_motion) {
 
 /**
  * faster (but maybe less accurate) math functions
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name fast_math
  * @param {bool=} fast_math when supplied it sets fast_math
@@ -627,7 +663,8 @@ proto.fast_math = function (fast_math) {
 
 /**
  * print statistics for hydrogen
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name hydrogen_stats
  * @param {bool=} hydrogen_stats when supplied it sets hydrogen_stats
@@ -644,7 +681,8 @@ proto.hydrogen_stats = function (hydrogen_stats) {
 
 /**
  * trace check elimination phase
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_check_elimination
  * @param {bool=} trace_check_elimination when supplied it sets trace_check_elimination
@@ -661,7 +699,8 @@ proto.trace_check_elimination = function (trace_check_elimination) {
 
 /**
  * trace generated hydrogen to file
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_hydrogen
  * @param {bool=} trace_hydrogen when supplied it sets trace_hydrogen
@@ -678,7 +717,8 @@ proto.trace_hydrogen = function (trace_hydrogen) {
 
 /**
  * hydrogen tracing filter
- * Default: `*`
+ * 
+ * *default*: `*`
  * 
  * @name trace_hydrogen_filter
  * @param {string=} trace_hydrogen_filter when supplied it sets trace_hydrogen_filter
@@ -695,7 +735,8 @@ proto.trace_hydrogen_filter = function (trace_hydrogen_filter) {
 
 /**
  * trace generated hydrogen for stubs
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_hydrogen_stubs
  * @param {bool=} trace_hydrogen_stubs when supplied it sets trace_hydrogen_stubs
@@ -712,7 +753,8 @@ proto.trace_hydrogen_stubs = function (trace_hydrogen_stubs) {
 
 /**
  * trace hydrogen to given file name
- * Default: `null`
+ * 
+ * *default*: `null`
  * 
  * @name trace_hydrogen_file
  * @param {string=} trace_hydrogen_file when supplied it sets trace_hydrogen_file
@@ -729,7 +771,8 @@ proto.trace_hydrogen_file = function (trace_hydrogen_file) {
 
 /**
  * trace generated IR for specified phases
- * Default: `HLZ`
+ * 
+ * *default*: `HLZ`
  * 
  * @name trace_phase
  * @param {string=} trace_phase when supplied it sets trace_phase
@@ -746,7 +789,8 @@ proto.trace_phase = function (trace_phase) {
 
 /**
  * trace inlining decisions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_inlining
  * @param {bool=} trace_inlining when supplied it sets trace_inlining
@@ -763,7 +807,8 @@ proto.trace_inlining = function (trace_inlining) {
 
 /**
  * trace load elimination
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_load_elimination
  * @param {bool=} trace_load_elimination when supplied it sets trace_load_elimination
@@ -780,7 +825,8 @@ proto.trace_load_elimination = function (trace_load_elimination) {
 
 /**
  * trace store elimination
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_store_elimination
  * @param {bool=} trace_store_elimination when supplied it sets trace_store_elimination
@@ -797,7 +843,8 @@ proto.trace_store_elimination = function (trace_store_elimination) {
 
 /**
  * trace register allocator
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_alloc
  * @param {bool=} trace_alloc when supplied it sets trace_alloc
@@ -814,7 +861,8 @@ proto.trace_alloc = function (trace_alloc) {
 
 /**
  * trace all use positions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_all_uses
  * @param {bool=} trace_all_uses when supplied it sets trace_all_uses
@@ -831,7 +879,8 @@ proto.trace_all_uses = function (trace_all_uses) {
 
 /**
  * trace range analysis
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_range
  * @param {bool=} trace_range when supplied it sets trace_range
@@ -848,7 +897,8 @@ proto.trace_range = function (trace_range) {
 
 /**
  * trace global value numbering
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_gvn
  * @param {bool=} trace_gvn when supplied it sets trace_gvn
@@ -865,7 +915,8 @@ proto.trace_gvn = function (trace_gvn) {
 
 /**
  * trace representation types
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_representation
  * @param {bool=} trace_representation when supplied it sets trace_representation
@@ -882,7 +933,8 @@ proto.trace_representation = function (trace_representation) {
 
 /**
  * trace hydrogen escape analysis
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_escape_analysis
  * @param {bool=} trace_escape_analysis when supplied it sets trace_escape_analysis
@@ -899,7 +951,8 @@ proto.trace_escape_analysis = function (trace_escape_analysis) {
 
 /**
  * trace allocation folding
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_allocation_folding
  * @param {bool=} trace_allocation_folding when supplied it sets trace_allocation_folding
@@ -916,7 +969,8 @@ proto.trace_allocation_folding = function (trace_allocation_folding) {
 
 /**
  * trace object migration
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_migration
  * @param {bool=} trace_migration when supplied it sets trace_migration
@@ -933,7 +987,8 @@ proto.trace_migration = function (trace_migration) {
 
 /**
  * trace map generalization
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_generalization
  * @param {bool=} trace_generalization when supplied it sets trace_generalization
@@ -950,7 +1005,8 @@ proto.trace_generalization = function (trace_generalization) {
 
 /**
  * pointer map for every instruction
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name stress_pointer_maps
  * @param {bool=} stress_pointer_maps when supplied it sets stress_pointer_maps
@@ -967,7 +1023,8 @@ proto.stress_pointer_maps = function (stress_pointer_maps) {
 
 /**
  * environment for every instruction
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name stress_environments
  * @param {bool=} stress_environments when supplied it sets stress_environments
@@ -984,7 +1041,8 @@ proto.stress_environments = function (stress_environments) {
 
 /**
  * print number of possible deopt points
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_deopt_stress
  * @param {bool=} print_deopt_stress when supplied it sets print_deopt_stress
@@ -1001,7 +1059,8 @@ proto.print_deopt_stress = function (print_deopt_stress) {
 
 /**
  * put a break point before deoptimizing
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trap_on_deopt
  * @param {bool=} trap_on_deopt when supplied it sets trap_on_deopt
@@ -1018,7 +1077,8 @@ proto.trap_on_deopt = function (trap_on_deopt) {
 
 /**
  * deoptimize uncommon cases
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name deoptimize_uncommon_cases
  * @param {bool=} deoptimize_uncommon_cases when supplied it sets deoptimize_uncommon_cases
@@ -1035,7 +1095,8 @@ proto.deoptimize_uncommon_cases = function (deoptimize_uncommon_cases) {
 
 /**
  * polymorphic inlining
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name polymorphic_inlining
  * @param {bool=} polymorphic_inlining when supplied it sets polymorphic_inlining
@@ -1052,7 +1113,8 @@ proto.polymorphic_inlining = function (polymorphic_inlining) {
 
 /**
  * use on-stack replacement
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_osr
  * @param {bool=} use_osr when supplied it sets use_osr
@@ -1069,7 +1131,8 @@ proto.use_osr = function (use_osr) {
 
 /**
  * trace array bounds check elimination
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_bce
  * @param {bool=} trace_bce when supplied it sets trace_bce
@@ -1086,7 +1149,8 @@ proto.trace_bce = function (trace_bce) {
 
 /**
  * use load elimination
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name load_elimination
  * @param {bool=} load_elimination when supplied it sets load_elimination
@@ -1103,7 +1167,8 @@ proto.load_elimination = function (load_elimination) {
 
 /**
  * use check elimination
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name check_elimination
  * @param {bool=} check_elimination when supplied it sets check_elimination
@@ -1120,7 +1185,8 @@ proto.check_elimination = function (check_elimination) {
 
 /**
  * use store elimination
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name store_elimination
  * @param {bool=} store_elimination when supplied it sets store_elimination
@@ -1137,7 +1203,8 @@ proto.store_elimination = function (store_elimination) {
 
 /**
  * use dead code elimination
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name dead_code_elimination
  * @param {bool=} dead_code_elimination when supplied it sets dead_code_elimination
@@ -1154,7 +1221,8 @@ proto.dead_code_elimination = function (dead_code_elimination) {
 
 /**
  * use constant folding
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name fold_constants
  * @param {bool=} fold_constants when supplied it sets fold_constants
@@ -1171,7 +1239,8 @@ proto.fold_constants = function (fold_constants) {
 
 /**
  * trace dead code elimination
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_dead_code_elimination
  * @param {bool=} trace_dead_code_elimination when supplied it sets trace_dead_code_elimination
@@ -1188,7 +1257,8 @@ proto.trace_dead_code_elimination = function (trace_dead_code_elimination) {
 
 /**
  * eliminate unreachable code
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name unreachable_code_elimination
  * @param {bool=} unreachable_code_elimination when supplied it sets unreachable_code_elimination
@@ -1205,7 +1275,8 @@ proto.unreachable_code_elimination = function (unreachable_code_elimination) {
 
 /**
  * trace on-stack replacement
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_osr
  * @param {bool=} trace_osr when supplied it sets trace_osr
@@ -1222,7 +1293,8 @@ proto.trace_osr = function (trace_osr) {
 
 /**
  * number of stress runs
- * Default: `0`
+ * 
+ * *default*: `0`
  * 
  * @name stress_runs
  * @param {int=} stress_runs when supplied it sets stress_runs
@@ -1239,7 +1311,8 @@ proto.stress_runs = function (stress_runs) {
 
 /**
  * optimize closures
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name optimize_closures
  * @param {bool=} optimize_closures when supplied it sets optimize_closures
@@ -1256,7 +1329,8 @@ proto.optimize_closures = function (optimize_closures) {
 
 /**
  * inline constructor calls
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name inline_construct
  * @param {bool=} inline_construct when supplied it sets inline_construct
@@ -1273,7 +1347,8 @@ proto.inline_construct = function (inline_construct) {
 
 /**
  * inline functions with arguments object
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name inline_arguments
  * @param {bool=} inline_arguments when supplied it sets inline_arguments
@@ -1290,7 +1365,8 @@ proto.inline_arguments = function (inline_arguments) {
 
 /**
  * inline JavaScript accessors
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name inline_accessors
  * @param {bool=} inline_accessors when supplied it sets inline_accessors
@@ -1307,7 +1383,8 @@ proto.inline_accessors = function (inline_accessors) {
 
 /**
  * number of stack frames inspected by the profiler
- * Default: `1`
+ * 
+ * *default*: `1`
  * 
  * @name frame_count
  * @param {int=} frame_count when supplied it sets frame_count
@@ -1324,7 +1401,8 @@ proto.frame_count = function (frame_count) {
 
 /**
  * call count before self-optimization
- * Default: `130`
+ * 
+ * *default*: `130`
  * 
  * @name self_opt_count
  * @param {int=} self_opt_count when supplied it sets self_opt_count
@@ -1341,7 +1419,8 @@ proto.self_opt_count = function (self_opt_count) {
 
 /**
  * extra verbose compilation tracing
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_opt_verbose
  * @param {bool=} trace_opt_verbose when supplied it sets trace_opt_verbose
@@ -1358,7 +1437,8 @@ proto.trace_opt_verbose = function (trace_opt_verbose) {
 
 /**
  * emit comments in code disassembly
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name code_comments
  * @param {bool=} code_comments when supplied it sets code_comments
@@ -1375,7 +1455,8 @@ proto.code_comments = function (code_comments) {
 
 /**
  * expose natives in global object
- * Default: `null`
+ * 
+ * *default*: `null`
  * 
  * @name expose_natives_as
  * @param {string=} expose_natives_as when supplied it sets expose_natives_as
@@ -1392,7 +1473,8 @@ proto.expose_natives_as = function (expose_natives_as) {
 
 /**
  * expose debug in global object
- * Default: `null`
+ * 
+ * *default*: `null`
  * 
  * @name expose_debug_as
  * @param {string=} expose_debug_as when supplied it sets expose_debug_as
@@ -1409,7 +1491,8 @@ proto.expose_debug_as = function (expose_debug_as) {
 
 /**
  * expose freeBuffer extension
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name expose_free_buffer
  * @param {bool=} expose_free_buffer when supplied it sets expose_free_buffer
@@ -1426,7 +1509,8 @@ proto.expose_free_buffer = function (expose_free_buffer) {
 
 /**
  * expose gc extension
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name expose_gc
  * @param {bool=} expose_gc when supplied it sets expose_gc
@@ -1443,7 +1527,8 @@ proto.expose_gc = function (expose_gc) {
 
 /**
  * expose trigger-failure extension
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name expose_trigger_failure
  * @param {bool=} expose_trigger_failure when supplied it sets expose_trigger_failure
@@ -1460,7 +1545,8 @@ proto.expose_trigger_failure = function (expose_trigger_failure) {
 
 /**
  * number of stack frames to capture
- * Default: `10`
+ * 
+ * *default*: `10`
  * 
  * @name stack_trace_limit
  * @param {int=} stack_trace_limit when supplied it sets stack_trace_limit
@@ -1477,7 +1563,8 @@ proto.stack_trace_limit = function (stack_trace_limit) {
 
 /**
  * disable builtin natives files
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name disable_native_files
  * @param {bool=} disable_native_files when supplied it sets disable_native_files
@@ -1494,7 +1581,8 @@ proto.disable_native_files = function (disable_native_files) {
 
 /**
  * use fast inline allocation
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name inline_new
  * @param {bool=} inline_new when supplied it sets inline_new
@@ -1511,7 +1599,8 @@ proto.inline_new = function (inline_new) {
 
 /**
  * trace function calls
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace
  * @param {bool=} trace when supplied it sets trace
@@ -1528,7 +1617,8 @@ proto.trace = function (trace) {
 
 /**
  * use lazy compilation
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name lazy
  * @param {bool=} lazy when supplied it sets lazy
@@ -1545,7 +1635,8 @@ proto.lazy = function (lazy) {
 
 /**
  * trace lazy optimization
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_opt
  * @param {bool=} trace_opt when supplied it sets trace_opt
@@ -1562,7 +1653,8 @@ proto.trace_opt = function (trace_opt) {
 
 /**
  * trace lazy optimization statistics
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_opt_stats
  * @param {bool=} trace_opt_stats when supplied it sets trace_opt_stats
@@ -1579,7 +1671,8 @@ proto.trace_opt_stats = function (trace_opt_stats) {
 
 /**
  * use adaptive optimizations
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name opt
  * @param {bool=} opt when supplied it sets opt
@@ -1596,7 +1689,8 @@ proto.opt = function (opt) {
 
 /**
  * always try to optimize functions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name always_opt
  * @param {bool=} always_opt when supplied it sets always_opt
@@ -1613,7 +1707,8 @@ proto.always_opt = function (always_opt) {
 
 /**
  * always try to OSR functions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name always_osr
  * @param {bool=} always_osr when supplied it sets always_osr
@@ -1630,7 +1725,8 @@ proto.always_osr = function (always_osr) {
 
 /**
  * prepare for turning on always opt
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name prepare_always_opt
  * @param {bool=} prepare_always_opt when supplied it sets prepare_always_opt
@@ -1647,7 +1743,8 @@ proto.prepare_always_opt = function (prepare_always_opt) {
 
 /**
  * trace optimize function deoptimization
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_deopt
  * @param {bool=} trace_deopt when supplied it sets trace_deopt
@@ -1664,7 +1761,8 @@ proto.trace_deopt = function (trace_deopt) {
 
 /**
  * enable compilation cache
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name compilation_cache
  * @param {bool=} compilation_cache when supplied it sets compilation_cache
@@ -1681,7 +1779,8 @@ proto.compilation_cache = function (compilation_cache) {
 
 /**
  * cache prototype transitions
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name cache_prototype_transitions
  * @param {bool=} cache_prototype_transitions when supplied it sets cache_prototype_transitions
@@ -1698,7 +1797,8 @@ proto.cache_prototype_transitions = function (cache_prototype_transitions) {
 
 /**
  * trace debugging JSON request/response
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_debug_json
  * @param {bool=} trace_debug_json when supplied it sets trace_debug_json
@@ -1715,7 +1815,8 @@ proto.trace_debug_json = function (trace_debug_json) {
 
 /**
  * enable liveedit experimental feature
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name enable_liveedit
  * @param {bool=} enable_liveedit when supplied it sets enable_liveedit
@@ -1732,7 +1833,8 @@ proto.enable_liveedit = function (enable_liveedit) {
 
 /**
  * abort by crashing
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name hard_abort
  * @param {bool=} hard_abort when supplied it sets hard_abort
@@ -1749,7 +1851,8 @@ proto.hard_abort = function (hard_abort) {
 
 /**
  * max size of the old space (in Mbytes)
- * Default: `0`
+ * 
+ * *default*: `0`
  * 
  * @name max_old_space_size
  * @param {int=} max_old_space_size when supplied it sets max_old_space_size
@@ -1766,7 +1869,8 @@ proto.max_old_space_size = function (max_old_space_size) {
 
 /**
  * max size of executable memory (in Mbytes)
- * Default: `0`
+ * 
+ * *default*: `0`
  * 
  * @name max_executable_size
  * @param {int=} max_executable_size when supplied it sets max_executable_size
@@ -1783,7 +1887,8 @@ proto.max_executable_size = function (max_executable_size) {
 
 /**
  * always perform global GCs
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name gc_global
  * @param {bool=} gc_global when supplied it sets gc_global
@@ -1800,7 +1905,8 @@ proto.gc_global = function (gc_global) {
 
 /**
  * garbage collect after <n> allocations
- * Default: `-1`
+ * 
+ * *default*: `-1`
  * 
  * @name gc_interval
  * @param {int=} gc_interval when supplied it sets gc_interval
@@ -1817,7 +1923,8 @@ proto.gc_interval = function (gc_interval) {
 
 /**
  * trace code flushing progress
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_code_flushing
  * @param {bool=} trace_code_flushing when supplied it sets trace_code_flushing
@@ -1834,7 +1941,8 @@ proto.trace_code_flushing = function (trace_code_flushing) {
 
 /**
  * use incremental marking
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name incremental_marking
  * @param {bool=} incremental_marking when supplied it sets incremental_marking
@@ -1851,7 +1959,8 @@ proto.incremental_marking = function (incremental_marking) {
 
 /**
  * do incremental marking steps
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name incremental_marking_steps
  * @param {bool=} incremental_marking_steps when supplied it sets incremental_marking_steps
@@ -1868,7 +1977,8 @@ proto.incremental_marking_steps = function (incremental_marking_steps) {
 
 /**
  * enable parallel sweeping
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name parallel_sweeping
  * @param {bool=} parallel_sweeping when supplied it sets parallel_sweeping
@@ -1885,7 +1995,8 @@ proto.parallel_sweeping = function (parallel_sweeping) {
 
 /**
  * enable concurrent sweeping
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name concurrent_sweeping
  * @param {bool=} concurrent_sweeping when supplied it sets concurrent_sweeping
@@ -1902,7 +2013,8 @@ proto.concurrent_sweeping = function (concurrent_sweeping) {
 
 /**
  * enable job based sweeping
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name job_based_sweeping
  * @param {bool=} job_based_sweeping when supplied it sets job_based_sweeping
@@ -1919,7 +2031,8 @@ proto.job_based_sweeping = function (job_based_sweeping) {
 
 /**
  * verify heap pointers before and after GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name verify_heap
  * @param {bool=} verify_heap when supplied it sets verify_heap
@@ -1936,7 +2049,8 @@ proto.verify_heap = function (verify_heap) {
 
 /**
  * use inline caching
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_ic
  * @param {bool=} use_ic when supplied it sets use_ic
@@ -1953,7 +2067,8 @@ proto.use_ic = function (use_ic) {
 
 /**
  * Perform compaction on every full GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name always_compact
  * @param {bool=} always_compact when supplied it sets always_compact
@@ -1970,7 +2085,8 @@ proto.always_compact = function (always_compact) {
 
 /**
  * allows verbose printing
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name use_verbose_printer
  * @param {bool=} use_verbose_printer when supplied it sets use_verbose_printer
@@ -1987,7 +2103,8 @@ proto.use_verbose_printer = function (use_verbose_printer) {
 
 /**
  * allow natives syntax
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name allow_natives_syntax
  * @param {bool=} allow_natives_syntax when supplied it sets allow_natives_syntax
@@ -2004,7 +2121,8 @@ proto.allow_natives_syntax = function (allow_natives_syntax) {
 
 /**
  * trace parsing and preparsing
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_parse
  * @param {bool=} trace_parse when supplied it sets trace_parse
@@ -2021,7 +2139,8 @@ proto.trace_parse = function (trace_parse) {
 
 /**
  * Trace simulator execution
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_sim
  * @param {bool=} trace_sim when supplied it sets trace_sim
@@ -2038,7 +2157,8 @@ proto.trace_sim = function (trace_sim) {
 
 /**
  * Enable debugging the simulator
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name debug_sim
  * @param {bool=} debug_sim when supplied it sets debug_sim
@@ -2055,7 +2175,8 @@ proto.debug_sim = function (debug_sim) {
 
 /**
  * Simulator stop after x number of instructions
- * Default: `0`
+ * 
+ * *default*: `0`
  * 
  * @name stop_sim_at
  * @param {int=} stop_sim_at when supplied it sets stop_sim_at
@@ -2072,7 +2193,8 @@ proto.stop_sim_at = function (stop_sim_at) {
 
 /**
  * generate optimized regexp code
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name regexp_optimization
  * @param {bool=} regexp_optimization when supplied it sets regexp_optimization
@@ -2089,7 +2211,8 @@ proto.regexp_optimization = function (regexp_optimization) {
 
 /**
  * testing_bool_flag
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name testing_bool_flag
  * @param {bool=} testing_bool_flag when supplied it sets testing_bool_flag
@@ -2106,7 +2229,8 @@ proto.testing_bool_flag = function (testing_bool_flag) {
 
 /**
  * testing_int_flag
- * Default: `13`
+ * 
+ * *default*: `13`
  * 
  * @name testing_int_flag
  * @param {int=} testing_int_flag when supplied it sets testing_int_flag
@@ -2123,7 +2247,8 @@ proto.testing_int_flag = function (testing_int_flag) {
 
 /**
  * float-flag
- * Default: `.`
+ * 
+ * *default*: `.`
  * 
  * @name testing_float_flag
  * @param {float=} testing_float_flag when supplied it sets testing_float_flag
@@ -2140,7 +2265,8 @@ proto.testing_float_flag = function (testing_float_flag) {
 
 /**
  * Seed used for threading test randomness
- * Default: `42`
+ * 
+ * *default*: `42`
  * 
  * @name testing_prng_seed
  * @param {int=} testing_prng_seed when supplied it sets testing_prng_seed
@@ -2157,7 +2283,8 @@ proto.testing_prng_seed = function (testing_prng_seed) {
 
 /**
  * enable predictable mode
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name predictable
  * @param {bool=} predictable when supplied it sets predictable
@@ -2174,7 +2301,8 @@ proto.predictable = function (predictable) {
 
 /**
  * Print usage message, including flags, on console
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name help
  * @param {bool=} help when supplied it sets help
@@ -2191,7 +2319,8 @@ proto.help = function (help) {
 
 /**
  * Dump counters on exit
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name dump_counters
  * @param {bool=} dump_counters when supplied it sets dump_counters
@@ -2208,7 +2337,8 @@ proto.dump_counters = function (dump_counters) {
 
 /**
  * Enable JavaScript debugger
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name debugger
  * @param {bool=} debugger when supplied it sets debugger
@@ -2225,7 +2355,8 @@ proto.debugger = function (debugr) {
 
 /**
  * Enable debugger agent
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name debugger_agent
  * @param {bool=} debugger_agent when supplied it sets debugger_agent
@@ -2242,7 +2373,8 @@ proto.debugger_agent = function (debugger_agent) {
 
 /**
  * Port to use for remote debugging
- * Default: `5858`
+ * 
+ * *default*: `5858`
  * 
  * @name debugger_port
  * @param {int=} debugger_port when supplied it sets debugger_port
@@ -2259,7 +2391,8 @@ proto.debugger_port = function (debugger_port) {
 
 /**
  * Map counters to a file
- * Default: ``
+ * 
+ * *default*: ``
  * 
  * @name map_counters
  * @param {string=} map_counters when supplied it sets map_counters
@@ -2276,7 +2409,8 @@ proto.map_counters = function (map_counters) {
 
 /**
  * Enable debugger compile events
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name debug_compile_events
  * @param {bool=} debug_compile_events when supplied it sets debug_compile_events
@@ -2293,7 +2427,8 @@ proto.debug_compile_events = function (debug_compile_events) {
 
 /**
  * enable GDBJIT interface (disables compacting GC)
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name gdbjit
  * @param {bool=} gdbjit when supplied it sets gdbjit
@@ -2310,7 +2445,8 @@ proto.gdbjit = function (gdbjit) {
 
 /**
  * enable GDBJIT interface for all code objects
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name gdbjit_full
  * @param {bool=} gdbjit_full when supplied it sets gdbjit_full
@@ -2327,7 +2463,8 @@ proto.gdbjit_full = function (gdbjit_full) {
 
 /**
  * dump elf objects with debug info to disk
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name gdbjit_dump
  * @param {bool=} gdbjit_dump when supplied it sets gdbjit_dump
@@ -2344,7 +2481,8 @@ proto.gdbjit_dump = function (gdbjit_dump) {
 
 /**
  * pretty print source code
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_source
  * @param {bool=} print_source when supplied it sets print_source
@@ -2361,7 +2499,8 @@ proto.print_source = function (print_source) {
 
 /**
  * print source AST
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_ast
  * @param {bool=} print_ast when supplied it sets print_ast
@@ -2378,7 +2517,8 @@ proto.print_ast = function (print_ast) {
 
 /**
  * print source AST for builtins
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_builtin_ast
  * @param {bool=} print_builtin_ast when supplied it sets print_builtin_ast
@@ -2395,7 +2535,8 @@ proto.print_builtin_ast = function (print_builtin_ast) {
 
 /**
  * function name where to insert a breakpoint
- * Default: ``
+ * 
+ * *default*: ``
  * 
  * @name stop_at
  * @param {string=} stop_at when supplied it sets stop_at
@@ -2412,7 +2553,8 @@ proto.stop_at = function (stop_at) {
 
 /**
  * replace aborts by breakpoints
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trap_on_abort
  * @param {bool=} trap_on_abort when supplied it sets trap_on_abort
@@ -2429,7 +2571,8 @@ proto.trap_on_abort = function (trap_on_abort) {
 
 /**
  * print scopes for builtins
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_builtin_scopes
  * @param {bool=} print_builtin_scopes when supplied it sets print_builtin_scopes
@@ -2446,7 +2589,8 @@ proto.print_builtin_scopes = function (print_builtin_scopes) {
 
 /**
  * print scopes
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_scopes
  * @param {bool=} print_scopes when supplied it sets print_scopes
@@ -2463,7 +2607,8 @@ proto.print_scopes = function (print_scopes) {
 
 /**
  * trace contexts operations
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_contexts
  * @param {bool=} trace_contexts when supplied it sets trace_contexts
@@ -2480,7 +2625,8 @@ proto.trace_contexts = function (trace_contexts) {
 
 /**
  * print stuff during garbage collection
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name gc_verbose
  * @param {bool=} gc_verbose when supplied it sets gc_verbose
@@ -2497,7 +2643,8 @@ proto.gc_verbose = function (gc_verbose) {
 
 /**
  * report heap statistics before and after GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name heap_stats
  * @param {bool=} heap_stats when supplied it sets heap_stats
@@ -2514,7 +2661,8 @@ proto.heap_stats = function (heap_stats) {
 
 /**
  * report code statistics after GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name code_stats
  * @param {bool=} code_stats when supplied it sets code_stats
@@ -2531,7 +2679,8 @@ proto.code_stats = function (code_stats) {
 
 /**
  * report handles after GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_handles
  * @param {bool=} print_handles when supplied it sets print_handles
@@ -2548,7 +2697,8 @@ proto.print_handles = function (print_handles) {
 
 /**
  * report global handles after GC
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_global_handles
  * @param {bool=} print_global_handles when supplied it sets print_global_handles
@@ -2565,7 +2715,8 @@ proto.print_global_handles = function (print_global_handles) {
 
 /**
  * trace inline cache state transitions
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_ic
  * @param {bool=} trace_ic when supplied it sets trace_ic
@@ -2582,7 +2733,8 @@ proto.trace_ic = function (trace_ic) {
 
 /**
  * print interfaces
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_interfaces
  * @param {bool=} print_interfaces when supplied it sets print_interfaces
@@ -2599,7 +2751,8 @@ proto.print_interfaces = function (print_interfaces) {
 
 /**
  * print interface inference details
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name print_interface_details
  * @param {bool=} print_interface_details when supplied it sets print_interface_details
@@ -2616,7 +2769,8 @@ proto.print_interface_details = function (print_interface_details) {
 
 /**
  * depth for printing interfaces
- * Default: `5`
+ * 
+ * *default*: `5`
  * 
  * @name print_interface_depth
  * @param {int=} print_interface_depth when supplied it sets print_interface_depth
@@ -2633,7 +2787,8 @@ proto.print_interface_depth = function (print_interface_depth) {
 
 /**
  * trace lazy compilation
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_lazy
  * @param {bool=} trace_lazy when supplied it sets trace_lazy
@@ -2650,7 +2805,8 @@ proto.trace_lazy = function (trace_lazy) {
 
 /**
  * trace isolate state changes
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_isolates
  * @param {bool=} trace_isolates when supplied it sets trace_isolates
@@ -2667,7 +2823,8 @@ proto.trace_isolates = function (trace_isolates) {
 
 /**
  * trace regexp bytecode execution
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name trace_regexp_bytecodes
  * @param {bool=} trace_regexp_bytecodes when supplied it sets trace_regexp_bytecodes
@@ -2684,7 +2841,8 @@ proto.trace_regexp_bytecodes = function (trace_regexp_bytecodes) {
 
 /**
  * Log all events to the log file.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_all
  * @param {bool=} log_all when supplied it sets log_all
@@ -2701,7 +2859,8 @@ proto.log_all = function (log_all) {
 
 /**
  * Log API events to the log file.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_api
  * @param {bool=} log_api when supplied it sets log_api
@@ -2718,7 +2877,8 @@ proto.log_api = function (log_api) {
 
 /**
  * Log global handle events.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_handles
  * @param {bool=} log_handles when supplied it sets log_handles
@@ -2735,7 +2895,8 @@ proto.log_handles = function (log_handles) {
 
 /**
  * Log suspect operations.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_suspect
  * @param {bool=} log_suspect when supplied it sets log_suspect
@@ -2752,7 +2913,8 @@ proto.log_suspect = function (log_suspect) {
 
 /**
  * Log regular expression execution.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_regexp
  * @param {bool=} log_regexp when supplied it sets log_regexp
@@ -2769,7 +2931,8 @@ proto.log_regexp = function (log_regexp) {
 
 /**
  * Specify the name of the log file.
- * Default: `v8.log`
+ * 
+ * *default*: `v8.log`
  * 
  * @name logfile
  * @param {string=} logfile when supplied it sets logfile
@@ -2786,7 +2949,8 @@ proto.logfile = function (logfile) {
 
 /**
  * Separate log files for each isolate.
- * Default: `true`
+ * 
+ * *default*: `true`
  * 
  * @name logfile_per_isolate
  * @param {bool=} logfile_per_isolate when supplied it sets logfile_per_isolate
@@ -2803,7 +2967,8 @@ proto.logfile_per_isolate = function (logfile_per_isolate) {
 
 /**
  * Enable low-level linux profiler.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name ll_prof
  * @param {bool=} ll_prof when supplied it sets ll_prof
@@ -2820,7 +2985,8 @@ proto.ll_prof = function (ll_prof) {
 
 /**
  * Time internal events.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_internal_timer_events
  * @param {bool=} log_internal_timer_events when supplied it sets log_internal_timer_events
@@ -2837,7 +3003,8 @@ proto.log_internal_timer_events = function (log_internal_timer_events) {
 
 /**
  * Log AArch64 instruction statistics.
- * Default: `false`
+ * 
+ * *default*: `false`
  * 
  * @name log_instruction_stats
  * @param {bool=} log_instruction_stats when supplied it sets log_instruction_stats

@@ -102,7 +102,8 @@ var api = Object.keys(flags)
     return acc.concat([
         '/**'
       , ' * ' + val.description
-      , ' * Default: `' + val.default + '`'
+      , ' * '
+      , ' * *default*: `' + val.default + '`'
       , ' * '
       , ' * @name ' + k 
       , ' * @param {' + val.type + '=} ' + k + ' when supplied it sets ' + k

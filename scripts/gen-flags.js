@@ -39,6 +39,13 @@ function getDefault(type, val) {
   }
 }
 
+function commentFromFile(name) {
+  var filename = path.join(__dirname, 'comments', name + '.md');
+  if (!fs.existsSync(filename)) return null;
+
+  return fs.readFileSync(filename, 'utf8').trim(/\\n/g)
+}
+
 var flags = defs
   .reduce(function (acc, line, idx) {
     if (!/^ *DEFINE/.test(line)) return acc;
@@ -54,7 +61,16 @@ var flags = defs
 
     var type = matches[1];
     var defval = getDefault(type, matches[3]);
-    acc[matches[2]] = { type: type, default: defval, description: matches[4] };
+    var name =  matches[2];
+    var comment = commentFromFile(name);
+    var configurable = !~notConfigurable.indexOf(name);
+    acc[name] = { 
+        type: type
+      , default: defval
+      , description: matches[4] 
+      , configurable: configurable
+      , comment: comment
+    };
 
     return acc;
   }, {});
@@ -99,12 +115,19 @@ var api = Object.keys(flags)
         set = '\'--' + k + '=\' + ' + arg;
     }
 
-    return acc.concat([
+    var configMsg = val.configurable ? null : '\n' + ' * **NOT CONFIGURABLE** ' + '\n *';
+    acc = acc.concat([
         '/**'
       , ' * ' + val.description
       , ' * '
       , ' * *default*: `' + val.default + '`'
-      , ' * '
+    ])
+
+    if (configMsg) acc.push(configMsg);
+    if (val.comment) acc.push(' *\n * ' + val.comment.split('\n').join('\n * '))
+
+    acc = acc.concat([
+        ' * '
       , ' * @name ' + k 
       , ' * @param {' + val.type + '=} ' + k + ' when supplied it sets ' + k
       , ' * @function' 
@@ -118,7 +141,9 @@ var api = Object.keys(flags)
       , '  return this._' + k + ';'
       , '}'
       , ''
-      ])
+    ])
+
+    return acc;
   }, [])
 
 var apiCode = [

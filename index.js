@@ -449,6 +449,11 @@ proto.string_slices = function (string_slices) {
  * use crankshaft
  * 
  * *default*: `true`
+ *
+ * #### Resources
+ * 
+ * - [v8 isolate.cc](https://github.com/v8/v8/blob/3.26.33/src/isolate.cc#L1778)
+ * - [v8 runtime.cc](https://github.com/v8/v8/blob/3.26.33/src/runtime.cc#L8509)
  * 
  * @name crankshaft
  * @param {bool=} crankshaft when supplied it sets crankshaft
@@ -1169,6 +1174,10 @@ proto.load_elimination = function (load_elimination) {
  * use check elimination
  * 
  * *default*: `true`
+ *
+ * #### Resources
+ * 
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/hydrogen.cc#L4029)
  * 
  * @name check_elimination
  * @param {bool=} check_elimination when supplied it sets check_elimination
@@ -1439,6 +1448,13 @@ proto.trace_opt_verbose = function (trace_opt_verbose) {
  * emit comments in code disassembly
  * 
  * *default*: `false`
+ *
+ * #### Resources
+ * 
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/lithium-codegen.cc#L66-L73)
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L4528-L4536)
+ * 
+ * **Note**: not available below **node:** `0.11` - **v8:** `3.25`
  * 
  * @name code_comments
  * @param {bool=} code_comments when supplied it sets code_comments
@@ -1511,6 +1527,9 @@ proto.expose_free_buffer = function (expose_free_buffer) {
  * expose gc extension
  * 
  * *default*: `false`
+
+ * **NOT CONFIGURABLE** 
+ *
  * 
  * @name expose_gc
  * @param {bool=} expose_gc when supplied it sets expose_gc
@@ -1691,6 +1710,8 @@ proto.opt = function (opt) {
  * always try to optimize functions
  * 
  * *default*: `false`
+ *
+ * **Note**: not properly working below **node:** `0.10` - **v8:** `3.14`
  * 
  * @name always_opt
  * @param {bool=} always_opt when supplied it sets always_opt
@@ -1709,6 +1730,17 @@ proto.always_opt = function (always_opt) {
  * always try to OSR functions
  * 
  * *default*: `false`
+ *
+ * OSR (*On Stack Replacement*) is used to convert a running function’s interpreter frame into a JIT’d frame – in the middle of that method.
+ * 
+ * #### Resources: 
+ *   
+ * - [Efficient and General On-Stack Replacement for Aggressive Program Specialization](http://www.cs.ucsb.edu/~ckrintz/papers/osr.pdf)
+ * - [What the heck is OSR](http://www.azulsystems.com/blog/cliff/2011-11-22-what-the-heck-is-osr-and-why-is-it-bad-or-good)
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/runtime-profiler.cc#L178-L185)
+ * 
+ * 
+ * **Note**: available starting with **node:** `0.10` - **v8:** `3.14`
  * 
  * @name always_osr
  * @param {bool=} always_osr when supplied it sets always_osr
@@ -1763,6 +1795,20 @@ proto.trace_deopt = function (trace_deopt) {
  * enable compilation cache
  * 
  * *default*: `true`
+ *
+ * The compilation cache keeps shared function infos for compiled
+ * scripts and evals. The shared function infos are looked up using
+ * the source string as the key. For regular expressions the
+ * compilation data is cached.
+ * 
+ * Enable/Disable is used by debugger to disable compilation cache during debugging to make sure new scripts are always
+ * compiled, however both this flag and the `enabled_` property need to be `true` in order for the compilation cache to get
+ * used.
+ * 
+ * #### Resources
+ * 
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/compilation-cache.h#L220)
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/debug.cc#L3292-L3301)
  * 
  * @name compilation_cache
  * @param {bool=} compilation_cache when supplied it sets compilation_cache
@@ -1781,6 +1827,10 @@ proto.compilation_cache = function (compilation_cache) {
  * cache prototype transitions
  * 
  * *default*: `true`
+ *
+ * #### Resources: 
+ *   
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/objects.cc#L12076)
  * 
  * @name cache_prototype_transitions
  * @param {bool=} cache_prototype_transitions when supplied it sets cache_prototype_transitions
@@ -1997,6 +2047,14 @@ proto.parallel_sweeping = function (parallel_sweeping) {
  * enable concurrent sweeping
  * 
  * *default*: `true`
+ *
+ * #### Resources
+ * 
+ * - [v8 mark-compact.cc](https://github.com/v8/v8/blob/3.26.33/src/mark-compact.cc#L210-L211)
+ * - [v8 mark-compact.cc](https://github.com/v8/v8/blob/3.26.33/src/mark-compact.cc#L4253)
+ * - [v8 sweeper-thread.cc](https://github.com/v8/v8/blob/3.26.33/src/sweeper-thread.cc#L79-L81)
+ * 
+ * **Note**: not available below **node:** `0.11` - **v8:** `3.25`
  * 
  * @name concurrent_sweeping
  * @param {bool=} concurrent_sweeping when supplied it sets concurrent_sweeping
@@ -2663,6 +2721,11 @@ proto.heap_stats = function (heap_stats) {
  * report code statistics after GC
  * 
  * *default*: `false`
+ *
+ * #### Resources
+ * 
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L582)
+ * - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L4528-L4536)
  * 
  * @name code_stats
  * @param {bool=} code_stats when supplied it sets code_stats

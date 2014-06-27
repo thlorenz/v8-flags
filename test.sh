@@ -1,6 +1,11 @@
 #!/usr/bin/env sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [[ -e $TRAVIS ]] 
+then
+  DIR=`pwd`
+else
+  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
 export PATH=$DIR/node_modules/.bin:$PATH
 

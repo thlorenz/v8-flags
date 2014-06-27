@@ -2179,9 +2179,12 @@ proto.use_verbose_printer = function (use_verbose_printer) {
 proto.allow_natives_syntax = function (allow_natives_syntax) {  
   if (typeof allow_natives_syntax !== 'undefined')  {
     this._allow_natives_syntax = allow_natives_syntax;
-    v8_flags.set(allow_natives_syntax ? '--allow_natives_syntax' : '--noallow_natives_syntax');
+    var flag = allow_natives_syntax ? '--allow_natives_syntax' : '--noallow_natives_syntax';
+    var err = v8_flags.set(flag);
+    if (err) throw new Error('Unable to set flag "' + flag + '"'); 
+  } else {
+    return v8_flags.get_allow_natives_syntax();
   }
-  return this._allow_natives_syntax;
 }
 
 /**

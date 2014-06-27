@@ -13,6 +13,9 @@ function inspect(obj, depth) {
 var notConfigurable = [
     'expose_gc'
   , 'expose_gc_as'
+  , 'debugger'
+  , 'debugger_agent'
+  , 'debugger_port'
 ]
 
 var defsFile = path.join(__dirname, '..', 'v8', 'flag-definitions.h');

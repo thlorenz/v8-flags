@@ -1214,6 +1214,13 @@ proto.store_elimination = function (store_elimination) {
  * use dead code elimination
  * 
  * *default*: `true`
+ *
+ * #### Resources
+ * 
+ * [v8 hydrogen.cc](https://github.com/v8/v8/blob/3.26.33/src/hydrogen.cc#L3999)
+ * [v8 hydrogin-dce.cc](https://github.com/v8/v8/blob/3.26.33/src/hydrogen-dce.cc)
+ * 
+ * **Note**: not available below **node:** `0.10` - **v8:** `3.14`
  * 
  * @name dead_code_elimination
  * @param {bool=} dead_code_elimination when supplied it sets dead_code_elimination
@@ -2217,6 +2224,14 @@ proto.trace_sim = function (trace_sim) {
  * Enable debugging the simulator
  * 
  * *default*: `false`
+ *
+ * At this point this is only used inside the arm64 simulator.
+ * 
+ * #### Resources
+ * 
+ * [v8 arm64/simulator-arm64.cc](https://github.com/v8/v8/blob/3.26.33/src/arm64/simulator-arm64.cc#L113-L114)
+ * 
+ * **Note**: not available below **node:** `0.11` - **v8:** `3.25`
  * 
  * @name debug_sim
  * @param {bool=} debug_sim when supplied it sets debug_sim
@@ -2397,6 +2412,15 @@ proto.dump_counters = function (dump_counters) {
  * Enable JavaScript debugger
  * 
  * *default*: `false`
+
+ * **NOT CONFIGURABLE** 
+ *
+ *
+ * Only considered by **d8** in order to decide if the in process debugger should be activated.
+ * 
+ * #### Resources
+ * 
+ * [v8 d8.cc](https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L799-L801)
  * 
  * @name debugger
  * @param {bool=} debugger when supplied it sets debugger
@@ -2415,6 +2439,15 @@ proto.debugger = function (debugr) {
  * Enable debugger agent
  * 
  * *default*: `false`
+
+ * **NOT CONFIGURABLE** 
+ *
+ *
+ * Cnsidered **only** by **d8** in order to decide if the in debugger agent should be activated.
+ * 
+ * #### Resources
+ * 
+ * [v8 d8.cc](https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L925-928)
  * 
  * @name debugger_agent
  * @param {bool=} debugger_agent when supplied it sets debugger_agent
@@ -2433,6 +2466,15 @@ proto.debugger_agent = function (debugger_agent) {
  * Port to use for remote debugging
  * 
  * *default*: `5858`
+
+ * **NOT CONFIGURABLE** 
+ *
+ *
+ * Cnsidered **only** by **d8** in order to decide on which port the remote debugger should listen.
+ * 
+ * #### Resources
+ * 
+ * [v8 d8.cc](https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L925-928)
  * 
  * @name debugger_port
  * @param {int=} debugger_port when supplied it sets debugger_port
@@ -2469,6 +2511,12 @@ proto.map_counters = function (map_counters) {
  * Enable debugger compile events
  * 
  * *default*: `true`
+ *
+ * #### Resources
+ * 
+ * [v8 debug.h](https://github.com/v8/v8/blob/3.26.33/src/debug.h#L843-L845)
+ * 
+ * **Note:** disabled by default on `WebOS`
  * 
  * @name debug_compile_events
  * @param {bool=} debug_compile_events when supplied it sets debug_compile_events

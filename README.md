@@ -242,7 +242,7 @@ Configures v8 flags at runtime.
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2162">lineno 2162</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2169">lineno 2169</a>
 </li>
 </ul></dd>
 </dl>
@@ -296,7 +296,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2126">lineno 2126</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2133">lineno 2133</a>
 </li>
 </ul></dd>
 </dl>
@@ -351,7 +351,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1709">lineno 1709</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1716">lineno 1716</a>
 </li>
 </ul></dd>
 </dl>
@@ -413,7 +413,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1729">lineno 1729</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1736">lineno 1736</a>
 </li>
 </ul></dd>
 </dl>
@@ -471,7 +471,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1826">lineno 1826</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1833">lineno 1833</a>
 </li>
 </ul></dd>
 </dl>
@@ -589,7 +589,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1447">lineno 1447</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1454">lineno 1454</a>
 </li>
 </ul></dd>
 </dl>
@@ -648,7 +648,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2720">lineno 2720</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2768">lineno 2768</a>
 </li>
 </ul></dd>
 </dl>
@@ -714,7 +714,7 @@ used.</p>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1794">lineno 1794</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1801">lineno 1801</a>
 </li>
 </ul></dd>
 </dl>
@@ -775,7 +775,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2046">lineno 2046</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2053">lineno 2053</a>
 </li>
 </ul></dd>
 </dl>
@@ -858,6 +858,10 @@ Type
 <div class="description">
 <p>use dead code elimination</p>
 <p><em>default</em>: <code>true</code></p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/hydrogen.cc#L3999">v8 hydrogen.cc</a>
+<a href="https://github.com/v8/v8/blob/3.26.33/src/hydrogen-dce.cc">v8 hydrogin-dce.cc</a></p>
+<p><strong>Note</strong>: not available below <strong>node:</strong> <code>0.10</code> - <strong>v8:</strong> <code>3.14</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -912,6 +916,9 @@ Type
 <div class="description">
 <p>Enable debugger compile events</p>
 <p><em>default</em>: <code>true</code></p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/debug.h#L843-L845">v8 debug.h</a></p>
+<p><strong>Note:</strong> disabled by default on <code>WebOS</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -942,7 +949,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2468">lineno 2468</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2510">lineno 2510</a>
 </li>
 </ul></dd>
 </dl>
@@ -966,6 +973,10 @@ Type
 <div class="description">
 <p>Enable debugging the simulator</p>
 <p><em>default</em>: <code>false</code></p>
+<p>At this point this is only used inside the arm64 simulator.</p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/arm64/simulator-arm64.cc#L113-L114">v8 arm64/simulator-arm64.cc</a></p>
+<p><strong>Note</strong>: not available below <strong>node:</strong> <code>0.11</code> - <strong>v8:</strong> <code>3.25</code></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -996,7 +1007,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2216">lineno 2216</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2223">lineno 2223</a>
 </li>
 </ul></dd>
 </dl>
@@ -1019,7 +1030,11 @@ Type
 <dd>
 <div class="description">
 <p>Enable JavaScript debugger</p>
-<p><em>default</em>: <code>false</code></p>
+<p><em>default</em>: <code>false</code>
+<strong>NOT CONFIGURABLE</strong> </p>
+<p>Only considered by <strong>d8</strong> in order to decide if the in process debugger should be activated.</p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L799-L801">v8 d8.cc</a></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1050,7 +1065,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2396">lineno 2396</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2411">lineno 2411</a>
 </li>
 </ul></dd>
 </dl>
@@ -1073,7 +1088,11 @@ Type
 <dd>
 <div class="description">
 <p>Enable debugger agent</p>
-<p><em>default</em>: <code>false</code></p>
+<p><em>default</em>: <code>false</code>
+<strong>NOT CONFIGURABLE</strong> </p>
+<p>Cnsidered <strong>only</strong> by <strong>d8</strong> in order to decide if the in debugger agent should be activated.</p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L925-928">v8 d8.cc</a></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1104,7 +1123,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2414">lineno 2414</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2438">lineno 2438</a>
 </li>
 </ul></dd>
 </dl>
@@ -1127,7 +1146,11 @@ Type
 <dd>
 <div class="description">
 <p>Port to use for remote debugging</p>
-<p><em>default</em>: <code>5858</code></p>
+<p><em>default</em>: <code>5858</code>
+<strong>NOT CONFIGURABLE</strong> </p>
+<p>Cnsidered <strong>only</strong> by <strong>d8</strong> in order to decide on which port the remote debugger should listen.</p>
+<h4>Resources</h4>
+<p><a href="https://github.com/v8/v8/blob/3.26.33/src/d8.cc#L925-928">v8 d8.cc</a></p>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -1158,7 +1181,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2432">lineno 2432</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2465">lineno 2465</a>
 </li>
 </ul></dd>
 </dl>
@@ -1266,7 +1289,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1583">lineno 1583</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1590">lineno 1590</a>
 </li>
 </ul></dd>
 </dl>
@@ -1320,7 +1343,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2378">lineno 2378</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2393">lineno 2393</a>
 </li>
 </ul></dd>
 </dl>
@@ -1374,7 +1397,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1866">lineno 1866</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1873">lineno 1873</a>
 </li>
 </ul></dd>
 </dl>
@@ -1482,7 +1505,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1490">lineno 1490</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1497">lineno 1497</a>
 </li>
 </ul></dd>
 </dl>
@@ -1536,7 +1559,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1508">lineno 1508</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1515">lineno 1515</a>
 </li>
 </ul></dd>
 </dl>
@@ -1591,7 +1614,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1526">lineno 1526</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1533">lineno 1533</a>
 </li>
 </ul></dd>
 </dl>
@@ -1645,7 +1668,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1472">lineno 1472</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1479">lineno 1479</a>
 </li>
 </ul></dd>
 </dl>
@@ -1699,7 +1722,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1547">lineno 1547</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1554">lineno 1554</a>
 </li>
 </ul></dd>
 </dl>
@@ -1807,7 +1830,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1231">lineno 1231</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1238">lineno 1238</a>
 </li>
 </ul></dd>
 </dl>
@@ -1861,7 +1884,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1393">lineno 1393</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1400">lineno 1400</a>
 </li>
 </ul></dd>
 </dl>
@@ -1915,7 +1938,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1938">lineno 1938</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1945">lineno 1945</a>
 </li>
 </ul></dd>
 </dl>
@@ -1969,7 +1992,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1956">lineno 1956</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1963">lineno 1963</a>
 </li>
 </ul></dd>
 </dl>
@@ -2023,7 +2046,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2684">lineno 2684</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2732">lineno 2732</a>
 </li>
 </ul></dd>
 </dl>
@@ -2077,7 +2100,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2486">lineno 2486</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2534">lineno 2534</a>
 </li>
 </ul></dd>
 </dl>
@@ -2131,7 +2154,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2522">lineno 2522</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2570">lineno 2570</a>
 </li>
 </ul></dd>
 </dl>
@@ -2185,7 +2208,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2504">lineno 2504</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2552">lineno 2552</a>
 </li>
 </ul></dd>
 </dl>
@@ -2293,7 +2316,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1884">lineno 1884</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1891">lineno 1891</a>
 </li>
 </ul></dd>
 </dl>
@@ -2887,7 +2910,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2702">lineno 2702</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2750">lineno 2750</a>
 </li>
 </ul></dd>
 </dl>
@@ -2941,7 +2964,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2360">lineno 2360</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2375">lineno 2375</a>
 </li>
 </ul></dd>
 </dl>
@@ -3103,7 +3126,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1992">lineno 1992</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1999">lineno 1999</a>
 </li>
 </ul></dd>
 </dl>
@@ -3157,7 +3180,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2010">lineno 2010</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2017">lineno 2017</a>
 </li>
 </ul></dd>
 </dl>
@@ -3211,7 +3234,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1375">lineno 1375</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1382">lineno 1382</a>
 </li>
 </ul></dd>
 </dl>
@@ -3265,7 +3288,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1357">lineno 1357</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1364">lineno 1364</a>
 </li>
 </ul></dd>
 </dl>
@@ -3319,7 +3342,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1339">lineno 1339</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1346">lineno 1346</a>
 </li>
 </ul></dd>
 </dl>
@@ -3373,7 +3396,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1601">lineno 1601</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1608">lineno 1608</a>
 </li>
 </ul></dd>
 </dl>
@@ -3427,7 +3450,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2072">lineno 2072</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2079">lineno 2079</a>
 </li>
 </ul></dd>
 </dl>
@@ -3481,7 +3504,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1637">lineno 1637</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1644">lineno 1644</a>
 </li>
 </ul></dd>
 </dl>
@@ -3535,7 +3558,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3031">lineno 3031</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3079">lineno 3079</a>
 </li>
 </ul></dd>
 </dl>
@@ -3643,7 +3666,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2905">lineno 2905</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2953">lineno 2953</a>
 </li>
 </ul></dd>
 </dl>
@@ -3697,7 +3720,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2923">lineno 2923</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2971">lineno 2971</a>
 </li>
 </ul></dd>
 </dl>
@@ -3751,7 +3774,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2941">lineno 2941</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2989">lineno 2989</a>
 </li>
 </ul></dd>
 </dl>
@@ -3805,7 +3828,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3067">lineno 3067</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3115">lineno 3115</a>
 </li>
 </ul></dd>
 </dl>
@@ -3859,7 +3882,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3049">lineno 3049</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3097">lineno 3097</a>
 </li>
 </ul></dd>
 </dl>
@@ -3913,7 +3936,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2977">lineno 2977</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3025">lineno 3025</a>
 </li>
 </ul></dd>
 </dl>
@@ -3967,7 +3990,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2959">lineno 2959</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3007">lineno 3007</a>
 </li>
 </ul></dd>
 </dl>
@@ -4021,7 +4044,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2995">lineno 2995</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3043">lineno 3043</a>
 </li>
 </ul></dd>
 </dl>
@@ -4075,7 +4098,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3013">lineno 3013</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L3061">lineno 3061</a>
 </li>
 </ul></dd>
 </dl>
@@ -4183,7 +4206,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2450">lineno 2450</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2492">lineno 2492</a>
 </li>
 </ul></dd>
 </dl>
@@ -4237,7 +4260,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1920">lineno 1920</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1927">lineno 1927</a>
 </li>
 </ul></dd>
 </dl>
@@ -4345,7 +4368,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1902">lineno 1902</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1909">lineno 1909</a>
 </li>
 </ul></dd>
 </dl>
@@ -4399,7 +4422,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1691">lineno 1691</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1698">lineno 1698</a>
 </li>
 </ul></dd>
 </dl>
@@ -4453,7 +4476,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1321">lineno 1321</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1328">lineno 1328</a>
 </li>
 </ul></dd>
 </dl>
@@ -4561,7 +4584,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2028">lineno 2028</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2035">lineno 2035</a>
 </li>
 </ul></dd>
 </dl>
@@ -4669,7 +4692,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2342">lineno 2342</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2357">lineno 2357</a>
 </li>
 </ul></dd>
 </dl>
@@ -4723,7 +4746,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1758">lineno 1758</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1765">lineno 1765</a>
 </li>
 </ul></dd>
 </dl>
@@ -4885,7 +4908,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2558">lineno 2558</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2606">lineno 2606</a>
 </li>
 </ul></dd>
 </dl>
@@ -4939,7 +4962,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2576">lineno 2576</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2624">lineno 2624</a>
 </li>
 </ul></dd>
 </dl>
@@ -4993,7 +5016,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2630">lineno 2630</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2678">lineno 2678</a>
 </li>
 </ul></dd>
 </dl>
@@ -5101,7 +5124,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2761">lineno 2761</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2809">lineno 2809</a>
 </li>
 </ul></dd>
 </dl>
@@ -5155,7 +5178,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2743">lineno 2743</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2791">lineno 2791</a>
 </li>
 </ul></dd>
 </dl>
@@ -5209,7 +5232,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2833">lineno 2833</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2881">lineno 2881</a>
 </li>
 </ul></dd>
 </dl>
@@ -5263,7 +5286,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2815">lineno 2815</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2863">lineno 2863</a>
 </li>
 </ul></dd>
 </dl>
@@ -5317,7 +5340,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2797">lineno 2797</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2845">lineno 2845</a>
 </li>
 </ul></dd>
 </dl>
@@ -5371,7 +5394,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2648">lineno 2648</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2696">lineno 2696</a>
 </li>
 </ul></dd>
 </dl>
@@ -5425,7 +5448,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2540">lineno 2540</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2588">lineno 2588</a>
 </li>
 </ul></dd>
 </dl>
@@ -5479,7 +5502,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2252">lineno 2252</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2267">lineno 2267</a>
 </li>
 </ul></dd>
 </dl>
@@ -5533,7 +5556,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1411">lineno 1411</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1418">lineno 1418</a>
 </li>
 </ul></dd>
 </dl>
@@ -5695,7 +5718,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1565">lineno 1565</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1572">lineno 1572</a>
 </li>
 </ul></dd>
 </dl>
@@ -5749,7 +5772,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2594">lineno 2594</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2642">lineno 2642</a>
 </li>
 </ul></dd>
 </dl>
@@ -5803,7 +5826,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2234">lineno 2234</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2249">lineno 2249</a>
 </li>
 </ul></dd>
 </dl>
@@ -6019,7 +6042,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1303">lineno 1303</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1310">lineno 1310</a>
 </li>
 </ul></dd>
 </dl>
@@ -6127,7 +6150,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2270">lineno 2270</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2285">lineno 2285</a>
 </li>
 </ul></dd>
 </dl>
@@ -6181,7 +6204,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2306">lineno 2306</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2321">lineno 2321</a>
 </li>
 </ul></dd>
 </dl>
@@ -6235,7 +6258,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2288">lineno 2288</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2303">lineno 2303</a>
 </li>
 </ul></dd>
 </dl>
@@ -6289,7 +6312,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2324">lineno 2324</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2339">lineno 2339</a>
 </li>
 </ul></dd>
 </dl>
@@ -6343,7 +6366,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1619">lineno 1619</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1626">lineno 1626</a>
 </li>
 </ul></dd>
 </dl>
@@ -6667,7 +6690,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1974">lineno 1974</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1981">lineno 1981</a>
 </li>
 </ul></dd>
 </dl>
@@ -6721,7 +6744,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2666">lineno 2666</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2714">lineno 2714</a>
 </li>
 </ul></dd>
 </dl>
@@ -6775,7 +6798,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1249">lineno 1249</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1256">lineno 1256</a>
 </li>
 </ul></dd>
 </dl>
@@ -6829,7 +6852,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1848">lineno 1848</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1855">lineno 1855</a>
 </li>
 </ul></dd>
 </dl>
@@ -6883,7 +6906,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1776">lineno 1776</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1783">lineno 1783</a>
 </li>
 </ul></dd>
 </dl>
@@ -7315,7 +7338,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2779">lineno 2779</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2827">lineno 2827</a>
 </li>
 </ul></dd>
 </dl>
@@ -7423,7 +7446,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2869">lineno 2869</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2917">lineno 2917</a>
 </li>
 </ul></dd>
 </dl>
@@ -7477,7 +7500,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2851">lineno 2851</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2899">lineno 2899</a>
 </li>
 </ul></dd>
 </dl>
@@ -7639,7 +7662,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1655">lineno 1655</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1662">lineno 1662</a>
 </li>
 </ul></dd>
 </dl>
@@ -7693,7 +7716,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1673">lineno 1673</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1680">lineno 1680</a>
 </li>
 </ul></dd>
 </dl>
@@ -7747,7 +7770,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1429">lineno 1429</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1436">lineno 1436</a>
 </li>
 </ul></dd>
 </dl>
@@ -7801,7 +7824,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1285">lineno 1285</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1292">lineno 1292</a>
 </li>
 </ul></dd>
 </dl>
@@ -7855,7 +7878,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2180">lineno 2180</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2187">lineno 2187</a>
 </li>
 </ul></dd>
 </dl>
@@ -8017,7 +8040,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2887">lineno 2887</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2935">lineno 2935</a>
 </li>
 </ul></dd>
 </dl>
@@ -8125,7 +8148,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2198">lineno 2198</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2205">lineno 2205</a>
 </li>
 </ul></dd>
 </dl>
@@ -8503,7 +8526,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2612">lineno 2612</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2660">lineno 2660</a>
 </li>
 </ul></dd>
 </dl>
@@ -8665,7 +8688,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1267">lineno 1267</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L1274">lineno 1274</a>
 </li>
 </ul></dd>
 </dl>
@@ -8935,7 +8958,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2108">lineno 2108</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2115">lineno 2115</a>
 </li>
 </ul></dd>
 </dl>
@@ -9205,7 +9228,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2144">lineno 2144</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2151">lineno 2151</a>
 </li>
 </ul></dd>
 </dl>
@@ -9259,7 +9282,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2090">lineno 2090</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L2097">lineno 2097</a>
 </li>
 </ul></dd>
 </dl>

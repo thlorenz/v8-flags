@@ -177,6 +177,7 @@ var apiCode = [
     // Logging and profiling flags
     //
 // since they only work when compiled with debug flag?
+// TODO: make singleton (1t)
 
 fs.writeFileSync(path.join(__dirname, '..', 'default-flags.js'), defaultFlagsCode, 'utf8');
 fs.writeFileSync(path.join(__dirname, '..', 'index.js'), apiCode, 'utf8');

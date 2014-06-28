@@ -8,32 +8,51 @@
 
 namespace i = v8::internal;
 
+bool convert(v8::Handle<v8::Boolean> arg) {
+  return arg->BooleanValue();
+}
+
+int32_t convert(v8::Handle<v8::Integer> arg) {
+  return arg->Int32Value();
+}
+
+double convert(v8::Handle<v8::Number> arg) {
+  return arg->NumberValue();
+}
+
+char* convert(v8::Handle<v8::String> arg) {
+  size_t len;
+  return NanCString(arg, &len);
+}
+
 /* v8 flag-definitions.h not properly cleaning this one up */
 #undef DEFINE_float
 #undef DEFINE_args
 #undef FLAG
 #define DEFINE_bool(nam, def, cmt)   FLAG(Boolean, nam)
 #define DEFINE_int(nam, def, cmt)    FLAG(Integer, nam)
-#define DEFINE_float(nam, def, cmt)  FLAG( Number, nam)
+#define DEFINE_float(nam, def, cmt)  FLAG(Number, nam)
 #define DEFINE_string(nam, def, cmt) FLAG(String, nam)
 #define DEFINE_implication(x, y)
 #define DEFINE_args(nam, def, cmt)
 
-#define FLAG_FULL(type, nam)                         \
-  NAN_METHOD(Get_##nam) {                            \
-    NanScope();                                      \
-    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam)); \
-  }                                                  \
-                                                     \
-  NAN_METHOD(Set_##nam) {                            \
-    NanScope();                                      \
-    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam)); \
+#define FLAG_FULL(type, nam)                           \
+  NAN_METHOD(Get_##nam) {                              \
+    NanScope();                                        \
+    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));   \
+  }                                                    \
+                                                       \
+  NAN_METHOD(Set_##nam) {                              \
+    NanScope();                                        \
+    v8::Handle<v8::type> flag =  args[0]->To##type();  \
+    i::FLAG_##nam = convert(flag);                     \
+    NanReturnUndefined();                              \
   }
 
-#define FLAG_READONLY(type, nam)                     \
-  NAN_METHOD(Get_##nam) {                            \
-    NanScope();                                      \
-    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam)); \
+#define FLAG_READONLY(type, nam)                       \
+  NAN_METHOD(Get_##nam) {                              \
+    NanScope();                                        \
+    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));   \
   }
 
 #if (NODE_VERSION_AT_LEAST(0, 10, 28))

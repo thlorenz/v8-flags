@@ -1,9 +1,10 @@
-#include <node.h>
-#include <nan.h>
+//#include <nan.h>
+#include "../node_modules/nan/nan.h"
 #include "v8.h"
 
 #include "atomicops.h"
 #include "flags.h"
+#include <node.h>
 
 using v8::FunctionTemplate;
 using v8::Isolate;

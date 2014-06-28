@@ -170,8 +170,8 @@ DEFINE_bool(enable_fpu, true,
             "enable use of MIPS FPU instructions if available (MIPS only)")
 
 // bootstrapper.cc
-DEFINE_string(expose_natives_as, NULL, "expose natives in global object")
-DEFINE_string(expose_debug_as, NULL, "expose debug in global object")
+/*DEFINE_string(expose_natives_as, NULL, "expose natives in global object")*/
+/*DEFINE_string(expose_debug_as, NULL, "expose debug in global object")*/
 DEFINE_bool(expose_gc, false, "expose gc extension")
 DEFINE_bool(expose_externalize_string, false,
             "expose externalize string extension")
@@ -342,12 +342,6 @@ DEFINE_bool(preemption, false,
 // Regexp
 DEFINE_bool(regexp_optimization, true, "generate optimized regexp code")
 
-// Testing flags test/cctest/test-{flags,api,serialization}.cc
-DEFINE_bool(testing_bool_flag, true, "testing_bool_flag")
-DEFINE_int(testing_int_flag, 13, "testing_int_flag")
-DEFINE_float(testing_float_flag, 2.5, "float-flag")
-DEFINE_string(testing_string_flag, "Hello, world!", "string-flag")
-DEFINE_int(testing_prng_seed, 42, "Seed used for threading test randomness")
 #ifdef WIN32
 DEFINE_string(testing_serialization_file, "C:\\Windows\\Temp\\serdes",
               "file in which to testing_serialize heap")
@@ -357,8 +351,8 @@ DEFINE_string(testing_serialization_file, "/tmp/serdes",
 #endif
 
 // mksnapshot.cc
-DEFINE_string(extra_code, NULL, "A filename with extra code to be included in"
-                  " the snapshot (mksnapshot only)")
+/*DEFINE_string(extra_code, NULL, "A filename with extra code to be included in"
+                  " the snapshot (mksnapshot only)")*/
 
 //
 // Dev shell flags

@@ -122,7 +122,7 @@ DEFINE_bool(trace_check_elimination, false, "trace check elimination phase")
 DEFINE_bool(trace_hydrogen, false, "trace generated hydrogen to file")
 DEFINE_string(trace_hydrogen_filter, "*", "hydrogen tracing filter")
 DEFINE_bool(trace_hydrogen_stubs, false, "trace generated hydrogen for stubs")
-DEFINE_string(trace_hydrogen_file, NULL, "trace hydrogen to given file name")
+/*DEFINE_string(trace_hydrogen_file, NULL, "trace hydrogen to given file name")*/
 DEFINE_string(trace_phase, "HLZ", "trace generated IR for specified phases")
 DEFINE_bool(trace_inlining, false, "trace inlining decisions")
 DEFINE_bool(trace_load_elimination, false, "trace load elimination")
@@ -257,12 +257,12 @@ DEFINE_bool(force_long_branches, false,
             "force all emitted branches to be in long mode (MIPS only)")
 
 // bootstrapper.cc
-DEFINE_string(expose_natives_as, NULL, "expose natives in global object")
-DEFINE_string(expose_debug_as, NULL, "expose debug in global object")
+/*DEFINE_string(expose_natives_as, NULL, "expose natives in global object")*/
+/*DEFINE_string(expose_debug_as, NULL, "expose debug in global object")*/
 DEFINE_bool(expose_free_buffer, false, "expose freeBuffer extension")
 DEFINE_bool(expose_gc, false, "expose gc extension")
-DEFINE_string(expose_gc_as, NULL,
-              "expose gc extension under the specified name")
+/*DEFINE_string(expose_gc_as, NULL,
+              "expose gc extension under the specified name")*/
 DEFINE_implication(expose_gc_as, expose_gc)
 DEFINE_bool(expose_externalize_string, false,
             "expose externalize string extension")
@@ -484,13 +484,6 @@ DEFINE_bool(profile_deserialization, false,
 // Regexp
 DEFINE_bool(regexp_optimization, true, "generate optimized regexp code")
 
-// Testing flags test/cctest/test-{flags,api,serialization}.cc
-DEFINE_bool(testing_bool_flag, true, "testing_bool_flag")
-DEFINE_maybe_bool(testing_maybe_bool_flag, "testing_maybe_bool_flag")
-DEFINE_int(testing_int_flag, 13, "testing_int_flag")
-DEFINE_float(testing_float_flag, 2.5, "float-flag")
-DEFINE_string(testing_string_flag, "Hello, world!", "string-flag")
-DEFINE_int(testing_prng_seed, 42, "Seed used for threading test randomness")
 #ifdef _WIN32
 DEFINE_string(testing_serialization_file, "C:\\Windows\\Temp\\serdes",
               "file in which to testing_serialize heap")
@@ -500,8 +493,8 @@ DEFINE_string(testing_serialization_file, "/tmp/serdes",
 #endif
 
 // mksnapshot.cc
-DEFINE_string(extra_code, NULL, "A filename with extra code to be included in"
-                  " the snapshot (mksnapshot only)")
+/*DEFINE_string(extra_code, NULL, "A filename with extra code to be included in"
+                  " the snapshot (mksnapshot only)")*/
 
 // code-stubs-hydrogen.cc
 DEFINE_bool(profile_hydrogen_code_stub_compilation, false,
@@ -682,8 +675,8 @@ DEFINE_int(log_instruction_period, 1 << 22,
 DEFINE_bool(redirect_code_traces, false,
             "output deopt information and disassembly into file "
             "code-<pid>-<isolate id>.asm")
-DEFINE_string(redirect_code_traces_to, NULL,
-            "output deopt information and disassembly into the given file")
+/*DEFINE_string(redirect_code_traces_to, NULL,
+            "output deopt information and disassembly into the given file")*/
 
 DEFINE_bool(hydrogen_track_positions, false,
             "track source code positions when building IR")

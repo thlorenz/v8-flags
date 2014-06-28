@@ -20,10 +20,10 @@ function unverified(flag, enabled) {
   test('\n' + flag + ' - NOT VERIFIED', function (t) {
     if (enabled) {
       t.ok(flags[flag](), 'enabled by default')
-      t.doesNotThrow(flags[flag].bind(flags, false), 'can be disabled')
+      t.doesNotThrow(flags['set_' + flag].bind(flags, false), 'can be disabled')
     } else {
       t.ok(!flags[flag](), 'disabled by default')
-      t.doesNotThrow(flags[flag].bind(flags, true), 'can be enabled')
+      t.doesNotThrow(flags['set_' + flag].bind(flags, true), 'can be enabled')
     }
     t.end()
   })
@@ -38,7 +38,7 @@ test('\nexpose_gc -- NOT CONFIGURABLE', function (t) {
   t.ok(!flags.expose_gc(), 'not enabled by default')
   t.ok(!gc(), 'not exposed by default')
 
-  flags.expose_gc(true)
+  flags.set_expose_gc(true)
   t.ok(!refresh(p)(), 'enabling does NOT expose it')
   t.end()
 })
@@ -56,7 +56,7 @@ test('\nallow_natives_syntax', function (t) {
     t.similar(err.message, /Unexpected token %/, 'Unexpected token %')
   }
 
-  flags.allow_natives_syntax(true)
+  flags.set_allow_natives_syntax(true)
   
   var heap = require(p)();
   t.ok(heap.before > 0 && heap.after < heap.before, 'enabling allows native syntax to get heap and trigger garbage collection')
@@ -78,7 +78,7 @@ test('\nalways_opt', function (t) {
   optimizations = refresh(p)();
   t.equal(optimizations, 0, 'does not optimize sample function on third try')
 
-  flags.always_opt(true)
+  flags.set_always_opt(true)
   optimizations = refresh(p)();
   t.equal(optimizations, 1, 'optimizes function once always_opt is enabled')
   t.end()

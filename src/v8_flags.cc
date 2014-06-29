@@ -86,8 +86,6 @@ void init(v8::Handle<v8::Object> exports) {
 #endif
 }
 
-NODE_MODULE(v8_flags, init)
-
 #undef DEFINE_bool
 #undef DEFINE_int
 #undef DEFINE_float
@@ -99,3 +97,5 @@ NODE_MODULE(v8_flags, init)
 #undef DEFINE_neg_implication
 #undef DEFINE_args
 #undef DEFINE_maybe_bool
+
+NODE_MODULE(v8_flags, init)

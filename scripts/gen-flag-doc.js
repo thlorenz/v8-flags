@@ -5,6 +5,13 @@ var fs = require('fs')
   , meta = require('../').meta
   , doctoc = require('doctoc/lib/transform')
 
+function implications(v) {
+  var s = '';
+  if (v.implications.length) s += '\n#### Implications\n\n- ' + v.implications.join('\n- ');
+  if (v.negativeImplications.length) s += '\n#### Negative implications\n\n- ' + v.negativeImplications.join('\n- ');
+  return s.length ? s : undefined;
+}
+
 function docsFor(v) {
   return [
     ''
@@ -15,8 +22,10 @@ function docsFor(v) {
   , '- **default:** `' + v.default + '`'
   , '- **type:** `' + v.type + '`'
   , '- **readonly:** `' + v.readonly + '`'
+  , implications(v)
   , v.comment
   ]
+  .filter(function (x) { return x !== undefined })
 }
 
 function commentFromFile(name) {

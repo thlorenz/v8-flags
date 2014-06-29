@@ -16,3 +16,4 @@ node_modules
 build
 .clang_complete
 .syntastic_c
+spike.js

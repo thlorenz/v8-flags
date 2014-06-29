@@ -49,23 +49,13 @@
 - [use_osr *{Boolean}*](#use_osr-boolean)
 - [array_bounds_checks_elimination *{Boolean}*](#array_bounds_checks_elimination-boolean)
 - [array_index_dehoisting *{Boolean}*](#array_index_dehoisting-boolean)
-- [dead_code_elimination *{Boolean}*](#dead_code_elimination-boolean)
-  - [Resources](#resources-1)
-- [trace_dead_code_elimination *{Boolean}*](#trace_dead_code_elimination-boolean)
 - [trace_osr *{Boolean}*](#trace_osr-boolean)
 - [stress_runs *{Integer}*](#stress_runs-integer)
 - [optimize_closures *{Boolean}*](#optimize_closures-boolean)
-- [lookup_sample_by_shared *{Boolean}*](#lookup_sample_by_shared-boolean)
-- [cache_optimized_code *{Boolean}*](#cache_optimized_code-boolean)
 - [inline_construct *{Boolean}*](#inline_construct-boolean)
 - [inline_arguments *{Boolean}*](#inline_arguments-boolean)
-- [inline_accessors *{Boolean}*](#inline_accessors-boolean)
 - [loop_weight *{Integer}*](#loop_weight-integer)
 - [optimize_for_in *{Boolean}*](#optimize_for_in-boolean)
-- [opt_safe_uint32_operations *{Boolean}*](#opt_safe_uint32_operations-boolean)
-- [parallel_recompilation *{Boolean}*](#parallel_recompilation-boolean)
-- [trace_parallel_recompilation *{Boolean}*](#trace_parallel_recompilation-boolean)
-- [parallel_recompilation_queue_length *{Integer}*](#parallel_recompilation_queue_length-integer)
 - [experimental_profiler *{Boolean}*](#experimental_profiler-boolean)
   - [Implications](#implications-2)
 - [watch_ic_patching *{Boolean}*](#watch_ic_patching-boolean)
@@ -83,7 +73,7 @@
   - [Implications](#implications-3)
 - [debug_code *{Boolean}*](#debug_code-boolean)
 - [code_comments *{Boolean}*](#code_comments-boolean)
-  - [Resources](#resources-2)
+  - [Resources](#resources-1)
 - [enable_sse2 *{Boolean}*](#enable_sse2-boolean)
 - [enable_sse3 *{Boolean}*](#enable_sse3-boolean)
 - [enable_sse4_1 *{Boolean}*](#enable_sse4_1-boolean)
@@ -91,11 +81,7 @@
 - [enable_rdtsc *{Boolean}*](#enable_rdtsc-boolean)
 - [enable_sahf *{Boolean}*](#enable_sahf-boolean)
 - [enable_vfp3 *{Boolean}*](#enable_vfp3-boolean)
-- [enable_vfp2 *{Boolean}*](#enable_vfp2-boolean)
 - [enable_armv7 *{Boolean}*](#enable_armv7-boolean)
-- [enable_sudiv *{Boolean}*](#enable_sudiv-boolean)
-- [enable_movw_movt *{Boolean}*](#enable_movw_movt-boolean)
-- [enable_unaligned_accesses *{Boolean}*](#enable_unaligned_accesses-boolean)
 - [enable_fpu *{Boolean}*](#enable_fpu-boolean)
 - [expose_gc *{Boolean}*](#expose_gc-boolean)
 - [expose_externalize_string *{Boolean}*](#expose_externalize_string-boolean)
@@ -115,9 +101,9 @@
 - [trace_deopt *{Boolean}*](#trace_deopt-boolean)
 - [min_preparse_length *{Integer}*](#min_preparse_length-integer)
 - [always_full_compiler *{Boolean}*](#always_full_compiler-boolean)
-- [max_opt_count *{Integer}*](#max_opt_count-integer)
+- [trace_bailout *{Boolean}*](#trace_bailout-boolean)
 - [compilation_cache *{Boolean}*](#compilation_cache-boolean)
-  - [Resources](#resources-3)
+  - [Resources](#resources-2)
 - [cache_prototype_transitions *{Boolean}*](#cache_prototype_transitions-boolean)
   - [Resources:](#resources)
 - [trace_debug_json *{Boolean}*](#trace_debug_json-boolean)
@@ -134,30 +120,26 @@
 - [gc_interval *{Integer}*](#gc_interval-integer)
 - [trace_gc *{Boolean}*](#trace_gc-boolean)
 - [trace_gc_nvp *{Boolean}*](#trace_gc_nvp-boolean)
-- [trace_gc_ignore_scavenger *{Boolean}*](#trace_gc_ignore_scavenger-boolean)
 - [print_cumulative_gc_stat *{Boolean}*](#print_cumulative_gc_stat-boolean)
 - [trace_gc_verbose *{Boolean}*](#trace_gc_verbose-boolean)
 - [trace_fragmentation *{Boolean}*](#trace_fragmentation-boolean)
-- [trace_external_memory *{Boolean}*](#trace_external_memory-boolean)
 - [collect_maps *{Boolean}*](#collect_maps-boolean)
 - [flush_code *{Boolean}*](#flush_code-boolean)
 - [incremental_marking *{Boolean}*](#incremental_marking-boolean)
 - [incremental_marking_steps *{Boolean}*](#incremental_marking_steps-boolean)
 - [trace_incremental_marking *{Boolean}*](#trace_incremental_marking-boolean)
-- [track_gc_object_stats *{Boolean}*](#track_gc_object_stats-boolean)
 - [use_idle_notification *{Boolean}*](#use_idle_notification-boolean)
+- [send_idle_notification *{Boolean}*](#send_idle_notification-boolean)
 - [use_ic *{Boolean}*](#use_ic-boolean)
 - [native_code_counters *{Boolean}*](#native_code_counters-boolean)
 - [always_compact *{Boolean}*](#always_compact-boolean)
 - [lazy_sweeping *{Boolean}*](#lazy_sweeping-boolean)
 - [never_compact *{Boolean}*](#never_compact-boolean)
 - [compact_code_space *{Boolean}*](#compact_code_space-boolean)
-- [incremental_code_compaction *{Boolean}*](#incremental_code_compaction-boolean)
 - [cleanup_code_caches_at_gc *{Boolean}*](#cleanup_code_caches_at_gc-boolean)
 - [random_seed *{Integer}*](#random_seed-integer)
 - [use_verbose_printer *{Boolean}*](#use_verbose_printer-boolean)
 - [allow_natives_syntax *{Boolean}*](#allow_natives_syntax-boolean)
-- [trace_parse *{Boolean}*](#trace_parse-boolean)
 - [trace_sim *{Boolean}*](#trace_sim-boolean)
 - [check_icache *{Boolean}*](#check_icache-boolean)
 - [stop_sim_at *{Integer}*](#stop_sim_at-integer)
@@ -173,7 +155,7 @@
 - [dump_counters *{Boolean}*](#dump_counters-boolean)
 - [map_counters *{String}*](#map_counters-string)
 - [debug_compile_events *{Boolean}*](#debug_compile_events-boolean)
-  - [Resources](#resources-4)
+  - [Resources](#resources-3)
 - [debug_script_collected_events *{Boolean}*](#debug_script_collected_events-boolean)
 - [gdbjit *{Boolean}*](#gdbjit-boolean)
 - [gdbjit_full *{Boolean}*](#gdbjit_full-boolean)
@@ -195,8 +177,8 @@
 - [gc_verbose *{Boolean}*](#gc_verbose-boolean)
 - [heap_stats *{Boolean}*](#heap_stats-boolean)
 - [code_stats *{Boolean}*](#code_stats-boolean)
-  - [Resources](#resources-5)
-- [verify_native_context_separation *{Boolean}*](#verify_native_context_separation-boolean)
+  - [Resources](#resources-4)
+- [verify_heap *{Boolean}*](#verify_heap-boolean)
 - [print_handles *{Boolean}*](#print_handles-boolean)
 - [print_global_handles *{Boolean}*](#print_global_handles-boolean)
 - [trace_ic *{Boolean}*](#trace_ic-boolean)
@@ -228,7 +210,6 @@
 - [sliding_state_window *{Boolean}*](#sliding_state_window-boolean)
 - [logfile *{String}*](#logfile-string)
 - [ll_prof *{Boolean}*](#ll_prof-boolean)
-- [gc_fake_mmap *{String}*](#gc_fake_mmap-string)
 - [trace_elements_transitions *{Boolean}*](#trace_elements_transitions-boolean)
 - [print_code_stubs *{Boolean}*](#print_code_stubs-boolean)
 - [test_secondary_stub_cache *{Boolean}*](#test_secondary_stub_cache-boolean)
@@ -255,7 +236,7 @@ enforce strict mode
 
 activate correct semantics for inheriting readonliness
 
-- **default:** `true`
+- **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
@@ -264,7 +245,7 @@ activate correct semantics for inheriting readonliness
 
 activate new semantics for global var declarations
 
-- **default:** `true`
+- **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
@@ -338,7 +319,7 @@ enable all harmony features (except typeof)
 
 optimizes arrays that have no holes
 
-- **default:** `true`
+- **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
@@ -639,7 +620,7 @@ use on-stack replacement
 
 perform array bounds checks elimination
 
-- **default:** `true`
+- **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
@@ -647,30 +628,6 @@ perform array bounds checks elimination
 ### array_index_dehoisting *{Boolean}*
 
 perform array index dehoisting
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### dead_code_elimination *{Boolean}*
-
-use dead code elimination
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-#### Resources
-
-[v8 hydrogen.cc](https://github.com/v8/v8/blob/3.26.33/src/hydrogen.cc#L3999)
-[v8 hydrogin-dce.cc](https://github.com/v8/v8/blob/3.26.33/src/hydrogen-dce.cc)
-
-**Note**: not available below **node:** `0.10` - **v8:** `3.14`
-
-### trace_dead_code_elimination *{Boolean}*
-
-trace dead code elimination
 
 - **default:** `false`
 - **type:** `Boolean`
@@ -704,24 +661,6 @@ optimize closures
 - **readonly:** `false`
 
 
-### lookup_sample_by_shared *{Boolean}*
-
-when picking a function to optimize, watch for shared function info, not JSFunction itself
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### cache_optimized_code *{Boolean}*
-
-cache optimized code for closures
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
 ### inline_construct *{Boolean}*
 
 inline constructor calls
@@ -734,15 +673,6 @@ inline constructor calls
 ### inline_arguments *{Boolean}*
 
 inline functions with arguments object
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### inline_accessors *{Boolean}*
-
-inline JavaScript accessors
 
 - **default:** `true`
 - **type:** `Boolean`
@@ -764,42 +694,6 @@ optimize functions containing for-in loops
 
 - **default:** `true`
 - **type:** `Boolean`
-- **readonly:** `false`
-
-
-### opt_safe_uint32_operations *{Boolean}*
-
-allow uint32 values on optimize frames if they are used only insafe operations
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### parallel_recompilation *{Boolean}*
-
-optimizing hot functions asynchronously on a separate thread
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### trace_parallel_recompilation *{Boolean}*
-
-track parallel recompilation
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### parallel_recompilation_queue_length *{Integer}*
-
-the length of the parallel compilation queue
-
-- **default:** `2`
-- **type:** `Integer`
 - **readonly:** `false`
 
 
@@ -897,7 +791,7 @@ weight back edges by jump distance for interrupt triggering
 
 execution budget before interrupt is triggered
 
-- **default:** `5888`
+- **default:** `5900`
 - **type:** `Integer`
 - **readonly:** `false`
 
@@ -1013,16 +907,7 @@ enable use of SAHF instruction if available (X64 only)
 
 ### enable_vfp3 *{Boolean}*
 
-enable use of VFP3 instructions if available - this implies enabling ARMv7 and VFP2 instructions (ARM only)
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### enable_vfp2 *{Boolean}*
-
-enable use of VFP2 instructions if available
+enable use of VFP3 instructions if available - this implies enabling ARMv7 instructions (ARM only)
 
 - **default:** `true`
 - **type:** `Boolean`
@@ -1032,33 +917,6 @@ enable use of VFP2 instructions if available
 ### enable_armv7 *{Boolean}*
 
 enable use of ARMv7 instructions if available (ARM only)
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### enable_sudiv *{Boolean}*
-
-enable use of SDIV and UDIV instructions if available (ARM only)
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### enable_movw_movt *{Boolean}*
-
-enable loading 32-bit constant by means of movw/movt instruction pairs (ARM only)
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### enable_unaligned_accesses *{Boolean}*
-
-enable unaligned accesses for ARMv7 (ARM only)
 
 - **default:** `true`
 - **type:** `Boolean`
@@ -1237,12 +1095,12 @@ try to use the dedicated run-once backend for all code
 - **readonly:** `false`
 
 
-### max_opt_count *{Integer}*
+### trace_bailout *{Boolean}*
 
-maximum number of optimization attempts before giving up.
+print reasons for falling back to using the classic V8 backend
 
-- **default:** `10`
-- **type:** `Integer`
+- **default:** `false`
+- **type:** `Boolean`
 - **readonly:** `false`
 
 
@@ -1406,15 +1264,6 @@ print one detailed trace line in name=value format after each garbage collection
 - **readonly:** `false`
 
 
-### trace_gc_ignore_scavenger *{Boolean}*
-
-do not print trace line after scavenger collection
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
 ### print_cumulative_gc_stat *{Boolean}*
 
 print cumulative GC statistics in name=value format on exit
@@ -1436,15 +1285,6 @@ print more details following each garbage collection
 ### trace_fragmentation *{Boolean}*
 
 report fragmentation for old pointer and data pages
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### trace_external_memory *{Boolean}*
-
-print amount of external allocated memory after each time it is adjusted.
 
 - **default:** `false`
 - **type:** `Boolean`
@@ -1496,20 +1336,20 @@ trace progress of the incremental marking
 - **readonly:** `false`
 
 
-### track_gc_object_stats *{Boolean}*
-
-track object counts and memory usage
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
 ### use_idle_notification *{Boolean}*
 
 Use idle notification to reduce memory footprint.
 
 - **default:** `true`
+- **type:** `Boolean`
+- **readonly:** `false`
+
+
+### send_idle_notification *{Boolean}*
+
+Send idle notifcation between stress runs.
+
+- **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
@@ -1568,15 +1408,6 @@ Compact code space on full non-incremental collections
 - **readonly:** `false`
 
 
-### incremental_code_compaction *{Boolean}*
-
-Compact code space on full incremental collections
-
-- **default:** `true`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
 ### cleanup_code_caches_at_gc *{Boolean}*
 
 Flush inline caches prior to mark compact collection and flush code caches in maps during mark compact cycle.
@@ -1607,15 +1438,6 @@ allows verbose printing
 ### allow_natives_syntax *{Boolean}*
 
 allow natives syntax
-
-- **default:** `false`
-- **type:** `Boolean`
-- **readonly:** `false`
-
-
-### trace_parse *{Boolean}*
-
-trace parsing and preparsing
 
 - **default:** `false`
 - **type:** `Boolean`
@@ -1955,9 +1777,9 @@ report code statistics after GC
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L582)
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L4528-L4536)
 
-### verify_native_context_separation *{Boolean}*
+### verify_heap *{Boolean}*
 
-verify that code holds on to at most one native context after GC
+verify heap pointers before and after GC
 
 - **default:** `false`
 - **type:** `Boolean`
@@ -2240,15 +2062,6 @@ Enable low-level linux profiler.
 
 - **default:** `false`
 - **type:** `Boolean`
-- **readonly:** `false`
-
-
-### gc_fake_mmap *{String}*
-
-Specify the name of the file for fake gc mmap used in ll_prof
-
-- **default:** `/tmp/__v8_gc__`
-- **type:** `String`
 - **readonly:** `false`
 
 

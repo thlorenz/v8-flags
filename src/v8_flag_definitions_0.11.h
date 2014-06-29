@@ -262,8 +262,8 @@ DEFINE_bool(force_long_branches, false,
 DEFINE_bool(expose_free_buffer, false, "expose freeBuffer extension")
 DEFINE_bool(expose_gc, false, "expose gc extension")
 /*DEFINE_string(expose_gc_as, NULL,
-              "expose gc extension under the specified name")*/
-DEFINE_implication(expose_gc_as, expose_gc)
+              "expose gc extension under the specified name")
+DEFINE_implication(expose_gc_as, expose_gc) */
 DEFINE_bool(expose_externalize_string, false,
             "expose externalize string extension")
 DEFINE_bool(expose_trigger_failure, false, "expose trigger-failure extension")

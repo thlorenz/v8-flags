@@ -20,6 +20,7 @@
   "homepage": "https://github.com/thlorenz/v8-flags",
   "dependencies": {},
   "devDependencies": {
+    "doctoc": "^0.7.1",
     "nan": "~1.2.0",
     "nave": "~0.4.3",
     "semver": "~2.3.1",

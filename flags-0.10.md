@@ -1078,6 +1078,9 @@ enable use of MIPS FPU instructions if available (MIPS only)
 
 expose gc extension
 
+
+**NOTE:** This flag cannot be configured after the process started up!
+
 - **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`

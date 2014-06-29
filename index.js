@@ -3,6 +3,16 @@
 var v8_flags = require('./build/Release/v8_flags')
   , v8_meta  = require('./build/Release/v8_flags_meta');
 
+// The following flags aren't configurable after startup since they activate (or don't) during the bootstrapping process
+// https://github.com/v8/v8/blob/146bf7bec2518cf664994a658dfc4a72a9c6bb10/src/bootstrapper.cc#L86-L97
+var notConfigurable = [
+    'expose_gc'
+  , 'expose_gc_as'
+  , 'debugger'
+  , 'debugger_agent'
+  , 'debugger_port'
+]
+
 var flags = exports.flags = v8_flags;
 
 // constant meta data is initialized on startup from the definitions found in C++ land
@@ -28,6 +38,7 @@ exports.meta = Object.keys(v8_meta)
         , readonly             : arguments[4]
         , implications         : implications
         , negativeImplications : neg_implications
+        , configurable         : !~notConfigurable.indexOf(k)
       }
     });
     return acc;

@@ -1586,6 +1586,9 @@ expose freeBuffer extension
 
 expose gc extension
 
+
+**NOTE:** This flag cannot be configured after the process started up!
+
 - **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`

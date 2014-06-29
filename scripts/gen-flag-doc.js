@@ -12,6 +12,10 @@ function implications(v) {
   return s.length ? s : undefined;
 }
 
+function configurable(v) {
+  return v.configurable ? undefined : '\n**NOTE:** This flag cannot be configured after the process started up!\n';
+}
+
 function docsFor(v) {
   return [
     ''
@@ -19,6 +23,7 @@ function docsFor(v) {
   , ''
   , v.description
   , ''
+  , configurable(v)
   , '- **default:** `' + v.default + '`'
   , '- **type:** `' + v.type + '`'
   , '- **readonly:** `' + v.readonly + '`'

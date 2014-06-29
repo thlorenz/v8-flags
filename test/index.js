@@ -3,9 +3,7 @@
 
 var test = require('tap').test
 var semver = require('semver')
-var flags = require('../');
-// ignore last digit in versions like 3.14.5.9
-var v8 = process.versions.v8.split('.').slice(0, 3).join('.')
+var flags = require('../').flags;
 
 function inspect(obj, depth) {
   console.error(require('util').inspect(obj, false, depth || 5, true));
@@ -16,8 +14,17 @@ function refresh(p) {
   return require(p);
 }
 
+function exists(t, flag) {
+  if (typeof flags[flag] !== 'function') {
+    t.pass(flag + ' does not exist in this version of v8')
+    return false;
+  }
+  return true;
+}
+
 function unverified(flag, enabled) {
   test('\n' + flag + ' - NOT VERIFIED', function (t) {
+    if (!exists(t, flag)) return t.end();
     if (enabled) {
       t.ok(flags[flag](), 'enabled by default')
       t.doesNotThrow(flags['set_' + flag].bind(flags, false), 'can be disabled')
@@ -65,8 +72,9 @@ test('\nallow_natives_syntax', function (t) {
 
 unverified('always_compact', false)
 
-if (semver.gte(v8, '3.14.5'))
 test('\nalways_opt', function (t) {
+  if (!exists(t, 'always_opt')) return t.end();
+
   flags.allow_natives_syntax(true)
   t.ok(!flags.always_opt(), 'not enabled by default')
 
@@ -84,19 +92,14 @@ test('\nalways_opt', function (t) {
   t.end()
 })
 
-if (semver.gte(v8, '3.25.30')) 
-  unverified('always_osr', false)
+unverified('always_osr', false)
 unverified('cache_prototype_transitions', true)
-if (semver.gte(v8, '3.25.30')) 
-  unverified('check_elimination', true)
+unverified('check_elimination', true)
 unverified('code_comments', false)
 unverified('compilation_cache', true)
-if (semver.gte(v8, '3.25.30')) 
-  unverified('concurrent_sweeping', false)
+unverified('concurrent_sweeping', false)
 unverified('crankshaft', true)
-if (semver.gte(v8, '3.14.5')) 
-  unverified('dead_code_elimination', true)
+unverified('dead_code_elimination', true)
 unverified('debug_compile_events', true)
-if (semver.gte(v8, '3.25.30')) 
-  unverified('debug_sim', false)
+unverified('debug_sim', false)
 

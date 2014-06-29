@@ -20,8 +20,8 @@ using i::kPointerSize;
 #define DEFINE_args(nam, def, cmt)
 #define DEFINE_maybe_bool(name, def)
 
-#define FLAG_FULL(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, true)
-#define FLAG_READONLY(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, false)
+#define FLAG_FULL(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, false)
+#define FLAG_READONLY(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, true)
 
 #define S(x) #x
 #define CREATE_function(nam, def, cmt, type, conf)               \
@@ -37,7 +37,7 @@ NAN_METHOD(nam) {                                                \
     , NanNew<v8::Boolean>(conf)                                  \
   };                                                             \
                                                                  \
-  cb->Call(3, argv);                                             \
+  cb->Call(5, argv);                                             \
   NanReturnUndefined();                                          \
 }
 
@@ -65,7 +65,7 @@ void init(v8::Handle<v8::Object> exports) {
 #endif
 }
 
-NODE_MODULE(v8_flags, init)
+NODE_MODULE(v8_flags_meta, init)
 
 #undef DEFINE_bool
 #undef DEFINE_int

@@ -4,9 +4,15 @@
 var test = require('tap').test
 var semver = require('semver')
 var flags = require('../').flags;
+// ignore last digit in versions like 3.14.5.9
+var v8 = process.versions.v8.split('.').slice(0, 3).join('.')
 
 function inspect(obj, depth) {
   console.error(require('util').inspect(obj, false, depth || 5, true));
+}
+
+function insp(obj, depth) {
+  return require('util').inspect(obj, false, depth || 5, true);
 }
 
 function refresh(p) {
@@ -36,7 +42,21 @@ function unverified(flag, enabled) {
   })
 }
 
-inspect(process.versions)
+test('\nversions ' + insp(process.versions), function (t) {
+  t.end()
+})
+
+test('\nlist flags ' + insp(require('../').listFlags()), function (t) {
+  t.end()
+})
+
+test('\nflags meta ' + insp(require('../').meta), function (t) {
+  t.end()
+})
+
+test('\nversions ' + insp(process.versions), function (t) {
+  t.end()
+})
 
 test('\nexpose_gc -- NOT CONFIGURABLE', function (t) {
   var p = './fixtures/expose_gc'
@@ -88,7 +108,8 @@ test('\nalways_opt', function (t) {
 
   flags.set_always_opt(true)
   optimizations = refresh(p)();
-  t.equal(optimizations, 1, 'optimizes function once always_opt is enabled')
+  if (semver.gte(v8, '3.14.5')) 
+    t.equal(optimizations, 1, 'optimizes function once always_opt is enabled')
   t.end()
 })
 

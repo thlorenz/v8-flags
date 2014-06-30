@@ -34,7 +34,6 @@ char* convert(v8::Handle<v8::String> arg) {
 #define DEFINE_string(nam, def, cmt) FLAG(String, nam)
 #define DEFINE_implication(x, y)
 #define DEFINE_neg_implication(x, y)
-#define DEFINE_args(nam, def, cmt)
 #define DEFINE_maybe_bool(name, def)
 
 #define FLAG_FULL(type, nam)                           \
@@ -56,13 +55,7 @@ char* convert(v8::Handle<v8::String> arg) {
     NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));   \
   }
 
-#if (NODE_VERSION_AT_LEAST(0, 11, 13))
-  #include "v8_flag_definitions_0.11.h"
-#elif (NODE_VERSION_AT_LEAST(0, 10, 28))
-  #include "v8_flag_definitions_0.10.h"
-#elif (NODE_VERSION_AT_LEAST(0, 8, 26))
-  #include "v8_flag_definitions_0.8.h"
-#endif
+#include "v8_flag_definitions.h"
 
 #undef FLAG_FULL
 #undef FLAG_READONLY
@@ -77,13 +70,7 @@ char* convert(v8::Handle<v8::String> arg) {
   exports->Set(NanNew<v8::String>(S(nam)), NanNew<v8::FunctionTemplate>(Get_##nam)->GetFunction());
 
 void init(v8::Handle<v8::Object> exports) {
-#if (NODE_VERSION_AT_LEAST(0, 11, 13))
-  #include "v8_flag_definitions_0.11.h"
-#elif (NODE_VERSION_AT_LEAST(0, 10, 28))
-  #include "v8_flag_definitions_0.10.h"
-#elif (NODE_VERSION_AT_LEAST(0, 8, 26))
-  #include "v8_flag_definitions_0.8.h"
-#endif
+  #include "v8_flag_definitions.h"
 }
 
 #undef DEFINE_bool
@@ -95,7 +82,6 @@ void init(v8::Handle<v8::Object> exports) {
 #undef S
 #undef DEFINE_implication
 #undef DEFINE_neg_implication
-#undef DEFINE_args
 #undef DEFINE_maybe_bool
 
 NODE_MODULE(v8_flags, init)

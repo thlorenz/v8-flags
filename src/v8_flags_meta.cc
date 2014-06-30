@@ -20,7 +20,6 @@ using i::KB;
 #define DEFINE_string(nam, def, cmt) FLAG(nam, def, cmt, String)
 #define DEFINE_implication(nam, implication)
 #define DEFINE_neg_implication(nam, implication)
-#define DEFINE_args(nam, def, cmt)
 #define DEFINE_maybe_bool(name, def)
 
 #define FLAG_FULL(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, false)
@@ -64,13 +63,7 @@ NAN_METHOD(neg_implications_##nam) {                                  \
   NanReturnUndefined();                                               \
 }
 
-#if (NODE_VERSION_AT_LEAST(0, 11, 13))
-  #include "v8_flag_definitions_0.11.h"
-#elif (NODE_VERSION_AT_LEAST(0, 10, 28))
-  #include "v8_flag_definitions_0.10.h"
-#elif (NODE_VERSION_AT_LEAST(0, 8, 26))
-  #include "v8_flag_definitions_0.8.h"
-#endif
+#include "v8_flag_definitions.h"
 
 #undef FLAG
 #undef CREATE_function
@@ -88,13 +81,7 @@ NAN_METHOD(neg_implications_##nam) {                                  \
 #define DEFINE_neg_implication(nam, implication) add_neg_implication(S(nam), S(implication));
 
 void init(v8::Handle<v8::Object> exports) {
-#if (NODE_VERSION_AT_LEAST(0, 11, 13))
-  #include "v8_flag_definitions_0.11.h"
-#elif (NODE_VERSION_AT_LEAST(0, 10, 28))
-  #include "v8_flag_definitions_0.10.h"
-#elif (NODE_VERSION_AT_LEAST(0, 8, 26))
-  #include "v8_flag_definitions_0.8.h"
-#endif
+  #include "v8_flag_definitions.h"
 }
 
 #undef DEFINE_bool
@@ -106,7 +93,6 @@ void init(v8::Handle<v8::Object> exports) {
 #undef S
 #undef DEFINE_implication
 #undef DEFINE_neg_implication
-#undef DEFINE_args
 #undef DEFINE_maybe_bool
 
 NODE_MODULE(v8_flags_meta, init)

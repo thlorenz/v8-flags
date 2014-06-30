@@ -162,12 +162,14 @@
 - [check_icache *{Boolean}*](#check_icache-boolean)
 - [stop_sim_at *{Integer}*](#stop_sim_at-integer)
 - [sim_stack_alignment *{Integer}*](#sim_stack_alignment-integer)
+- [abort_on_uncaught_exception *{Boolean}*](#abort_on_uncaught_exception-boolean)
 - [trace_exception *{Boolean}*](#trace_exception-boolean)
 - [preallocate_message_memory *{Boolean}*](#preallocate_message_memory-boolean)
 - [randomize_hashes *{Boolean}*](#randomize_hashes-boolean)
 - [hash_seed *{Integer}*](#hash_seed-integer)
 - [preemption *{Boolean}*](#preemption-boolean)
 - [regexp_optimization *{Boolean}*](#regexp_optimization-boolean)
+- [testing_string_flag *{String}*](#testing_string_flag-string)
 - [testing_serialization_file *{String}*](#testing_serialization_file-string)
 - [help *{Boolean}*](#help-boolean)
 - [dump_counters *{Boolean}*](#dump_counters-boolean)
@@ -1661,6 +1663,15 @@ Stack alingment in bytes in simulator (4 or 8, 8 is default)
 - **readonly:** `false`
 
 
+### abort_on_uncaught_exception *{Boolean}*
+
+abort program (dump core) when an uncaught exception is thrown
+
+- **default:** `false`
+- **type:** `Boolean`
+- **readonly:** `false`
+
+
 ### trace_exception *{Boolean}*
 
 print stack trace when throwing exceptions
@@ -1712,6 +1723,15 @@ generate optimized regexp code
 
 - **default:** `true`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### testing_string_flag *{String}*
+
+string-flag
+
+- **default:** `Hello, world!`
+- **type:** `String`
 - **readonly:** `false`
 
 

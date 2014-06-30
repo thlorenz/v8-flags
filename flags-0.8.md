@@ -81,6 +81,7 @@
 - [enable_rdtsc *{Boolean}*](#enable_rdtsc-boolean)
 - [enable_sahf *{Boolean}*](#enable_sahf-boolean)
 - [enable_vfp3 *{Boolean}*](#enable_vfp3-boolean)
+- [enable_vfp2 *{Boolean}*](#enable_vfp2-boolean)
 - [enable_armv7 *{Boolean}*](#enable_armv7-boolean)
 - [enable_fpu *{Boolean}*](#enable_fpu-boolean)
 - [expose_gc *{Boolean}*](#expose_gc-boolean)
@@ -150,6 +151,7 @@
 - [hash_seed *{Integer}*](#hash_seed-integer)
 - [preemption *{Boolean}*](#preemption-boolean)
 - [regexp_optimization *{Boolean}*](#regexp_optimization-boolean)
+- [testing_string_flag *{String}*](#testing_string_flag-string)
 - [testing_serialization_file *{String}*](#testing_serialization_file-string)
 - [help *{Boolean}*](#help-boolean)
 - [dump_counters *{Boolean}*](#dump_counters-boolean)
@@ -907,7 +909,16 @@ enable use of SAHF instruction if available (X64 only)
 
 ### enable_vfp3 *{Boolean}*
 
-enable use of VFP3 instructions if available - this implies enabling ARMv7 instructions (ARM only)
+enable use of VFP3 instructions if available - this implies enabling ARMv7 and VFP2 instructions (ARM only)
+
+- **default:** `true`
+- **type:** `Boolean`
+- **readonly:** `false`
+
+
+### enable_vfp2 *{Boolean}*
+
+enable use of VFP2 instructions if available
 
 - **default:** `true`
 - **type:** `Boolean`
@@ -1534,6 +1545,15 @@ generate optimized regexp code
 
 - **default:** `true`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### testing_string_flag *{String}*
+
+string-flag
+
+- **default:** `Hello, world!`
+- **type:** `String`
 - **readonly:** `false`
 
 

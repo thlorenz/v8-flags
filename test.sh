@@ -11,5 +11,11 @@ export PATH=$DIR/node_modules/.bin:$PATH
 
 set -e
 
-nave use $1 npm install
-nave use $1 node $DIR/test/index.js
+if [[ -e $TRAVIS ]]
+then
+  npm install
+  tap $DIR/test/*.js
+else
+  nave use $1 npm install
+  nave use $1 node $DIR/test/index.js
+fi

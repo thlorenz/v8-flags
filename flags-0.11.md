@@ -247,6 +247,7 @@
 - [hash_seed *{Integer}*](#hash_seed-integer)
 - [profile_deserialization *{Boolean}*](#profile_deserialization-boolean)
 - [regexp_optimization *{Boolean}*](#regexp_optimization-boolean)
+- [testing_string_flag *{String}*](#testing_string_flag-string)
 - [testing_serialization_file *{String}*](#testing_serialization_file-string)
 - [profile_hydrogen_code_stub_compilation *{Boolean}*](#profile_hydrogen_code_stub_compilation-boolean)
 - [predictable *{Boolean}*](#predictable-boolean)
@@ -2483,6 +2484,15 @@ generate optimized regexp code
 
 - **default:** `true`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### testing_string_flag *{String}*
+
+string-flag
+
+- **default:** `Hello, world!`
+- **type:** `String`
 - **readonly:** `false`
 
 

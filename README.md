@@ -3,10 +3,38 @@
 Configures v8 flags at runtime.
 
 ```js
+// use-strict-violator.js
+a = "I'm the trouble starter, punking instigator"
+
+module.exports = a;
+```
+
+```js
 var flags = require('v8-flags').flags;
-console.log(flags.use_strict()); // false
-flags.use_strict(true)
-console.log(flags.use_strict()); // true
+console.log('inital use strict', flags.use_strict());
+
+flags.use_strict(true);
+console.log('set use strict to', flags.use_strict());
+
+try {
+  require('./use-strict-violator');
+} catch(err) {
+  console.error('FAIL:', err);
+}
+
+flags.use_strict(false);
+console.log('set use strict to', flags.use_strict());
+
+var violator = require('./use-strict-violator');
+console.log(violator)
+```
+
+```
+inital use strict false
+set use strict to true
+FAIL: [ReferenceError: a is not defined]
+set use strict to false
+I'm the trouble starter, punking instigator
 ```
 
 ## Installation

@@ -13,6 +13,14 @@ console.log(flags.use_strict()); // true
 
     npm install v8-flags
 
+## Contributions
+
+I am doing my best to document each flag, but am hoping for others *especially the ones with insider knowledge* to supply useful comments.
+
+I made this as easy as possible, all you have to do is add/edit the `.md` file with the name of the flag in [this
+folder](https://github.com/thlorenz/v8-flags/tree/master/scripts/comments) and run `npm run flag-doc` to
+update all documentation with the added details.
+
 ## API
 
 The different versions of v8 and thus Node.js have different flags and therefore the API fluctuates somewhat between the

@@ -11,13 +11,31 @@ using i::kPointerSize;
 using i::MB;
 using i::KB;
 
+// The below are just to avoid warning when checking for null for primitive types
+// via the Get_##nam macros. Overloaded functions are a quick and dirty way to run differnent code per type.
+bool is_null(bool val) {
+  return false;
+}
+
+bool is_null(int val) {
+  return false;
+}
+
+bool is_null(float val) {
+  return false;
+}
+
+bool is_null(const char* val) {
+  return val == NULL;
+}
+
 #undef DEFINE_float
 #undef DEFINE_args
 #undef FLAG
 #define DEFINE_bool(nam, def, cmt)   FLAG(nam, def, cmt, Boolean)
 #define DEFINE_int(nam, def, cmt)    FLAG(nam, def, cmt, Integer)
 #define DEFINE_float(nam, def, cmt)  FLAG(nam, def, cmt, Number)
-#define DEFINE_string(nam, def, cmt) FLAG(nam, def, cmt, String)
+#define DEFINE_string(nam, def, cmt) FLAG(nam, (const char*)def, cmt, String)
 #define DEFINE_implication(nam, implication)
 #define DEFINE_neg_implication(nam, implication)
 #define DEFINE_maybe_bool(name, def)
@@ -26,41 +44,46 @@ using i::KB;
 #define FLAG_READONLY(nam, def, cmt, type) CREATE_function(nam, def, cmt, type, true)
 
 #define S(x) #x
-#define CREATE_function(nam, def, cmt, type, conf)                    \
-NAN_METHOD(nam) {                                                     \
-  NanScope();                                                         \
-  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());      \
-                                                                      \
-  v8::Local<v8::Value> argv[] = {                                     \
-      NanNew<v8::String>(S(nam))                                      \
-    , NanNew<v8::type>(def)                                           \
-    , NanNew<v8::String>(cmt)                                         \
-    , NanNew<v8::String>(S(type))                                     \
-    , NanNew<v8::Boolean>(conf)                                       \
-  };                                                                  \
-                                                                      \
-  cb->Call(5, argv);                                                  \
-  NanReturnUndefined();                                               \
-}                                                                     \
-                                                                      \
-NAN_METHOD(implications_##nam) {                                      \
-  NanScope();                                                         \
-  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());      \
-  v8::Local<v8::Value> argv[MAX_IMPLICATIONS];                        \
-  int len;                                                            \
-  get_implications(S(nam), argv, &len);                               \
-  cb->Call(len, argv);                                                \
-  NanReturnUndefined();                                               \
-}                                                                     \
-                                                                      \
-NAN_METHOD(neg_implications_##nam) {                                  \
-  NanScope();                                                         \
-  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());      \
-  v8::Local<v8::Value> argv[MAX_IMPLICATIONS];                        \
-  int len;                                                            \
-  get_neg_implications(S(nam), argv, &len);                           \
-  cb->Call(len, argv);                                                \
-  NanReturnUndefined();                                               \
+#define CREATE_function(nam, def, cmt, type, conf)                      \
+NAN_METHOD(nam) {                                                       \
+  NanScope();                                                           \
+  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());        \
+  v8::Local<v8::Value> def_val;                                         \
+  if (is_null(def))                                                     \
+    def_val = NanUndefined();                                           \
+  else                                                                  \
+    def_val =  NanNew<v8::type>(def);                                   \
+                                                                        \
+  v8::Local<v8::Value> argv[] = {                                       \
+      NanNew<v8::String>(S(nam))                                        \
+    , def_val                                                           \
+    , NanNew<v8::String>(cmt)                                           \
+    , NanNew<v8::String>(S(type))                                       \
+    , NanNew<v8::Boolean>(conf)                                         \
+  };                                                                    \
+                                                                        \
+  cb->Call(5, argv);                                                    \
+  NanReturnUndefined();                                                 \
+}                                                                       \
+                                                                        \
+NAN_METHOD(implications_##nam) {                                        \
+  NanScope();                                                           \
+  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());        \
+  v8::Local<v8::Value> argv[MAX_IMPLICATIONS];                          \
+  int len;                                                              \
+  get_implications(S(nam), argv, &len);                                 \
+  cb->Call(len, argv);                                                  \
+  NanReturnUndefined();                                                 \
+}                                                                       \
+                                                                        \
+NAN_METHOD(neg_implications_##nam) {                                    \
+  NanScope();                                                           \
+  NanCallback *cb = new NanCallback(args[0].As<v8::Function>());        \
+  v8::Local<v8::Value> argv[MAX_IMPLICATIONS];                          \
+  int len;                                                              \
+  get_neg_implications(S(nam), argv, &len);                             \
+  cb->Call(len, argv);                                                  \
+  NanReturnUndefined();                                                 \
 }
 
 #include "v8_flag_definitions.h"

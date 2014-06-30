@@ -24,10 +24,29 @@ char* convert(v8::Handle<v8::String> arg) {
   return NanCString(arg, &len);
 }
 
+// The below are just to avoid warning when checking for null for primitive types
+// via the Get_##nam macros. Overloaded functions are a quick and dirty way to run differnent code per type.
+bool is_null(bool val) {
+  return false;
+}
+
+bool is_null(int val) {
+  return false;
+}
+
+bool is_null(float val) {
+  return false;
+}
+
+bool is_null(const char* val) {
+  return val == NULL;
+}
+
 /* v8 flag-definitions.h not properly cleaning this one up */
 #undef DEFINE_float
 #undef DEFINE_args
 #undef FLAG
+
 #define DEFINE_bool(nam, def, cmt)   FLAG(Boolean, nam)
 #define DEFINE_int(nam, def, cmt)    FLAG(Integer, nam)
 #define DEFINE_float(nam, def, cmt)  FLAG(Number, nam)
@@ -36,23 +55,31 @@ char* convert(v8::Handle<v8::String> arg) {
 #define DEFINE_neg_implication(x, y)
 #define DEFINE_maybe_bool(name, def)
 
-#define FLAG_FULL(type, nam)                           \
-  NAN_METHOD(Get_##nam) {                              \
-    NanScope();                                        \
-    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));   \
-  }                                                    \
-                                                       \
-  NAN_METHOD(Set_##nam) {                              \
-    NanScope();                                        \
-    v8::Handle<v8::type> flag =  args[0]->To##type();  \
-    i::FLAG_##nam = convert(flag);                     \
-    NanReturnUndefined();                              \
+#define FLAG_FULL(type, nam)                                \
+  NAN_METHOD(Get_##nam) {                                   \
+    NanScope();                                             \
+    if (is_null(i::FLAG_##nam)) {                           \
+      NanReturnUndefined();                                 \
+    } else {                                                \
+      NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));      \
+    }                                                       \
+  }                                                         \
+                                                            \
+  NAN_METHOD(Set_##nam) {                                   \
+    NanScope();                                             \
+    v8::Handle<v8::type> flag =  args[0]->To##type();       \
+    i::FLAG_##nam = convert(flag);                          \
+    NanReturnUndefined();                                   \
   }
 
 #define FLAG_READONLY(type, nam)                       \
   NAN_METHOD(Get_##nam) {                              \
     NanScope();                                        \
-    NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));   \
+    if (is_null(i::FLAG_##nam)) {                      \
+      NanReturnUndefined();                            \
+    } else {                                           \
+      NanReturnValue(NanNew<v8::type>(i::FLAG_##nam)); \
+    }                                                  \
   }
 
 #include "v8_flag_definitions.h"

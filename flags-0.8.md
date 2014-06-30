@@ -84,6 +84,8 @@
 - [enable_vfp2 `true` *{Boolean}*](#enable_vfp2-true-boolean)
 - [enable_armv7 `true` *{Boolean}*](#enable_armv7-true-boolean)
 - [enable_fpu `true` *{Boolean}*](#enable_fpu-true-boolean)
+- [expose_natives_as `undefined` *{String}*](#expose_natives_as-undefined-string)
+- [expose_debug_as `undefined` *{String}*](#expose_debug_as-undefined-string)
 - [expose_gc `false` *{Boolean}*](#expose_gc-false-boolean)
 - [expose_externalize_string `false` *{Boolean}*](#expose_externalize_string-false-boolean)
 - [stack_trace_limit `10` *{Integer}*](#stack_trace_limit-10-integer)
@@ -940,6 +942,24 @@ enable use of MIPS FPU instructions if available (MIPS only)
 
 - **default:** `true`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### expose_natives_as `undefined` *{String}*
+
+expose natives in global object
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
+### expose_debug_as `undefined` *{String}*
+
+expose debug in global object
+
+- **default:** `undefined`
+- **type:** `String`
 - **readonly:** `false`
 
 

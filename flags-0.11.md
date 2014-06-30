@@ -63,6 +63,7 @@
 - [trace_hydrogen `false` *{Boolean}*](#trace_hydrogen-false-boolean)
 - [trace_hydrogen_filter `*` *{String}*](#trace_hydrogen_filter--string)
 - [trace_hydrogen_stubs `false` *{Boolean}*](#trace_hydrogen_stubs-false-boolean)
+- [trace_hydrogen_file `undefined` *{String}*](#trace_hydrogen_file-undefined-string)
 - [trace_phase `HLZ` *{String}*](#trace_phase-hlz-string)
 - [trace_inlining `false` *{Boolean}*](#trace_inlining-false-boolean)
 - [trace_load_elimination `false` *{Boolean}*](#trace_load_elimination-false-boolean)
@@ -145,8 +146,12 @@
 - [enable_32dregs `true` *{Boolean}*](#enable_32dregs-true-boolean)
 - [enable_vldr_imm `false` *{Boolean}*](#enable_vldr_imm-false-boolean)
 - [force_long_branches `false` *{Boolean}*](#force_long_branches-false-boolean)
+- [expose_natives_as `undefined` *{String}*](#expose_natives_as-undefined-string)
+- [expose_debug_as `undefined` *{String}*](#expose_debug_as-undefined-string)
 - [expose_free_buffer `false` *{Boolean}*](#expose_free_buffer-false-boolean)
 - [expose_gc `false` *{Boolean}*](#expose_gc-false-boolean)
+- [expose_gc_as `undefined` *{String}*](#expose_gc_as-undefined-string)
+  - [Implications](#implications-8)
 - [expose_externalize_string `false` *{Boolean}*](#expose_externalize_string-false-boolean)
 - [expose_trigger_failure `false` *{Boolean}*](#expose_trigger_failure-false-boolean)
 - [stack_trace_limit `10` *{Integer}*](#stack_trace_limit-10-integer)
@@ -178,7 +183,7 @@
 - [trace_js_array_abuse `false` *{Boolean}*](#trace_js_array_abuse-false-boolean)
 - [trace_external_array_abuse `false` *{Boolean}*](#trace_external_array_abuse-false-boolean)
 - [trace_array_abuse `false` *{Boolean}*](#trace_array_abuse-false-boolean)
-  - [Implications](#implications-8)
+  - [Implications](#implications-9)
 - [debugger_auto_break `true` *{Boolean}*](#debugger_auto_break-true-boolean)
 - [enable_liveedit `true` *{Boolean}*](#enable_liveedit-true-boolean)
 - [hard_abort `true` *{Boolean}*](#hard_abort-true-boolean)
@@ -249,6 +254,7 @@
 - [regexp_optimization `true` *{Boolean}*](#regexp_optimization-true-boolean)
 - [testing_string_flag `Hello, world!` *{String}*](#testing_string_flag-hello-world!-string)
 - [testing_serialization_file `/tmp/serdes` *{String}*](#testing_serialization_file-tmpserdes-string)
+- [extra_code `undefined` *{String}*](#extra_code-undefined-string)
 - [profile_hydrogen_code_stub_compilation `false` *{Boolean}*](#profile_hydrogen_code_stub_compilation-false-boolean)
 - [predictable `false` *{Boolean}*](#predictable-false-boolean)
   - [Negative implications](#negative-implications)
@@ -311,13 +317,14 @@
 - [perf_jit_prof `false` *{Boolean}*](#perf_jit_prof-false-boolean)
 - [gc_fake_mmap `/tmp/__v8_gc__` *{String}*](#gc_fake_mmap-tmp__v8_gc__-string)
 - [log_internal_timer_events `false` *{Boolean}*](#log_internal_timer_events-false-boolean)
-  - [Implications](#implications-9)
-- [log_timer_events `false` *{Boolean}*](#log_timer_events-false-boolean)
   - [Implications](#implications-10)
+- [log_timer_events `false` *{Boolean}*](#log_timer_events-false-boolean)
+  - [Implications](#implications-11)
 - [log_instruction_stats `false` *{Boolean}*](#log_instruction_stats-false-boolean)
 - [log_instruction_file `arm64_inst.csv` *{String}*](#log_instruction_file-arm64_instcsv-string)
 - [log_instruction_period `4194304` *{Integer}*](#log_instruction_period-4194304-integer)
 - [redirect_code_traces `false` *{Boolean}*](#redirect_code_traces-false-boolean)
+- [redirect_code_traces_to `undefined` *{String}*](#redirect_code_traces_to-undefined-string)
 - [hydrogen_track_positions `false` *{Boolean}*](#hydrogen_track_positions-false-boolean)
 - [trace_elements_transitions `false` *{Boolean}*](#trace_elements_transitions-false-boolean)
 - [trace_creation_allocation_sites `false` *{Boolean}*](#trace_creation_allocation_sites-false-boolean)
@@ -855,6 +862,15 @@ trace generated hydrogen for stubs
 
 - **default:** `false`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### trace_hydrogen_file `undefined` *{String}*
+
+trace hydrogen to given file name
+
+- **default:** `undefined`
+- **type:** `String`
 - **readonly:** `false`
 
 
@@ -1574,6 +1590,24 @@ force all emitted branches to be in long mode (MIPS only)
 - **readonly:** `false`
 
 
+### expose_natives_as `undefined` *{String}*
+
+expose natives in global object
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
+### expose_debug_as `undefined` *{String}*
+
+expose debug in global object
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
 ### expose_free_buffer `false` *{Boolean}*
 
 expose freeBuffer extension
@@ -1593,6 +1627,22 @@ expose gc extension
 - **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
+
+
+### expose_gc_as `undefined` *{String}*
+
+expose gc extension under the specified name
+
+
+**NOTE:** This flag cannot be configured after the process started up!
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+#### Implications
+
+- expose_gc
 
 
 ### expose_externalize_string `false` *{Boolean}*
@@ -2505,6 +2555,15 @@ file in which to serialize heap
 - **readonly:** `false`
 
 
+### extra_code `undefined` *{String}*
+
+A filename with extra code to be included in the snapshot (mksnapshot only)
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
 ### profile_hydrogen_code_stub_compilation `false` *{Boolean}*
 
 Print the time it takes to lazily compile hydrogen code stubs.
@@ -3102,6 +3161,15 @@ output deopt information and disassembly into file code-<pid>-<isolate id>.asm
 
 - **default:** `false`
 - **type:** `Boolean`
+- **readonly:** `false`
+
+
+### redirect_code_traces_to `undefined` *{String}*
+
+output deopt information and disassembly into the given file
+
+- **default:** `undefined`
+- **type:** `String`
 - **readonly:** `false`
 
 

@@ -47,13 +47,6 @@ function removeDefine(lines, name) {
       break;
     }
   }
-  // remove implications as well (they are always one liners)
-  regexp = new RegExp('^ *DEFINE_(neg_)*implication\\(' + name + ',');
-  for (i = 0; i < lines.length; i++) {
-    if (regexp.test(lines[i])) {
-      lines.splice(i--, 1);
-    }
-  }
 }
 
 function removeDefineArgs(lines) {
@@ -81,27 +74,13 @@ function extractFlagDefinitions() {
   // so not easily fixed by just supplying an empty define, therefore clean that up here
   removeDefineArgs(lines);
 
-  // some flags cause segmentation faults when accessed so we exclude them from the API
-  // we don't have to worry about removing implications as they don't get added to the JS side API when no flag definition is found
-  [ 
-    // node 0.8+
-    'expose_natives_as'
-  , 'expose_debug_as'
-  , 'testing_bool_flag'
+  // remove test flags
+  [ 'testing_bool_flag'
   , 'testing_maybe_bool_flag'
   , 'testing_int_flag'
   , 'testing_float_flag'
-  , 'testing_string_flag'
+  , 'testing_string_flag' // not matched due to comma in string (not important)
   , 'testing_prng_seed'
-    // node 0.10
-  , 'extra_code'
-    // node 0.11
-  , 'trace_hydrogen_file' // ? on 0.10
-//  , 'expose_gc' // ? on 0.10
-  , 'expose_gc_as'
-  , 'extra_code'
-  , 'redirect_code'
-  , 'redirect_code_traces_to'
   ].forEach(removeDefine.bind(null, lines))
 
   var flagDefinitionsFile = path.join(__dirname, '..', 'src', 'v8_flag_definitions.h');

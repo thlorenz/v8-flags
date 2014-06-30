@@ -97,6 +97,8 @@
 - [enable_movw_movt `false` *{Boolean}*](#enable_movw_movt-false-boolean)
 - [enable_unaligned_accesses `true` *{Boolean}*](#enable_unaligned_accesses-true-boolean)
 - [enable_fpu `true` *{Boolean}*](#enable_fpu-true-boolean)
+- [expose_natives_as `undefined` *{String}*](#expose_natives_as-undefined-string)
+- [expose_debug_as `undefined` *{String}*](#expose_debug_as-undefined-string)
 - [expose_gc `false` *{Boolean}*](#expose_gc-false-boolean)
 - [expose_externalize_string `false` *{Boolean}*](#expose_externalize_string-false-boolean)
 - [stack_trace_limit `10` *{Integer}*](#stack_trace_limit-10-integer)
@@ -171,6 +173,7 @@
 - [regexp_optimization `true` *{Boolean}*](#regexp_optimization-true-boolean)
 - [testing_string_flag `Hello, world!` *{String}*](#testing_string_flag-hello-world!-string)
 - [testing_serialization_file `/tmp/serdes` *{String}*](#testing_serialization_file-tmpserdes-string)
+- [extra_code `undefined` *{String}*](#extra_code-undefined-string)
 - [help `false` *{Boolean}*](#help-false-boolean)
 - [dump_counters `false` *{Boolean}*](#dump_counters-false-boolean)
 - [map_counters `` *{String}*](#map_counters--string)
@@ -1076,6 +1079,24 @@ enable use of MIPS FPU instructions if available (MIPS only)
 - **readonly:** `false`
 
 
+### expose_natives_as `undefined` *{String}*
+
+expose natives in global object
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
+### expose_debug_as `undefined` *{String}*
+
+expose debug in global object
+
+- **default:** `undefined`
+- **type:** `String`
+- **readonly:** `false`
+
+
 ### expose_gc `false` *{Boolean}*
 
 expose gc extension
@@ -1740,6 +1761,15 @@ string-flag
 file in which to serialize heap
 
 - **default:** `/tmp/serdes`
+- **type:** `String`
+- **readonly:** `false`
+
+
+### extra_code `undefined` *{String}*
+
+A filename with extra code to be included in the snapshot (mksnapshot only)
+
+- **default:** `undefined`
 - **type:** `String`
 - **readonly:** `false`
 

@@ -13,6 +13,8 @@ var notConfigurable = [
   , 'debugger_agent'
   , 'debugger_port'
   , 'expose_debug_as'
+  , 'harmony_proxies'
+  , 'harmony_collections'
 ]
 
 var flags = exports.flags = v8_flags;

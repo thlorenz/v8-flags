@@ -28,11 +28,13 @@ function exists(t, flag) {
   return true;
 }
 
-function throwsInitially(t, p, name, message) {
+function throwsInitially(t, p, name, message, debug) {
   try {
-    require( p)
+    var res = require( p)
+    if (debug) inspect(res);
     t.fail('requiring initially should have thrown')
   } catch (err) {
+    if (debug) return inspect(err);
     t.equal(err.name, name, 'throws ' + name)
     t.similar(err.message, new RegExp(message), message)
   }
@@ -42,6 +44,7 @@ function throwsInitially(t, p, name, message) {
 function unverified(flag, enabled) {
   test('\n' + flag + ' - NOT VERIFIED', function (t) {
     if (!exists(t, flag)) return t.end();
+    t.on('end', flags[flag].bind(flags, enabled))
     if (enabled) {
       t.ok(flags[flag](), 'enabled by default')
       t.doesNotThrow(flags[flag].bind(flags, false), 'can be disabled')
@@ -130,6 +133,8 @@ unverified('debug_compile_events', true)
 unverified('debug_sim', false)
 
 test('\nharmony_scoping', function (t) {
+  t.on('end', flags.harmony_scoping.bind(flags, false))
+
   var p = './fixtures/harmony_scoping'
   t.ok(!flags.harmony_scoping(), 'not enabled by default')
   throwsInitially(t, p, 'SyntaxError', 'Unexpected strict mode reserved word')
@@ -140,3 +145,19 @@ test('\nharmony_scoping', function (t) {
   t.ok(e.b_is_defined, 'script level scoped var is defined')
   t.end()
 })
+
+test('\nharmony_typeof', function (t) {
+  t.on('end', flags.harmony_typeof.bind(flags, false))
+
+  var p = './fixtures/harmony_typeof'
+  t.ok(!flags.harmony_typeof(), 'not enabled by default')
+  t.ok(require(p), 'works initially')
+  t.end()
+})
+
+// not configurable because part of the bootstrapping process
+unverified('harmony_proxies', false)
+unverified('harmony_collections', false)
+
+// imports don't work since node wraps file contents on require
+unverified('harmony_modules', false)

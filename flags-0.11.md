@@ -6,12 +6,16 @@
 - [es_staging `false` *{Boolean}*](#es_staging-false-boolean)
   - [Implications](#implications)
 - [harmony_typeof `false` *{Boolean}*](#harmony_typeof-false-boolean)
+  - [Resources](#resources)
 - [harmony_scoping `false` *{Boolean}*](#harmony_scoping-false-boolean)
 - [harmony_modules `false` *{Boolean}*](#harmony_modules-false-boolean)
   - [Implications](#implications-1)
+  - [References](#references)
 - [harmony_symbols `false` *{Boolean}*](#harmony_symbols-false-boolean)
 - [harmony_proxies `false` *{Boolean}*](#harmony_proxies-false-boolean)
+  - [Resources](#resources-1)
 - [harmony_collections `false` *{Boolean}*](#harmony_collections-false-boolean)
+  - [References](#references-1)
 - [harmony_generators `false` *{Boolean}*](#harmony_generators-false-boolean)
 - [harmony_iteration `false` *{Boolean}*](#harmony_iteration-false-boolean)
 - [harmony_numeric_literals `false` *{Boolean}*](#harmony_numeric_literals-false-boolean)
@@ -41,7 +45,7 @@
 - [unbox_double_arrays `true` *{Boolean}*](#unbox_double_arrays-true-boolean)
 - [string_slices `true` *{Boolean}*](#string_slices-true-boolean)
 - [crankshaft `true` *{Boolean}*](#crankshaft-true-boolean)
-  - [Resources](#resources)
+  - [Resources](#resources-2)
 - [hydrogen_filter `*` *{String}*](#hydrogen_filter--string)
 - [use_gvn `true` *{Boolean}*](#use_gvn-true-boolean)
 - [gvn_iterations `3` *{Integer}*](#gvn_iterations-3-integer)
@@ -95,10 +99,10 @@
 - [analyze_environment_liveness `true` *{Boolean}*](#analyze_environment_liveness-true-boolean)
 - [load_elimination `true` *{Boolean}*](#load_elimination-true-boolean)
 - [check_elimination `true` *{Boolean}*](#check_elimination-true-boolean)
-  - [Resources](#resources-1)
+  - [Resources](#resources-3)
 - [store_elimination `false` *{Boolean}*](#store_elimination-false-boolean)
 - [dead_code_elimination `true` *{Boolean}*](#dead_code_elimination-true-boolean)
-  - [Resources](#resources-2)
+  - [Resources](#resources-4)
 - [fold_constants `true` *{Boolean}*](#fold_constants-true-boolean)
 - [trace_dead_code_elimination `false` *{Boolean}*](#trace_dead_code_elimination-false-boolean)
 - [unreachable_code_elimination `true` *{Boolean}*](#unreachable_code_elimination-true-boolean)
@@ -131,7 +135,7 @@
   - [Implications](#implications-7)
 - [debug_code `false` *{Boolean}*](#debug_code-false-boolean)
 - [code_comments `false` *{Boolean}*](#code_comments-false-boolean)
-  - [Resources](#resources-3)
+  - [Resources](#resources-5)
 - [enable_sse2 `true` *{Boolean}*](#enable_sse2-true-boolean)
 - [enable_sse3 `true` *{Boolean}*](#enable_sse3-true-boolean)
 - [enable_sse4_1 `true` *{Boolean}*](#enable_sse4_1-true-boolean)
@@ -175,7 +179,7 @@
 - [always_full_compiler `false` *{Boolean}*](#always_full_compiler-false-boolean)
 - [max_opt_count `10` *{Integer}*](#max_opt_count-10-integer)
 - [compilation_cache `true` *{Boolean}*](#compilation_cache-true-boolean)
-  - [Resources](#resources-4)
+  - [Resources](#resources-6)
 - [cache_prototype_transitions `true` *{Boolean}*](#cache_prototype_transitions-true-boolean)
   - [Resources:](#resources-1)
 - [cpu_profiler_sampling_interval `1000` *{Integer}*](#cpu_profiler_sampling_interval-1000-integer)
@@ -216,7 +220,7 @@
 - [track_gc_object_stats `false` *{Boolean}*](#track_gc_object_stats-false-boolean)
 - [parallel_sweeping `true` *{Boolean}*](#parallel_sweeping-true-boolean)
 - [concurrent_sweeping `false` *{Boolean}*](#concurrent_sweeping-false-boolean)
-  - [Resources](#resources-5)
+  - [Resources](#resources-7)
 - [sweeper_threads `0` *{Integer}*](#sweeper_threads-0-integer)
 - [job_based_sweeping `false` *{Boolean}*](#job_based_sweeping-false-boolean)
 - [heap_profiler_trace_objects `false` *{Boolean}*](#heap_profiler_trace_objects-false-boolean)
@@ -237,7 +241,7 @@
 - [trace_parse `false` *{Boolean}*](#trace_parse-false-boolean)
 - [trace_sim `false` *{Boolean}*](#trace_sim-false-boolean)
 - [debug_sim `false` *{Boolean}*](#debug_sim-false-boolean)
-  - [Resources](#resources-6)
+  - [Resources](#resources-8)
 - [check_icache `false` *{Boolean}*](#check_icache-false-boolean)
 - [stop_sim_at `0` *{Integer}*](#stop_sim_at-0-integer)
 - [sim_stack_alignment `8` *{Integer}*](#sim_stack_alignment-8-integer)
@@ -262,7 +266,7 @@
 - [dump_counters `false` *{Boolean}*](#dump_counters-false-boolean)
 - [map_counters `` *{String}*](#map_counters--string)
 - [debug_compile_events `true` *{Boolean}*](#debug_compile_events-true-boolean)
-  - [Resources](#resources-7)
+  - [Resources](#resources-9)
 - [debug_script_collected_events `true` *{Boolean}*](#debug_script_collected_events-true-boolean)
 - [gdbjit `false` *{Boolean}*](#gdbjit-false-boolean)
 - [gdbjit_full `false` *{Boolean}*](#gdbjit_full-false-boolean)
@@ -283,7 +287,7 @@
 - [gc_verbose `false` *{Boolean}*](#gc_verbose-false-boolean)
 - [heap_stats `false` *{Boolean}*](#heap_stats-false-boolean)
 - [code_stats `false` *{Boolean}*](#code_stats-false-boolean)
-  - [Resources](#resources-8)
+  - [Resources](#resources-10)
 - [verify_native_context_separation `false` *{Boolean}*](#verify_native_context_separation-false-boolean)
 - [print_handles `false` *{Boolean}*](#print_handles-false-boolean)
 - [print_global_handles `false` *{Boolean}*](#print_global_handles-false-boolean)
@@ -371,6 +375,11 @@ enable harmony semantics for typeof
 - **type:** `Boolean`
 - **readonly:** `false`
 
+**Note:** this feature seems to work in v8 even without turning on this flag.
+
+#### Resources
+
+- *rejected?* [proposal](http://wiki.ecmascript.org/doku.php?id=harmony:typeof_null&s=typeof)
 
 ### harmony_scoping `false` *{Boolean}*
 
@@ -393,6 +402,10 @@ enable harmony modules (implies block scoping)
 
 - harmony_scoping
 
+#### References
+
+- [spec](http://wiki.ecmascript.org/doku.php?id=harmony:modules)
+- [v8 parser.cc](https://github.com/v8/v8/blob/3.25.30/src/parser.cc#L1147)
 
 ### harmony_symbols `false` *{Boolean}*
 
@@ -407,19 +420,33 @@ enable harmony symbols (a.k.a. private names)
 
 enable harmony proxies
 
+
+**NOTE:** This flag cannot be configured after the process started up!
+
 - **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
+#### Resources
+
+- [v8 bootstrapper.cc](https://github.com/v8/v8/blob/3.25.30/src/bootstrapper.cc#L1609-L1614)
+- [spec draft](http://wiki.ecmascript.org/doku.php?id=harmony:direct_proxies)
 
 ### harmony_collections `false` *{Boolean}*
 
 enable harmony collections (sets, maps)
 
+
+**NOTE:** This flag cannot be configured after the process started up!
+
 - **default:** `false`
 - **type:** `Boolean`
 - **readonly:** `false`
 
+#### References
+
+- [v8 bootstrapper.cc](https://github.com/v8/v8/blob/3.25.30/src/bootstrapper.cc#L1363-L1374)
+- [example](http://dailyjs.com/2012/10/15/preparing-for-esnext/#example_collections)
 
 ### harmony_generators `false` *{Boolean}*
 
@@ -1594,6 +1621,9 @@ force all emitted branches to be in long mode (MIPS only)
 
 expose natives in global object
 
+
+**NOTE:** This flag cannot be configured after the process started up!
+
 - **default:** `undefined`
 - **type:** `String`
 - **readonly:** `false`
@@ -1602,6 +1632,9 @@ expose natives in global object
 ### expose_debug_as `undefined` *{String}*
 
 expose debug in global object
+
+
+**NOTE:** This flag cannot be configured after the process started up!
 
 - **default:** `undefined`
 - **type:** `String`

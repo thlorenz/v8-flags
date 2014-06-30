@@ -44,6 +44,7 @@ var flags = exports.flags = v8_flags;
  * @name meta
  * @function
  * @return {Array.<Object>} array of objects with the folloing properties each
+ *
  *  - **name:** flag name
  *  - **default:** default setting of the flag
  *  - **type:** type of the flag

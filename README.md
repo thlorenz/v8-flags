@@ -33,9 +33,9 @@ The below API allows to access and configure these flags.
 
 - [enforceFlagImplications()](#enforceflagimplications)
 - [flags()](#flags)
-- [Example](#example)
-- [listFlags()  {Object}](#listflags-→-object)
-- [meta()  {Array.<Object>}](#meta-→-arrayobject)
+  - [Example](#example)
+- [listFlags() → {Object}](#listflags--object)
+- [meta() → {Array.<Object>}](#meta--arrayobject)
 - [printHelp()](#printhelp)
 - [resetAllFlags()](#resetallflags)
 
@@ -67,7 +67,7 @@ The below API allows to access and configure these flags.
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L116">lineno 116</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L117">lineno 117</a>
 </li>
 </ul></dd>
 </dl>
@@ -108,7 +108,7 @@ console.log(flags.use_strict()); // true</code></pre>
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L84">lineno 84</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L85">lineno 85</a>
 </li>
 </ul></dd>
 </dl>
@@ -145,15 +145,17 @@ Type
 </dl>
 <h5>Returns:</h5>
 <div class="param-desc">
-<p>array of objects with the folloing properties each
-- <strong>name:</strong> flag name
-- <strong>default:</strong> default setting of the flag
-- <strong>type:</strong> type of the flag
-- <strong>description:</strong> the description of the flag
-- <strong>readonly:</strong> set <code>true</code> if flag cannot be set
-- <strong>configurable:</strong> set <code>true</code> if setting the flag at runtime has the desired effect
-- <strong>implications:</strong> flags that will be set to <code>true</code> whenever this flag is <code>true</code> and <code>enforceFlagImplications</code> is called
-- <strong>negativeImplications:</strong> flags that will be set to <code>false</code> whenever this flag is <code>false</code> and <code>enforceFlagImplications</code> is called</p>
+<p>array of objects with the folloing properties each</p>
+<ul>
+<li><strong>name:</strong> flag name</li>
+<li><strong>default:</strong> default setting of the flag</li>
+<li><strong>type:</strong> type of the flag</li>
+<li><strong>description:</strong> the description of the flag</li>
+<li><strong>readonly:</strong> set <code>true</code> if flag cannot be set</li>
+<li><strong>configurable:</strong> set <code>true</code> if setting the flag at runtime has the desired effect</li>
+<li><strong>implications:</strong> flags that will be set to <code>true</code> whenever this flag is <code>true</code> and <code>enforceFlagImplications</code> is called</li>
+<li><strong>negativeImplications:</strong> flags that will be set to <code>false</code> whenever this flag is <code>false</code> and <code>enforceFlagImplications</code> is called</li>
+</ul>
 </div>
 <dl>
 <dt>
@@ -177,7 +179,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L99">lineno 99</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L100">lineno 100</a>
 </li>
 </ul></dd>
 </dl>
@@ -195,7 +197,7 @@ Type
 <li>
 <a href="https://github.com/thlorenz/v8-flags/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L107">lineno 107</a>
+<a href="https://github.com/thlorenz/v8-flags/blob/master/index.js#L108">lineno 108</a>
 </li>
 </ul></dd>
 </dl>

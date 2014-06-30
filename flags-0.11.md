@@ -2,339 +2,339 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [use_strict *{Boolean}*](#use_strict-boolean)
-- [es_staging *{Boolean}*](#es_staging-boolean)
+- [use_strict `false` *{Boolean}*](#use_strict-false-boolean)
+- [es_staging `false` *{Boolean}*](#es_staging-false-boolean)
   - [Implications](#implications)
-- [harmony_typeof *{Boolean}*](#harmony_typeof-boolean)
-- [harmony_scoping *{Boolean}*](#harmony_scoping-boolean)
-- [harmony_modules *{Boolean}*](#harmony_modules-boolean)
+- [harmony_typeof `false` *{Boolean}*](#harmony_typeof-false-boolean)
+- [harmony_scoping `false` *{Boolean}*](#harmony_scoping-false-boolean)
+- [harmony_modules `false` *{Boolean}*](#harmony_modules-false-boolean)
   - [Implications](#implications-1)
-- [harmony_symbols *{Boolean}*](#harmony_symbols-boolean)
-- [harmony_proxies *{Boolean}*](#harmony_proxies-boolean)
-- [harmony_collections *{Boolean}*](#harmony_collections-boolean)
-- [harmony_generators *{Boolean}*](#harmony_generators-boolean)
-- [harmony_iteration *{Boolean}*](#harmony_iteration-boolean)
-- [harmony_numeric_literals *{Boolean}*](#harmony_numeric_literals-boolean)
-- [harmony_strings *{Boolean}*](#harmony_strings-boolean)
-- [harmony_arrays *{Boolean}*](#harmony_arrays-boolean)
-- [harmony_maths *{Boolean}*](#harmony_maths-boolean)
-- [harmony *{Boolean}*](#harmony-boolean)
+- [harmony_symbols `false` *{Boolean}*](#harmony_symbols-false-boolean)
+- [harmony_proxies `false` *{Boolean}*](#harmony_proxies-false-boolean)
+- [harmony_collections `false` *{Boolean}*](#harmony_collections-false-boolean)
+- [harmony_generators `false` *{Boolean}*](#harmony_generators-false-boolean)
+- [harmony_iteration `false` *{Boolean}*](#harmony_iteration-false-boolean)
+- [harmony_numeric_literals `false` *{Boolean}*](#harmony_numeric_literals-false-boolean)
+- [harmony_strings `false` *{Boolean}*](#harmony_strings-false-boolean)
+- [harmony_arrays `false` *{Boolean}*](#harmony_arrays-false-boolean)
+- [harmony_maths `false` *{Boolean}*](#harmony_maths-false-boolean)
+- [harmony `false` *{Boolean}*](#harmony-false-boolean)
   - [Implications](#implications-2)
-- [packed_arrays *{Boolean}*](#packed_arrays-boolean)
-- [smi_only_arrays *{Boolean}*](#smi_only_arrays-boolean)
-- [compiled_keyed_dictionary_loads *{Boolean}*](#compiled_keyed_dictionary_loads-boolean)
-- [clever_optimizations *{Boolean}*](#clever_optimizations-boolean)
-- [pretenuring *{Boolean}*](#pretenuring-boolean)
-- [pretenuring_call_new *{Boolean}*](#pretenuring_call_new-boolean)
-- [allocation_site_pretenuring *{Boolean}*](#allocation_site_pretenuring-boolean)
-- [trace_pretenuring *{Boolean}*](#trace_pretenuring-boolean)
-- [trace_pretenuring_statistics *{Boolean}*](#trace_pretenuring_statistics-boolean)
-- [track_fields *{Boolean}*](#track_fields-boolean)
-- [track_double_fields *{Boolean}*](#track_double_fields-boolean)
+- [packed_arrays `true` *{Boolean}*](#packed_arrays-true-boolean)
+- [smi_only_arrays `true` *{Boolean}*](#smi_only_arrays-true-boolean)
+- [compiled_keyed_dictionary_loads `true` *{Boolean}*](#compiled_keyed_dictionary_loads-true-boolean)
+- [clever_optimizations `true` *{Boolean}*](#clever_optimizations-true-boolean)
+- [pretenuring `true` *{Boolean}*](#pretenuring-true-boolean)
+- [pretenuring_call_new `false` *{Boolean}*](#pretenuring_call_new-false-boolean)
+- [allocation_site_pretenuring `true` *{Boolean}*](#allocation_site_pretenuring-true-boolean)
+- [trace_pretenuring `false` *{Boolean}*](#trace_pretenuring-false-boolean)
+- [trace_pretenuring_statistics `false` *{Boolean}*](#trace_pretenuring_statistics-false-boolean)
+- [track_fields `true` *{Boolean}*](#track_fields-true-boolean)
+- [track_double_fields `true` *{Boolean}*](#track_double_fields-true-boolean)
   - [Implications](#implications-3)
-- [track_heap_object_fields *{Boolean}*](#track_heap_object_fields-boolean)
+- [track_heap_object_fields `true` *{Boolean}*](#track_heap_object_fields-true-boolean)
   - [Implications](#implications-4)
-- [track_computed_fields *{Boolean}*](#track_computed_fields-boolean)
+- [track_computed_fields `true` *{Boolean}*](#track_computed_fields-true-boolean)
   - [Implications](#implications-5)
-- [smi_binop *{Boolean}*](#smi_binop-boolean)
-- [optimize_for_size *{Boolean}*](#optimize_for_size-boolean)
-- [unbox_double_arrays *{Boolean}*](#unbox_double_arrays-boolean)
-- [string_slices *{Boolean}*](#string_slices-boolean)
-- [crankshaft *{Boolean}*](#crankshaft-boolean)
+- [smi_binop `true` *{Boolean}*](#smi_binop-true-boolean)
+- [optimize_for_size `false` *{Boolean}*](#optimize_for_size-false-boolean)
+- [unbox_double_arrays `true` *{Boolean}*](#unbox_double_arrays-true-boolean)
+- [string_slices `true` *{Boolean}*](#string_slices-true-boolean)
+- [crankshaft `true` *{Boolean}*](#crankshaft-true-boolean)
   - [Resources](#resources)
-- [hydrogen_filter *{String}*](#hydrogen_filter-string)
-- [use_gvn *{Boolean}*](#use_gvn-boolean)
-- [gvn_iterations *{Integer}*](#gvn_iterations-integer)
-- [use_canonicalizing *{Boolean}*](#use_canonicalizing-boolean)
-- [use_inlining *{Boolean}*](#use_inlining-boolean)
-- [use_escape_analysis *{Boolean}*](#use_escape_analysis-boolean)
-- [use_allocation_folding *{Boolean}*](#use_allocation_folding-boolean)
-- [use_local_allocation_folding *{Boolean}*](#use_local_allocation_folding-boolean)
-- [use_write_barrier_elimination *{Boolean}*](#use_write_barrier_elimination-boolean)
-- [max_inlining_levels *{Integer}*](#max_inlining_levels-integer)
-- [max_inlined_source_size *{Integer}*](#max_inlined_source_size-integer)
-- [max_inlined_nodes *{Integer}*](#max_inlined_nodes-integer)
-- [max_inlined_nodes_cumulative *{Integer}*](#max_inlined_nodes_cumulative-integer)
-- [loop_invariant_code_motion *{Boolean}*](#loop_invariant_code_motion-boolean)
-- [fast_math *{Boolean}*](#fast_math-boolean)
-- [collect_megamorphic_maps_from_stub_cache *{Boolean}*](#collect_megamorphic_maps_from_stub_cache-boolean)
-- [hydrogen_stats *{Boolean}*](#hydrogen_stats-boolean)
-- [trace_check_elimination *{Boolean}*](#trace_check_elimination-boolean)
-- [trace_hydrogen *{Boolean}*](#trace_hydrogen-boolean)
-- [trace_hydrogen_filter *{String}*](#trace_hydrogen_filter-string)
-- [trace_hydrogen_stubs *{Boolean}*](#trace_hydrogen_stubs-boolean)
-- [trace_phase *{String}*](#trace_phase-string)
-- [trace_inlining *{Boolean}*](#trace_inlining-boolean)
-- [trace_load_elimination *{Boolean}*](#trace_load_elimination-boolean)
-- [trace_store_elimination *{Boolean}*](#trace_store_elimination-boolean)
-- [trace_alloc *{Boolean}*](#trace_alloc-boolean)
-- [trace_all_uses *{Boolean}*](#trace_all_uses-boolean)
-- [trace_range *{Boolean}*](#trace_range-boolean)
-- [trace_gvn *{Boolean}*](#trace_gvn-boolean)
-- [trace_representation *{Boolean}*](#trace_representation-boolean)
-- [trace_escape_analysis *{Boolean}*](#trace_escape_analysis-boolean)
-- [trace_allocation_folding *{Boolean}*](#trace_allocation_folding-boolean)
-- [trace_track_allocation_sites *{Boolean}*](#trace_track_allocation_sites-boolean)
-- [trace_migration *{Boolean}*](#trace_migration-boolean)
-- [trace_generalization *{Boolean}*](#trace_generalization-boolean)
-- [stress_pointer_maps *{Boolean}*](#stress_pointer_maps-boolean)
-- [stress_environments *{Boolean}*](#stress_environments-boolean)
-- [deopt_every_n_times *{Integer}*](#deopt_every_n_times-integer)
-- [deopt_every_n_garbage_collections *{Integer}*](#deopt_every_n_garbage_collections-integer)
-- [print_deopt_stress *{Boolean}*](#print_deopt_stress-boolean)
-- [trap_on_deopt *{Boolean}*](#trap_on_deopt-boolean)
-- [trap_on_stub_deopt *{Boolean}*](#trap_on_stub_deopt-boolean)
-- [deoptimize_uncommon_cases *{Boolean}*](#deoptimize_uncommon_cases-boolean)
-- [polymorphic_inlining *{Boolean}*](#polymorphic_inlining-boolean)
-- [use_osr *{Boolean}*](#use_osr-boolean)
-- [array_bounds_checks_elimination *{Boolean}*](#array_bounds_checks_elimination-boolean)
-- [trace_bce *{Boolean}*](#trace_bce-boolean)
-- [array_bounds_checks_hoisting *{Boolean}*](#array_bounds_checks_hoisting-boolean)
-- [array_index_dehoisting *{Boolean}*](#array_index_dehoisting-boolean)
-- [analyze_environment_liveness *{Boolean}*](#analyze_environment_liveness-boolean)
-- [load_elimination *{Boolean}*](#load_elimination-boolean)
-- [check_elimination *{Boolean}*](#check_elimination-boolean)
+- [hydrogen_filter `*` *{String}*](#hydrogen_filter--string)
+- [use_gvn `true` *{Boolean}*](#use_gvn-true-boolean)
+- [gvn_iterations `3` *{Integer}*](#gvn_iterations-3-integer)
+- [use_canonicalizing `true` *{Boolean}*](#use_canonicalizing-true-boolean)
+- [use_inlining `true` *{Boolean}*](#use_inlining-true-boolean)
+- [use_escape_analysis `true` *{Boolean}*](#use_escape_analysis-true-boolean)
+- [use_allocation_folding `true` *{Boolean}*](#use_allocation_folding-true-boolean)
+- [use_local_allocation_folding `false` *{Boolean}*](#use_local_allocation_folding-false-boolean)
+- [use_write_barrier_elimination `true` *{Boolean}*](#use_write_barrier_elimination-true-boolean)
+- [max_inlining_levels `5` *{Integer}*](#max_inlining_levels-5-integer)
+- [max_inlined_source_size `600` *{Integer}*](#max_inlined_source_size-600-integer)
+- [max_inlined_nodes `196` *{Integer}*](#max_inlined_nodes-196-integer)
+- [max_inlined_nodes_cumulative `400` *{Integer}*](#max_inlined_nodes_cumulative-400-integer)
+- [loop_invariant_code_motion `true` *{Boolean}*](#loop_invariant_code_motion-true-boolean)
+- [fast_math `true` *{Boolean}*](#fast_math-true-boolean)
+- [collect_megamorphic_maps_from_stub_cache `true` *{Boolean}*](#collect_megamorphic_maps_from_stub_cache-true-boolean)
+- [hydrogen_stats `false` *{Boolean}*](#hydrogen_stats-false-boolean)
+- [trace_check_elimination `false` *{Boolean}*](#trace_check_elimination-false-boolean)
+- [trace_hydrogen `false` *{Boolean}*](#trace_hydrogen-false-boolean)
+- [trace_hydrogen_filter `*` *{String}*](#trace_hydrogen_filter--string)
+- [trace_hydrogen_stubs `false` *{Boolean}*](#trace_hydrogen_stubs-false-boolean)
+- [trace_phase `HLZ` *{String}*](#trace_phase-hlz-string)
+- [trace_inlining `false` *{Boolean}*](#trace_inlining-false-boolean)
+- [trace_load_elimination `false` *{Boolean}*](#trace_load_elimination-false-boolean)
+- [trace_store_elimination `false` *{Boolean}*](#trace_store_elimination-false-boolean)
+- [trace_alloc `false` *{Boolean}*](#trace_alloc-false-boolean)
+- [trace_all_uses `false` *{Boolean}*](#trace_all_uses-false-boolean)
+- [trace_range `false` *{Boolean}*](#trace_range-false-boolean)
+- [trace_gvn `false` *{Boolean}*](#trace_gvn-false-boolean)
+- [trace_representation `false` *{Boolean}*](#trace_representation-false-boolean)
+- [trace_escape_analysis `false` *{Boolean}*](#trace_escape_analysis-false-boolean)
+- [trace_allocation_folding `false` *{Boolean}*](#trace_allocation_folding-false-boolean)
+- [trace_track_allocation_sites `false` *{Boolean}*](#trace_track_allocation_sites-false-boolean)
+- [trace_migration `false` *{Boolean}*](#trace_migration-false-boolean)
+- [trace_generalization `false` *{Boolean}*](#trace_generalization-false-boolean)
+- [stress_pointer_maps `false` *{Boolean}*](#stress_pointer_maps-false-boolean)
+- [stress_environments `false` *{Boolean}*](#stress_environments-false-boolean)
+- [deopt_every_n_times `0` *{Integer}*](#deopt_every_n_times-0-integer)
+- [deopt_every_n_garbage_collections `0` *{Integer}*](#deopt_every_n_garbage_collections-0-integer)
+- [print_deopt_stress `false` *{Boolean}*](#print_deopt_stress-false-boolean)
+- [trap_on_deopt `false` *{Boolean}*](#trap_on_deopt-false-boolean)
+- [trap_on_stub_deopt `false` *{Boolean}*](#trap_on_stub_deopt-false-boolean)
+- [deoptimize_uncommon_cases `true` *{Boolean}*](#deoptimize_uncommon_cases-true-boolean)
+- [polymorphic_inlining `true` *{Boolean}*](#polymorphic_inlining-true-boolean)
+- [use_osr `true` *{Boolean}*](#use_osr-true-boolean)
+- [array_bounds_checks_elimination `true` *{Boolean}*](#array_bounds_checks_elimination-true-boolean)
+- [trace_bce `false` *{Boolean}*](#trace_bce-false-boolean)
+- [array_bounds_checks_hoisting `false` *{Boolean}*](#array_bounds_checks_hoisting-false-boolean)
+- [array_index_dehoisting `true` *{Boolean}*](#array_index_dehoisting-true-boolean)
+- [analyze_environment_liveness `true` *{Boolean}*](#analyze_environment_liveness-true-boolean)
+- [load_elimination `true` *{Boolean}*](#load_elimination-true-boolean)
+- [check_elimination `true` *{Boolean}*](#check_elimination-true-boolean)
   - [Resources](#resources-1)
-- [store_elimination *{Boolean}*](#store_elimination-boolean)
-- [dead_code_elimination *{Boolean}*](#dead_code_elimination-boolean)
+- [store_elimination `false` *{Boolean}*](#store_elimination-false-boolean)
+- [dead_code_elimination `true` *{Boolean}*](#dead_code_elimination-true-boolean)
   - [Resources](#resources-2)
-- [fold_constants *{Boolean}*](#fold_constants-boolean)
-- [trace_dead_code_elimination *{Boolean}*](#trace_dead_code_elimination-boolean)
-- [unreachable_code_elimination *{Boolean}*](#unreachable_code_elimination-boolean)
-- [trace_osr *{Boolean}*](#trace_osr-boolean)
-- [stress_runs *{Integer}*](#stress_runs-integer)
-- [optimize_closures *{Boolean}*](#optimize_closures-boolean)
-- [lookup_sample_by_shared *{Boolean}*](#lookup_sample_by_shared-boolean)
-- [cache_optimized_code *{Boolean}*](#cache_optimized_code-boolean)
-- [flush_optimized_code_cache *{Boolean}*](#flush_optimized_code_cache-boolean)
-- [inline_construct *{Boolean}*](#inline_construct-boolean)
-- [inline_arguments *{Boolean}*](#inline_arguments-boolean)
-- [inline_accessors *{Boolean}*](#inline_accessors-boolean)
-- [escape_analysis_iterations *{Integer}*](#escape_analysis_iterations-integer)
-- [optimize_for_in *{Boolean}*](#optimize_for_in-boolean)
-- [opt_safe_uint32_operations *{Boolean}*](#opt_safe_uint32_operations-boolean)
-- [concurrent_recompilation *{Boolean}*](#concurrent_recompilation-boolean)
-- [trace_concurrent_recompilation *{Boolean}*](#trace_concurrent_recompilation-boolean)
-- [concurrent_recompilation_queue_length *{Integer}*](#concurrent_recompilation_queue_length-integer)
-- [concurrent_recompilation_delay *{Integer}*](#concurrent_recompilation_delay-integer)
-- [block_concurrent_recompilation *{Boolean}*](#block_concurrent_recompilation-boolean)
-- [concurrent_osr *{Boolean}*](#concurrent_osr-boolean)
+- [fold_constants `true` *{Boolean}*](#fold_constants-true-boolean)
+- [trace_dead_code_elimination `false` *{Boolean}*](#trace_dead_code_elimination-false-boolean)
+- [unreachable_code_elimination `true` *{Boolean}*](#unreachable_code_elimination-true-boolean)
+- [trace_osr `false` *{Boolean}*](#trace_osr-false-boolean)
+- [stress_runs `0` *{Integer}*](#stress_runs-0-integer)
+- [optimize_closures `true` *{Boolean}*](#optimize_closures-true-boolean)
+- [lookup_sample_by_shared `true` *{Boolean}*](#lookup_sample_by_shared-true-boolean)
+- [cache_optimized_code `true` *{Boolean}*](#cache_optimized_code-true-boolean)
+- [flush_optimized_code_cache `true` *{Boolean}*](#flush_optimized_code_cache-true-boolean)
+- [inline_construct `true` *{Boolean}*](#inline_construct-true-boolean)
+- [inline_arguments `true` *{Boolean}*](#inline_arguments-true-boolean)
+- [inline_accessors `true` *{Boolean}*](#inline_accessors-true-boolean)
+- [escape_analysis_iterations `2` *{Integer}*](#escape_analysis_iterations-2-integer)
+- [optimize_for_in `true` *{Boolean}*](#optimize_for_in-true-boolean)
+- [opt_safe_uint32_operations `true` *{Boolean}*](#opt_safe_uint32_operations-true-boolean)
+- [concurrent_recompilation `true` *{Boolean}*](#concurrent_recompilation-true-boolean)
+- [trace_concurrent_recompilation `false` *{Boolean}*](#trace_concurrent_recompilation-false-boolean)
+- [concurrent_recompilation_queue_length `8` *{Integer}*](#concurrent_recompilation_queue_length-8-integer)
+- [concurrent_recompilation_delay `0` *{Integer}*](#concurrent_recompilation_delay-0-integer)
+- [block_concurrent_recompilation `false` *{Boolean}*](#block_concurrent_recompilation-false-boolean)
+- [concurrent_osr `false` *{Boolean}*](#concurrent_osr-false-boolean)
   - [Implications](#implications-6)
-- [omit_map_checks_for_leaf_maps *{Boolean}*](#omit_map_checks_for_leaf_maps-boolean)
-- [typed_array_max_size_in_heap *{Integer}*](#typed_array_max_size_in_heap-integer)
-- [frame_count *{Integer}*](#frame_count-integer)
-- [interrupt_budget *{Integer}*](#interrupt_budget-integer)
-- [type_info_threshold *{Integer}*](#type_info_threshold-integer)
-- [self_opt_count *{Integer}*](#self_opt_count-integer)
-- [trace_opt_verbose *{Boolean}*](#trace_opt_verbose-boolean)
+- [omit_map_checks_for_leaf_maps `true` *{Boolean}*](#omit_map_checks_for_leaf_maps-true-boolean)
+- [typed_array_max_size_in_heap `64` *{Integer}*](#typed_array_max_size_in_heap-64-integer)
+- [frame_count `1` *{Integer}*](#frame_count-1-integer)
+- [interrupt_budget `6144` *{Integer}*](#interrupt_budget-6144-integer)
+- [type_info_threshold `25` *{Integer}*](#type_info_threshold-25-integer)
+- [self_opt_count `130` *{Integer}*](#self_opt_count-130-integer)
+- [trace_opt_verbose `false` *{Boolean}*](#trace_opt_verbose-false-boolean)
   - [Implications](#implications-7)
-- [debug_code *{Boolean}*](#debug_code-boolean)
-- [code_comments *{Boolean}*](#code_comments-boolean)
+- [debug_code `false` *{Boolean}*](#debug_code-false-boolean)
+- [code_comments `false` *{Boolean}*](#code_comments-false-boolean)
   - [Resources](#resources-3)
-- [enable_sse2 *{Boolean}*](#enable_sse2-boolean)
-- [enable_sse3 *{Boolean}*](#enable_sse3-boolean)
-- [enable_sse4_1 *{Boolean}*](#enable_sse4_1-boolean)
-- [enable_cmov *{Boolean}*](#enable_cmov-boolean)
-- [enable_sahf *{Boolean}*](#enable_sahf-boolean)
-- [enable_vfp3 *{Boolean}*](#enable_vfp3-boolean)
-- [enable_armv7 *{Boolean}*](#enable_armv7-boolean)
-- [enable_neon *{Boolean}*](#enable_neon-boolean)
-- [enable_sudiv *{Boolean}*](#enable_sudiv-boolean)
-- [enable_movw_movt *{Boolean}*](#enable_movw_movt-boolean)
-- [enable_unaligned_accesses *{Boolean}*](#enable_unaligned_accesses-boolean)
-- [enable_32dregs *{Boolean}*](#enable_32dregs-boolean)
-- [enable_vldr_imm *{Boolean}*](#enable_vldr_imm-boolean)
-- [force_long_branches *{Boolean}*](#force_long_branches-boolean)
-- [expose_free_buffer *{Boolean}*](#expose_free_buffer-boolean)
-- [expose_gc *{Boolean}*](#expose_gc-boolean)
-- [expose_externalize_string *{Boolean}*](#expose_externalize_string-boolean)
-- [expose_trigger_failure *{Boolean}*](#expose_trigger_failure-boolean)
-- [stack_trace_limit *{Integer}*](#stack_trace_limit-integer)
-- [builtins_in_stack_traces *{Boolean}*](#builtins_in_stack_traces-boolean)
-- [disable_native_files *{Boolean}*](#disable_native_files-boolean)
-- [inline_new *{Boolean}*](#inline_new-boolean)
-- [trace_codegen *{Boolean}*](#trace_codegen-boolean)
-- [trace *{Boolean}*](#trace-boolean)
-- [mask_constants_with_cookie *{Boolean}*](#mask_constants_with_cookie-boolean)
-- [lazy *{Boolean}*](#lazy-boolean)
-- [trace_opt *{Boolean}*](#trace_opt-boolean)
-- [trace_opt_stats *{Boolean}*](#trace_opt_stats-boolean)
-- [opt *{Boolean}*](#opt-boolean)
-- [always_opt *{Boolean}*](#always_opt-boolean)
-- [always_osr *{Boolean}*](#always_osr-boolean)
+- [enable_sse2 `true` *{Boolean}*](#enable_sse2-true-boolean)
+- [enable_sse3 `true` *{Boolean}*](#enable_sse3-true-boolean)
+- [enable_sse4_1 `true` *{Boolean}*](#enable_sse4_1-true-boolean)
+- [enable_cmov `true` *{Boolean}*](#enable_cmov-true-boolean)
+- [enable_sahf `true` *{Boolean}*](#enable_sahf-true-boolean)
+- [enable_vfp3 `true` *{Boolean}*](#enable_vfp3-true-boolean)
+- [enable_armv7 `true` *{Boolean}*](#enable_armv7-true-boolean)
+- [enable_neon `true` *{Boolean}*](#enable_neon-true-boolean)
+- [enable_sudiv `true` *{Boolean}*](#enable_sudiv-true-boolean)
+- [enable_movw_movt `false` *{Boolean}*](#enable_movw_movt-false-boolean)
+- [enable_unaligned_accesses `true` *{Boolean}*](#enable_unaligned_accesses-true-boolean)
+- [enable_32dregs `true` *{Boolean}*](#enable_32dregs-true-boolean)
+- [enable_vldr_imm `false` *{Boolean}*](#enable_vldr_imm-false-boolean)
+- [force_long_branches `false` *{Boolean}*](#force_long_branches-false-boolean)
+- [expose_free_buffer `false` *{Boolean}*](#expose_free_buffer-false-boolean)
+- [expose_gc `false` *{Boolean}*](#expose_gc-false-boolean)
+- [expose_externalize_string `false` *{Boolean}*](#expose_externalize_string-false-boolean)
+- [expose_trigger_failure `false` *{Boolean}*](#expose_trigger_failure-false-boolean)
+- [stack_trace_limit `10` *{Integer}*](#stack_trace_limit-10-integer)
+- [builtins_in_stack_traces `false` *{Boolean}*](#builtins_in_stack_traces-false-boolean)
+- [disable_native_files `false` *{Boolean}*](#disable_native_files-false-boolean)
+- [inline_new `true` *{Boolean}*](#inline_new-true-boolean)
+- [trace_codegen `false` *{Boolean}*](#trace_codegen-false-boolean)
+- [trace `false` *{Boolean}*](#trace-false-boolean)
+- [mask_constants_with_cookie `true` *{Boolean}*](#mask_constants_with_cookie-true-boolean)
+- [lazy `true` *{Boolean}*](#lazy-true-boolean)
+- [trace_opt `false` *{Boolean}*](#trace_opt-false-boolean)
+- [trace_opt_stats `false` *{Boolean}*](#trace_opt_stats-false-boolean)
+- [opt `true` *{Boolean}*](#opt-true-boolean)
+- [always_opt `false` *{Boolean}*](#always_opt-false-boolean)
+- [always_osr `false` *{Boolean}*](#always_osr-false-boolean)
   - [Resources:](#resources)
-- [prepare_always_opt *{Boolean}*](#prepare_always_opt-boolean)
-- [trace_deopt *{Boolean}*](#trace_deopt-boolean)
-- [trace_stub_failures *{Boolean}*](#trace_stub_failures-boolean)
-- [min_preparse_length *{Integer}*](#min_preparse_length-integer)
-- [always_full_compiler *{Boolean}*](#always_full_compiler-boolean)
-- [max_opt_count *{Integer}*](#max_opt_count-integer)
-- [compilation_cache *{Boolean}*](#compilation_cache-boolean)
+- [prepare_always_opt `false` *{Boolean}*](#prepare_always_opt-false-boolean)
+- [trace_deopt `false` *{Boolean}*](#trace_deopt-false-boolean)
+- [trace_stub_failures `false` *{Boolean}*](#trace_stub_failures-false-boolean)
+- [min_preparse_length `1024` *{Integer}*](#min_preparse_length-1024-integer)
+- [always_full_compiler `false` *{Boolean}*](#always_full_compiler-false-boolean)
+- [max_opt_count `10` *{Integer}*](#max_opt_count-10-integer)
+- [compilation_cache `true` *{Boolean}*](#compilation_cache-true-boolean)
   - [Resources](#resources-4)
-- [cache_prototype_transitions *{Boolean}*](#cache_prototype_transitions-boolean)
+- [cache_prototype_transitions `true` *{Boolean}*](#cache_prototype_transitions-true-boolean)
   - [Resources:](#resources-1)
-- [cpu_profiler_sampling_interval *{Integer}*](#cpu_profiler_sampling_interval-integer)
-- [trace_debug_json *{Boolean}*](#trace_debug_json-boolean)
-- [trace_js_array_abuse *{Boolean}*](#trace_js_array_abuse-boolean)
-- [trace_external_array_abuse *{Boolean}*](#trace_external_array_abuse-boolean)
-- [trace_array_abuse *{Boolean}*](#trace_array_abuse-boolean)
+- [cpu_profiler_sampling_interval `1000` *{Integer}*](#cpu_profiler_sampling_interval-1000-integer)
+- [trace_debug_json `false` *{Boolean}*](#trace_debug_json-false-boolean)
+- [trace_js_array_abuse `false` *{Boolean}*](#trace_js_array_abuse-false-boolean)
+- [trace_external_array_abuse `false` *{Boolean}*](#trace_external_array_abuse-false-boolean)
+- [trace_array_abuse `false` *{Boolean}*](#trace_array_abuse-false-boolean)
   - [Implications](#implications-8)
-- [debugger_auto_break *{Boolean}*](#debugger_auto_break-boolean)
-- [enable_liveedit *{Boolean}*](#enable_liveedit-boolean)
-- [hard_abort *{Boolean}*](#hard_abort-boolean)
-- [stack_size *{Integer}*](#stack_size-integer)
-- [max_stack_trace_source_length *{Integer}*](#max_stack_trace_source_length-integer)
-- [always_inline_smi_code *{Boolean}*](#always_inline_smi_code-boolean)
-- [max_new_space_size *{Integer}*](#max_new_space_size-integer)
-- [max_old_space_size *{Integer}*](#max_old_space_size-integer)
-- [max_executable_size *{Integer}*](#max_executable_size-integer)
-- [gc_global *{Boolean}*](#gc_global-boolean)
-- [gc_interval *{Integer}*](#gc_interval-integer)
-- [trace_gc *{Boolean}*](#trace_gc-boolean)
-- [trace_gc_nvp *{Boolean}*](#trace_gc_nvp-boolean)
-- [trace_gc_ignore_scavenger *{Boolean}*](#trace_gc_ignore_scavenger-boolean)
-- [print_cumulative_gc_stat *{Boolean}*](#print_cumulative_gc_stat-boolean)
-- [print_max_heap_committed *{Boolean}*](#print_max_heap_committed-boolean)
-- [trace_gc_verbose *{Boolean}*](#trace_gc_verbose-boolean)
-- [trace_fragmentation *{Boolean}*](#trace_fragmentation-boolean)
-- [trace_external_memory *{Boolean}*](#trace_external_memory-boolean)
-- [collect_maps *{Boolean}*](#collect_maps-boolean)
-- [weak_embedded_maps_in_optimized_code *{Boolean}*](#weak_embedded_maps_in_optimized_code-boolean)
-- [weak_embedded_objects_in_optimized_code *{Boolean}*](#weak_embedded_objects_in_optimized_code-boolean)
-- [flush_code *{Boolean}*](#flush_code-boolean)
-- [flush_code_incrementally *{Boolean}*](#flush_code_incrementally-boolean)
-- [trace_code_flushing *{Boolean}*](#trace_code_flushing-boolean)
-- [age_code *{Boolean}*](#age_code-boolean)
-- [incremental_marking *{Boolean}*](#incremental_marking-boolean)
-- [incremental_marking_steps *{Boolean}*](#incremental_marking_steps-boolean)
-- [trace_incremental_marking *{Boolean}*](#trace_incremental_marking-boolean)
-- [track_gc_object_stats *{Boolean}*](#track_gc_object_stats-boolean)
-- [parallel_sweeping *{Boolean}*](#parallel_sweeping-boolean)
-- [concurrent_sweeping *{Boolean}*](#concurrent_sweeping-boolean)
+- [debugger_auto_break `true` *{Boolean}*](#debugger_auto_break-true-boolean)
+- [enable_liveedit `true` *{Boolean}*](#enable_liveedit-true-boolean)
+- [hard_abort `true` *{Boolean}*](#hard_abort-true-boolean)
+- [stack_size `984` *{Integer}*](#stack_size-984-integer)
+- [max_stack_trace_source_length `300` *{Integer}*](#max_stack_trace_source_length-300-integer)
+- [always_inline_smi_code `false` *{Boolean}*](#always_inline_smi_code-false-boolean)
+- [max_new_space_size `0` *{Integer}*](#max_new_space_size-0-integer)
+- [max_old_space_size `0` *{Integer}*](#max_old_space_size-0-integer)
+- [max_executable_size `0` *{Integer}*](#max_executable_size-0-integer)
+- [gc_global `false` *{Boolean}*](#gc_global-false-boolean)
+- [gc_interval `-1` *{Integer}*](#gc_interval--1-integer)
+- [trace_gc `false` *{Boolean}*](#trace_gc-false-boolean)
+- [trace_gc_nvp `false` *{Boolean}*](#trace_gc_nvp-false-boolean)
+- [trace_gc_ignore_scavenger `false` *{Boolean}*](#trace_gc_ignore_scavenger-false-boolean)
+- [print_cumulative_gc_stat `false` *{Boolean}*](#print_cumulative_gc_stat-false-boolean)
+- [print_max_heap_committed `false` *{Boolean}*](#print_max_heap_committed-false-boolean)
+- [trace_gc_verbose `false` *{Boolean}*](#trace_gc_verbose-false-boolean)
+- [trace_fragmentation `false` *{Boolean}*](#trace_fragmentation-false-boolean)
+- [trace_external_memory `false` *{Boolean}*](#trace_external_memory-false-boolean)
+- [collect_maps `true` *{Boolean}*](#collect_maps-true-boolean)
+- [weak_embedded_maps_in_optimized_code `true` *{Boolean}*](#weak_embedded_maps_in_optimized_code-true-boolean)
+- [weak_embedded_objects_in_optimized_code `true` *{Boolean}*](#weak_embedded_objects_in_optimized_code-true-boolean)
+- [flush_code `true` *{Boolean}*](#flush_code-true-boolean)
+- [flush_code_incrementally `true` *{Boolean}*](#flush_code_incrementally-true-boolean)
+- [trace_code_flushing `false` *{Boolean}*](#trace_code_flushing-false-boolean)
+- [age_code `true` *{Boolean}*](#age_code-true-boolean)
+- [incremental_marking `true` *{Boolean}*](#incremental_marking-true-boolean)
+- [incremental_marking_steps `true` *{Boolean}*](#incremental_marking_steps-true-boolean)
+- [trace_incremental_marking `false` *{Boolean}*](#trace_incremental_marking-false-boolean)
+- [track_gc_object_stats `false` *{Boolean}*](#track_gc_object_stats-false-boolean)
+- [parallel_sweeping `true` *{Boolean}*](#parallel_sweeping-true-boolean)
+- [concurrent_sweeping `false` *{Boolean}*](#concurrent_sweeping-false-boolean)
   - [Resources](#resources-5)
-- [sweeper_threads *{Integer}*](#sweeper_threads-integer)
-- [job_based_sweeping *{Boolean}*](#job_based_sweeping-boolean)
-- [heap_profiler_trace_objects *{Boolean}*](#heap_profiler_trace_objects-boolean)
-- [use_idle_notification *{Boolean}*](#use_idle_notification-boolean)
-- [use_ic *{Boolean}*](#use_ic-boolean)
-- [native_code_counters *{Boolean}*](#native_code_counters-boolean)
-- [always_compact *{Boolean}*](#always_compact-boolean)
-- [lazy_sweeping *{Boolean}*](#lazy_sweeping-boolean)
-- [never_compact *{Boolean}*](#never_compact-boolean)
-- [compact_code_space *{Boolean}*](#compact_code_space-boolean)
-- [incremental_code_compaction *{Boolean}*](#incremental_code_compaction-boolean)
-- [cleanup_code_caches_at_gc *{Boolean}*](#cleanup_code_caches_at_gc-boolean)
-- [use_marking_progress_bar *{Boolean}*](#use_marking_progress_bar-boolean)
-- [zap_code_space *{Boolean}*](#zap_code_space-boolean)
-- [random_seed *{Integer}*](#random_seed-integer)
-- [use_verbose_printer *{Boolean}*](#use_verbose_printer-boolean)
-- [allow_natives_syntax *{Boolean}*](#allow_natives_syntax-boolean)
-- [trace_parse *{Boolean}*](#trace_parse-boolean)
-- [trace_sim *{Boolean}*](#trace_sim-boolean)
-- [debug_sim *{Boolean}*](#debug_sim-boolean)
+- [sweeper_threads `0` *{Integer}*](#sweeper_threads-0-integer)
+- [job_based_sweeping `false` *{Boolean}*](#job_based_sweeping-false-boolean)
+- [heap_profiler_trace_objects `false` *{Boolean}*](#heap_profiler_trace_objects-false-boolean)
+- [use_idle_notification `true` *{Boolean}*](#use_idle_notification-true-boolean)
+- [use_ic `true` *{Boolean}*](#use_ic-true-boolean)
+- [native_code_counters `false` *{Boolean}*](#native_code_counters-false-boolean)
+- [always_compact `false` *{Boolean}*](#always_compact-false-boolean)
+- [lazy_sweeping `true` *{Boolean}*](#lazy_sweeping-true-boolean)
+- [never_compact `false` *{Boolean}*](#never_compact-false-boolean)
+- [compact_code_space `true` *{Boolean}*](#compact_code_space-true-boolean)
+- [incremental_code_compaction `true` *{Boolean}*](#incremental_code_compaction-true-boolean)
+- [cleanup_code_caches_at_gc `true` *{Boolean}*](#cleanup_code_caches_at_gc-true-boolean)
+- [use_marking_progress_bar `true` *{Boolean}*](#use_marking_progress_bar-true-boolean)
+- [zap_code_space `true` *{Boolean}*](#zap_code_space-true-boolean)
+- [random_seed `0` *{Integer}*](#random_seed-0-integer)
+- [use_verbose_printer `true` *{Boolean}*](#use_verbose_printer-true-boolean)
+- [allow_natives_syntax `false` *{Boolean}*](#allow_natives_syntax-false-boolean)
+- [trace_parse `false` *{Boolean}*](#trace_parse-false-boolean)
+- [trace_sim `false` *{Boolean}*](#trace_sim-false-boolean)
+- [debug_sim `false` *{Boolean}*](#debug_sim-false-boolean)
   - [Resources](#resources-6)
-- [check_icache *{Boolean}*](#check_icache-boolean)
-- [stop_sim_at *{Integer}*](#stop_sim_at-integer)
-- [sim_stack_alignment *{Integer}*](#sim_stack_alignment-integer)
-- [sim_stack_size *{Integer}*](#sim_stack_size-integer)
-- [log_regs_modified *{Boolean}*](#log_regs_modified-boolean)
-- [log_colour *{Boolean}*](#log_colour-boolean)
-- [ignore_asm_unimplemented_break *{Boolean}*](#ignore_asm_unimplemented_break-boolean)
-- [trace_sim_messages *{Boolean}*](#trace_sim_messages-boolean)
-- [stack_trace_on_illegal *{Boolean}*](#stack_trace_on_illegal-boolean)
-- [abort_on_uncaught_exception *{Boolean}*](#abort_on_uncaught_exception-boolean)
-- [randomize_hashes *{Boolean}*](#randomize_hashes-boolean)
-- [hash_seed *{Integer}*](#hash_seed-integer)
-- [profile_deserialization *{Boolean}*](#profile_deserialization-boolean)
-- [regexp_optimization *{Boolean}*](#regexp_optimization-boolean)
-- [testing_string_flag *{String}*](#testing_string_flag-string)
-- [testing_serialization_file *{String}*](#testing_serialization_file-string)
-- [profile_hydrogen_code_stub_compilation *{Boolean}*](#profile_hydrogen_code_stub_compilation-boolean)
-- [predictable *{Boolean}*](#predictable-boolean)
+- [check_icache `false` *{Boolean}*](#check_icache-false-boolean)
+- [stop_sim_at `0` *{Integer}*](#stop_sim_at-0-integer)
+- [sim_stack_alignment `8` *{Integer}*](#sim_stack_alignment-8-integer)
+- [sim_stack_size `2048` *{Integer}*](#sim_stack_size-2048-integer)
+- [log_regs_modified `true` *{Boolean}*](#log_regs_modified-true-boolean)
+- [log_colour `true` *{Boolean}*](#log_colour-true-boolean)
+- [ignore_asm_unimplemented_break `false` *{Boolean}*](#ignore_asm_unimplemented_break-false-boolean)
+- [trace_sim_messages `false` *{Boolean}*](#trace_sim_messages-false-boolean)
+- [stack_trace_on_illegal `false` *{Boolean}*](#stack_trace_on_illegal-false-boolean)
+- [abort_on_uncaught_exception `false` *{Boolean}*](#abort_on_uncaught_exception-false-boolean)
+- [randomize_hashes `true` *{Boolean}*](#randomize_hashes-true-boolean)
+- [hash_seed `0` *{Integer}*](#hash_seed-0-integer)
+- [profile_deserialization `false` *{Boolean}*](#profile_deserialization-false-boolean)
+- [regexp_optimization `true` *{Boolean}*](#regexp_optimization-true-boolean)
+- [testing_string_flag `Hello, world!` *{String}*](#testing_string_flag-hello-world!-string)
+- [testing_serialization_file `/tmp/serdes` *{String}*](#testing_serialization_file-tmpserdes-string)
+- [profile_hydrogen_code_stub_compilation `false` *{Boolean}*](#profile_hydrogen_code_stub_compilation-false-boolean)
+- [predictable `false` *{Boolean}*](#predictable-false-boolean)
   - [Negative implications](#negative-implications)
-- [help *{Boolean}*](#help-boolean)
-- [dump_counters *{Boolean}*](#dump_counters-boolean)
-- [map_counters *{String}*](#map_counters-string)
-- [debug_compile_events *{Boolean}*](#debug_compile_events-boolean)
+- [help `false` *{Boolean}*](#help-false-boolean)
+- [dump_counters `false` *{Boolean}*](#dump_counters-false-boolean)
+- [map_counters `` *{String}*](#map_counters--string)
+- [debug_compile_events `true` *{Boolean}*](#debug_compile_events-true-boolean)
   - [Resources](#resources-7)
-- [debug_script_collected_events *{Boolean}*](#debug_script_collected_events-boolean)
-- [gdbjit *{Boolean}*](#gdbjit-boolean)
-- [gdbjit_full *{Boolean}*](#gdbjit_full-boolean)
-- [gdbjit_dump *{Boolean}*](#gdbjit_dump-boolean)
-- [gdbjit_dump_filter *{String}*](#gdbjit_dump_filter-string)
-- [force_marking_deque_overflows *{Boolean}*](#force_marking_deque_overflows-boolean)
-- [stress_compaction *{Boolean}*](#stress_compaction-boolean)
-- [print_source *{Boolean}*](#print_source-boolean)
-- [print_builtin_source *{Boolean}*](#print_builtin_source-boolean)
-- [print_ast *{Boolean}*](#print_ast-boolean)
-- [print_builtin_ast *{Boolean}*](#print_builtin_ast-boolean)
-- [stop_at *{String}*](#stop_at-string)
-- [trap_on_abort *{Boolean}*](#trap_on_abort-boolean)
-- [print_builtin_scopes *{Boolean}*](#print_builtin_scopes-boolean)
-- [print_scopes *{Boolean}*](#print_scopes-boolean)
-- [trace_contexts *{Boolean}*](#trace_contexts-boolean)
-- [gc_greedy *{Boolean}*](#gc_greedy-boolean)
-- [gc_verbose *{Boolean}*](#gc_verbose-boolean)
-- [heap_stats *{Boolean}*](#heap_stats-boolean)
-- [code_stats *{Boolean}*](#code_stats-boolean)
+- [debug_script_collected_events `true` *{Boolean}*](#debug_script_collected_events-true-boolean)
+- [gdbjit `false` *{Boolean}*](#gdbjit-false-boolean)
+- [gdbjit_full `false` *{Boolean}*](#gdbjit_full-false-boolean)
+- [gdbjit_dump `false` *{Boolean}*](#gdbjit_dump-false-boolean)
+- [gdbjit_dump_filter `` *{String}*](#gdbjit_dump_filter--string)
+- [force_marking_deque_overflows `false` *{Boolean}*](#force_marking_deque_overflows-false-boolean)
+- [stress_compaction `false` *{Boolean}*](#stress_compaction-false-boolean)
+- [print_source `false` *{Boolean}*](#print_source-false-boolean)
+- [print_builtin_source `false` *{Boolean}*](#print_builtin_source-false-boolean)
+- [print_ast `false` *{Boolean}*](#print_ast-false-boolean)
+- [print_builtin_ast `false` *{Boolean}*](#print_builtin_ast-false-boolean)
+- [stop_at `` *{String}*](#stop_at--string)
+- [trap_on_abort `false` *{Boolean}*](#trap_on_abort-false-boolean)
+- [print_builtin_scopes `false` *{Boolean}*](#print_builtin_scopes-false-boolean)
+- [print_scopes `false` *{Boolean}*](#print_scopes-false-boolean)
+- [trace_contexts `false` *{Boolean}*](#trace_contexts-false-boolean)
+- [gc_greedy `false` *{Boolean}*](#gc_greedy-false-boolean)
+- [gc_verbose `false` *{Boolean}*](#gc_verbose-false-boolean)
+- [heap_stats `false` *{Boolean}*](#heap_stats-false-boolean)
+- [code_stats `false` *{Boolean}*](#code_stats-false-boolean)
   - [Resources](#resources-8)
-- [verify_native_context_separation *{Boolean}*](#verify_native_context_separation-boolean)
-- [print_handles *{Boolean}*](#print_handles-boolean)
-- [print_global_handles *{Boolean}*](#print_global_handles-boolean)
-- [trace_ic *{Boolean}*](#trace_ic-boolean)
-- [print_interfaces *{Boolean}*](#print_interfaces-boolean)
-- [print_interface_details *{Boolean}*](#print_interface_details-boolean)
-- [print_interface_depth *{Integer}*](#print_interface_depth-integer)
-- [trace_normalization *{Boolean}*](#trace_normalization-boolean)
-- [trace_lazy *{Boolean}*](#trace_lazy-boolean)
-- [collect_heap_spill_statistics *{Boolean}*](#collect_heap_spill_statistics-boolean)
-- [trace_isolates *{Boolean}*](#trace_isolates-boolean)
-- [regexp_possessive_quantifier *{Boolean}*](#regexp_possessive_quantifier-boolean)
-- [trace_regexp_bytecodes *{Boolean}*](#trace_regexp_bytecodes-boolean)
-- [trace_regexp_assembler *{Boolean}*](#trace_regexp_assembler-boolean)
-- [log *{Boolean}*](#log-boolean)
-- [log_all *{Boolean}*](#log_all-boolean)
-- [log_runtime *{Boolean}*](#log_runtime-boolean)
-- [log_api *{Boolean}*](#log_api-boolean)
-- [log_code *{Boolean}*](#log_code-boolean)
-- [log_gc *{Boolean}*](#log_gc-boolean)
-- [log_handles *{Boolean}*](#log_handles-boolean)
-- [log_snapshot_positions *{Boolean}*](#log_snapshot_positions-boolean)
-- [log_suspect *{Boolean}*](#log_suspect-boolean)
-- [prof *{Boolean}*](#prof-boolean)
-- [prof_browser_mode *{Boolean}*](#prof_browser_mode-boolean)
-- [log_regexp *{Boolean}*](#log_regexp-boolean)
-- [logfile *{String}*](#logfile-string)
-- [logfile_per_isolate *{Boolean}*](#logfile_per_isolate-boolean)
-- [ll_prof *{Boolean}*](#ll_prof-boolean)
-- [perf_basic_prof *{Boolean}*](#perf_basic_prof-boolean)
-- [perf_jit_prof *{Boolean}*](#perf_jit_prof-boolean)
-- [gc_fake_mmap *{String}*](#gc_fake_mmap-string)
-- [log_internal_timer_events *{Boolean}*](#log_internal_timer_events-boolean)
+- [verify_native_context_separation `false` *{Boolean}*](#verify_native_context_separation-false-boolean)
+- [print_handles `false` *{Boolean}*](#print_handles-false-boolean)
+- [print_global_handles `false` *{Boolean}*](#print_global_handles-false-boolean)
+- [trace_ic `false` *{Boolean}*](#trace_ic-false-boolean)
+- [print_interfaces `false` *{Boolean}*](#print_interfaces-false-boolean)
+- [print_interface_details `false` *{Boolean}*](#print_interface_details-false-boolean)
+- [print_interface_depth `5` *{Integer}*](#print_interface_depth-5-integer)
+- [trace_normalization `false` *{Boolean}*](#trace_normalization-false-boolean)
+- [trace_lazy `false` *{Boolean}*](#trace_lazy-false-boolean)
+- [collect_heap_spill_statistics `false` *{Boolean}*](#collect_heap_spill_statistics-false-boolean)
+- [trace_isolates `false` *{Boolean}*](#trace_isolates-false-boolean)
+- [regexp_possessive_quantifier `false` *{Boolean}*](#regexp_possessive_quantifier-false-boolean)
+- [trace_regexp_bytecodes `false` *{Boolean}*](#trace_regexp_bytecodes-false-boolean)
+- [trace_regexp_assembler `false` *{Boolean}*](#trace_regexp_assembler-false-boolean)
+- [log `false` *{Boolean}*](#log-false-boolean)
+- [log_all `false` *{Boolean}*](#log_all-false-boolean)
+- [log_runtime `false` *{Boolean}*](#log_runtime-false-boolean)
+- [log_api `false` *{Boolean}*](#log_api-false-boolean)
+- [log_code `false` *{Boolean}*](#log_code-false-boolean)
+- [log_gc `false` *{Boolean}*](#log_gc-false-boolean)
+- [log_handles `false` *{Boolean}*](#log_handles-false-boolean)
+- [log_snapshot_positions `false` *{Boolean}*](#log_snapshot_positions-false-boolean)
+- [log_suspect `false` *{Boolean}*](#log_suspect-false-boolean)
+- [prof `false` *{Boolean}*](#prof-false-boolean)
+- [prof_browser_mode `true` *{Boolean}*](#prof_browser_mode-true-boolean)
+- [log_regexp `false` *{Boolean}*](#log_regexp-false-boolean)
+- [logfile `v8.log` *{String}*](#logfile-v8log-string)
+- [logfile_per_isolate `true` *{Boolean}*](#logfile_per_isolate-true-boolean)
+- [ll_prof `false` *{Boolean}*](#ll_prof-false-boolean)
+- [perf_basic_prof `false` *{Boolean}*](#perf_basic_prof-false-boolean)
+- [perf_jit_prof `false` *{Boolean}*](#perf_jit_prof-false-boolean)
+- [gc_fake_mmap `/tmp/__v8_gc__` *{String}*](#gc_fake_mmap-tmp__v8_gc__-string)
+- [log_internal_timer_events `false` *{Boolean}*](#log_internal_timer_events-false-boolean)
   - [Implications](#implications-9)
-- [log_timer_events *{Boolean}*](#log_timer_events-boolean)
+- [log_timer_events `false` *{Boolean}*](#log_timer_events-false-boolean)
   - [Implications](#implications-10)
-- [log_instruction_stats *{Boolean}*](#log_instruction_stats-boolean)
-- [log_instruction_file *{String}*](#log_instruction_file-string)
-- [log_instruction_period *{Integer}*](#log_instruction_period-integer)
-- [redirect_code_traces *{Boolean}*](#redirect_code_traces-boolean)
-- [hydrogen_track_positions *{Boolean}*](#hydrogen_track_positions-boolean)
-- [trace_elements_transitions *{Boolean}*](#trace_elements_transitions-boolean)
-- [trace_creation_allocation_sites *{Boolean}*](#trace_creation_allocation_sites-boolean)
-- [print_code_stubs *{Boolean}*](#print_code_stubs-boolean)
-- [test_secondary_stub_cache *{Boolean}*](#test_secondary_stub_cache-boolean)
-- [test_primary_stub_cache *{Boolean}*](#test_primary_stub_cache-boolean)
-- [print_code *{Boolean}*](#print_code-boolean)
-- [print_opt_code *{Boolean}*](#print_opt_code-boolean)
-- [print_unopt_code *{Boolean}*](#print_unopt_code-boolean)
-- [print_code_verbose *{Boolean}*](#print_code_verbose-boolean)
-- [print_builtin_code *{Boolean}*](#print_builtin_code-boolean)
-- [enable_ool_constant_pool *{Boolean}*](#enable_ool_constant_pool-boolean)
+- [log_instruction_stats `false` *{Boolean}*](#log_instruction_stats-false-boolean)
+- [log_instruction_file `arm64_inst.csv` *{String}*](#log_instruction_file-arm64_instcsv-string)
+- [log_instruction_period `4194304` *{Integer}*](#log_instruction_period-4194304-integer)
+- [redirect_code_traces `false` *{Boolean}*](#redirect_code_traces-false-boolean)
+- [hydrogen_track_positions `false` *{Boolean}*](#hydrogen_track_positions-false-boolean)
+- [trace_elements_transitions `false` *{Boolean}*](#trace_elements_transitions-false-boolean)
+- [trace_creation_allocation_sites `false` *{Boolean}*](#trace_creation_allocation_sites-false-boolean)
+- [print_code_stubs `false` *{Boolean}*](#print_code_stubs-false-boolean)
+- [test_secondary_stub_cache `false` *{Boolean}*](#test_secondary_stub_cache-false-boolean)
+- [test_primary_stub_cache `false` *{Boolean}*](#test_primary_stub_cache-false-boolean)
+- [print_code `false` *{Boolean}*](#print_code-false-boolean)
+- [print_opt_code `false` *{Boolean}*](#print_opt_code-false-boolean)
+- [print_unopt_code `false` *{Boolean}*](#print_unopt_code-false-boolean)
+- [print_code_verbose `false` *{Boolean}*](#print_code_verbose-false-boolean)
+- [print_builtin_code `false` *{Boolean}*](#print_builtin_code-false-boolean)
+- [enable_ool_constant_pool `false` *{Boolean}*](#enable_ool_constant_pool-false-boolean)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-### use_strict *{Boolean}*
+### use_strict `false` *{Boolean}*
 
 enforce strict mode
 
@@ -343,7 +343,7 @@ enforce strict mode
 - **readonly:** `false`
 
 
-### es_staging *{Boolean}*
+### es_staging `false` *{Boolean}*
 
 enable upcoming ES6+ features
 
@@ -356,7 +356,7 @@ enable upcoming ES6+ features
 - harmony_maths
 
 
-### harmony_typeof *{Boolean}*
+### harmony_typeof `false` *{Boolean}*
 
 enable harmony semantics for typeof
 
@@ -365,7 +365,7 @@ enable harmony semantics for typeof
 - **readonly:** `false`
 
 
-### harmony_scoping *{Boolean}*
+### harmony_scoping `false` *{Boolean}*
 
 enable harmony block scoping
 
@@ -374,7 +374,7 @@ enable harmony block scoping
 - **readonly:** `false`
 
 
-### harmony_modules *{Boolean}*
+### harmony_modules `false` *{Boolean}*
 
 enable harmony modules (implies block scoping)
 
@@ -387,7 +387,7 @@ enable harmony modules (implies block scoping)
 - harmony_scoping
 
 
-### harmony_symbols *{Boolean}*
+### harmony_symbols `false` *{Boolean}*
 
 enable harmony symbols (a.k.a. private names)
 
@@ -396,7 +396,7 @@ enable harmony symbols (a.k.a. private names)
 - **readonly:** `false`
 
 
-### harmony_proxies *{Boolean}*
+### harmony_proxies `false` *{Boolean}*
 
 enable harmony proxies
 
@@ -405,7 +405,7 @@ enable harmony proxies
 - **readonly:** `false`
 
 
-### harmony_collections *{Boolean}*
+### harmony_collections `false` *{Boolean}*
 
 enable harmony collections (sets, maps)
 
@@ -414,7 +414,7 @@ enable harmony collections (sets, maps)
 - **readonly:** `false`
 
 
-### harmony_generators *{Boolean}*
+### harmony_generators `false` *{Boolean}*
 
 enable harmony generators
 
@@ -423,7 +423,7 @@ enable harmony generators
 - **readonly:** `false`
 
 
-### harmony_iteration *{Boolean}*
+### harmony_iteration `false` *{Boolean}*
 
 enable harmony iteration (for-of)
 
@@ -432,7 +432,7 @@ enable harmony iteration (for-of)
 - **readonly:** `false`
 
 
-### harmony_numeric_literals *{Boolean}*
+### harmony_numeric_literals `false` *{Boolean}*
 
 enable harmony numeric literals (0o77, 0b11)
 
@@ -441,7 +441,7 @@ enable harmony numeric literals (0o77, 0b11)
 - **readonly:** `false`
 
 
-### harmony_strings *{Boolean}*
+### harmony_strings `false` *{Boolean}*
 
 enable harmony string
 
@@ -450,7 +450,7 @@ enable harmony string
 - **readonly:** `false`
 
 
-### harmony_arrays *{Boolean}*
+### harmony_arrays `false` *{Boolean}*
 
 enable harmony arrays
 
@@ -459,7 +459,7 @@ enable harmony arrays
 - **readonly:** `false`
 
 
-### harmony_maths *{Boolean}*
+### harmony_maths `false` *{Boolean}*
 
 enable harmony math functions
 
@@ -468,7 +468,7 @@ enable harmony math functions
 - **readonly:** `false`
 
 
-### harmony *{Boolean}*
+### harmony `false` *{Boolean}*
 
 enable all harmony features (except typeof)
 
@@ -491,7 +491,7 @@ enable all harmony features (except typeof)
 - es_staging
 
 
-### packed_arrays *{Boolean}*
+### packed_arrays `true` *{Boolean}*
 
 optimizes arrays that have no holes
 
@@ -500,7 +500,7 @@ optimizes arrays that have no holes
 - **readonly:** `false`
 
 
-### smi_only_arrays *{Boolean}*
+### smi_only_arrays `true` *{Boolean}*
 
 tracks arrays with only smi values
 
@@ -509,7 +509,7 @@ tracks arrays with only smi values
 - **readonly:** `false`
 
 
-### compiled_keyed_dictionary_loads *{Boolean}*
+### compiled_keyed_dictionary_loads `true` *{Boolean}*
 
 use optimizing compiler to generate keyed dictionary load stubs
 
@@ -518,7 +518,7 @@ use optimizing compiler to generate keyed dictionary load stubs
 - **readonly:** `false`
 
 
-### clever_optimizations *{Boolean}*
+### clever_optimizations `true` *{Boolean}*
 
 Optimize object size, Array shift, DOM strings and string +
 
@@ -527,7 +527,7 @@ Optimize object size, Array shift, DOM strings and string +
 - **readonly:** `false`
 
 
-### pretenuring *{Boolean}*
+### pretenuring `true` *{Boolean}*
 
 allocate objects in old space
 
@@ -536,7 +536,7 @@ allocate objects in old space
 - **readonly:** `false`
 
 
-### pretenuring_call_new *{Boolean}*
+### pretenuring_call_new `false` *{Boolean}*
 
 pretenure call new
 
@@ -545,7 +545,7 @@ pretenure call new
 - **readonly:** `false`
 
 
-### allocation_site_pretenuring *{Boolean}*
+### allocation_site_pretenuring `true` *{Boolean}*
 
 pretenure with allocation sites
 
@@ -554,7 +554,7 @@ pretenure with allocation sites
 - **readonly:** `false`
 
 
-### trace_pretenuring *{Boolean}*
+### trace_pretenuring `false` *{Boolean}*
 
 trace pretenuring decisions of HAllocate instructions
 
@@ -563,7 +563,7 @@ trace pretenuring decisions of HAllocate instructions
 - **readonly:** `false`
 
 
-### trace_pretenuring_statistics *{Boolean}*
+### trace_pretenuring_statistics `false` *{Boolean}*
 
 trace allocation site pretenuring statistics
 
@@ -572,7 +572,7 @@ trace allocation site pretenuring statistics
 - **readonly:** `false`
 
 
-### track_fields *{Boolean}*
+### track_fields `true` *{Boolean}*
 
 track fields with only smi values
 
@@ -581,7 +581,7 @@ track fields with only smi values
 - **readonly:** `false`
 
 
-### track_double_fields *{Boolean}*
+### track_double_fields `true` *{Boolean}*
 
 track fields with double values
 
@@ -594,7 +594,7 @@ track fields with double values
 - track_fields
 
 
-### track_heap_object_fields *{Boolean}*
+### track_heap_object_fields `true` *{Boolean}*
 
 track fields with heap values
 
@@ -607,7 +607,7 @@ track fields with heap values
 - track_fields
 
 
-### track_computed_fields *{Boolean}*
+### track_computed_fields `true` *{Boolean}*
 
 track computed boilerplate fields
 
@@ -620,7 +620,7 @@ track computed boilerplate fields
 - track_fields
 
 
-### smi_binop *{Boolean}*
+### smi_binop `true` *{Boolean}*
 
 support smi representation in binary operations
 
@@ -629,7 +629,7 @@ support smi representation in binary operations
 - **readonly:** `false`
 
 
-### optimize_for_size *{Boolean}*
+### optimize_for_size `false` *{Boolean}*
 
 Enables optimizations which favor memory size over execution speed.
 
@@ -638,7 +638,7 @@ Enables optimizations which favor memory size over execution speed.
 - **readonly:** `false`
 
 
-### unbox_double_arrays *{Boolean}*
+### unbox_double_arrays `true` *{Boolean}*
 
 automatically unbox arrays of doubles
 
@@ -647,7 +647,7 @@ automatically unbox arrays of doubles
 - **readonly:** `false`
 
 
-### string_slices *{Boolean}*
+### string_slices `true` *{Boolean}*
 
 use string slices
 
@@ -656,7 +656,7 @@ use string slices
 - **readonly:** `false`
 
 
-### crankshaft *{Boolean}*
+### crankshaft `true` *{Boolean}*
 
 use crankshaft
 
@@ -669,7 +669,7 @@ use crankshaft
 - [v8 isolate.cc](https://github.com/v8/v8/blob/3.26.33/src/isolate.cc#L1778)
 - [v8 runtime.cc](https://github.com/v8/v8/blob/3.26.33/src/runtime.cc#L8509)
 
-### hydrogen_filter *{String}*
+### hydrogen_filter `*` *{String}*
 
 optimization filter
 
@@ -678,7 +678,7 @@ optimization filter
 - **readonly:** `false`
 
 
-### use_gvn *{Boolean}*
+### use_gvn `true` *{Boolean}*
 
 use hydrogen global value numbering
 
@@ -687,7 +687,7 @@ use hydrogen global value numbering
 - **readonly:** `false`
 
 
-### gvn_iterations *{Integer}*
+### gvn_iterations `3` *{Integer}*
 
 maximum number of GVN fix-point iterations
 
@@ -696,7 +696,7 @@ maximum number of GVN fix-point iterations
 - **readonly:** `false`
 
 
-### use_canonicalizing *{Boolean}*
+### use_canonicalizing `true` *{Boolean}*
 
 use hydrogen instruction canonicalizing
 
@@ -705,7 +705,7 @@ use hydrogen instruction canonicalizing
 - **readonly:** `false`
 
 
-### use_inlining *{Boolean}*
+### use_inlining `true` *{Boolean}*
 
 use function inlining
 
@@ -714,7 +714,7 @@ use function inlining
 - **readonly:** `false`
 
 
-### use_escape_analysis *{Boolean}*
+### use_escape_analysis `true` *{Boolean}*
 
 use hydrogen escape analysis
 
@@ -723,7 +723,7 @@ use hydrogen escape analysis
 - **readonly:** `false`
 
 
-### use_allocation_folding *{Boolean}*
+### use_allocation_folding `true` *{Boolean}*
 
 use allocation folding
 
@@ -732,7 +732,7 @@ use allocation folding
 - **readonly:** `false`
 
 
-### use_local_allocation_folding *{Boolean}*
+### use_local_allocation_folding `false` *{Boolean}*
 
 only fold in basic blocks
 
@@ -741,7 +741,7 @@ only fold in basic blocks
 - **readonly:** `false`
 
 
-### use_write_barrier_elimination *{Boolean}*
+### use_write_barrier_elimination `true` *{Boolean}*
 
 eliminate write barriers targeting allocations in optimized code
 
@@ -750,7 +750,7 @@ eliminate write barriers targeting allocations in optimized code
 - **readonly:** `false`
 
 
-### max_inlining_levels *{Integer}*
+### max_inlining_levels `5` *{Integer}*
 
 maximum number of inlining levels
 
@@ -759,7 +759,7 @@ maximum number of inlining levels
 - **readonly:** `false`
 
 
-### max_inlined_source_size *{Integer}*
+### max_inlined_source_size `600` *{Integer}*
 
 maximum source size in bytes considered for a single inlining
 
@@ -768,7 +768,7 @@ maximum source size in bytes considered for a single inlining
 - **readonly:** `false`
 
 
-### max_inlined_nodes *{Integer}*
+### max_inlined_nodes `196` *{Integer}*
 
 maximum number of AST nodes considered for a single inlining
 
@@ -777,7 +777,7 @@ maximum number of AST nodes considered for a single inlining
 - **readonly:** `false`
 
 
-### max_inlined_nodes_cumulative *{Integer}*
+### max_inlined_nodes_cumulative `400` *{Integer}*
 
 maximum cumulative number of AST nodes considered for inlining
 
@@ -786,7 +786,7 @@ maximum cumulative number of AST nodes considered for inlining
 - **readonly:** `false`
 
 
-### loop_invariant_code_motion *{Boolean}*
+### loop_invariant_code_motion `true` *{Boolean}*
 
 loop invariant code motion
 
@@ -795,7 +795,7 @@ loop invariant code motion
 - **readonly:** `false`
 
 
-### fast_math *{Boolean}*
+### fast_math `true` *{Boolean}*
 
 faster (but maybe less accurate) math functions
 
@@ -804,7 +804,7 @@ faster (but maybe less accurate) math functions
 - **readonly:** `false`
 
 
-### collect_megamorphic_maps_from_stub_cache *{Boolean}*
+### collect_megamorphic_maps_from_stub_cache `true` *{Boolean}*
 
 crankshaft harvests type feedback from stub cache
 
@@ -813,7 +813,7 @@ crankshaft harvests type feedback from stub cache
 - **readonly:** `false`
 
 
-### hydrogen_stats *{Boolean}*
+### hydrogen_stats `false` *{Boolean}*
 
 print statistics for hydrogen
 
@@ -822,7 +822,7 @@ print statistics for hydrogen
 - **readonly:** `false`
 
 
-### trace_check_elimination *{Boolean}*
+### trace_check_elimination `false` *{Boolean}*
 
 trace check elimination phase
 
@@ -831,7 +831,7 @@ trace check elimination phase
 - **readonly:** `false`
 
 
-### trace_hydrogen *{Boolean}*
+### trace_hydrogen `false` *{Boolean}*
 
 trace generated hydrogen to file
 
@@ -840,7 +840,7 @@ trace generated hydrogen to file
 - **readonly:** `false`
 
 
-### trace_hydrogen_filter *{String}*
+### trace_hydrogen_filter `*` *{String}*
 
 hydrogen tracing filter
 
@@ -849,7 +849,7 @@ hydrogen tracing filter
 - **readonly:** `false`
 
 
-### trace_hydrogen_stubs *{Boolean}*
+### trace_hydrogen_stubs `false` *{Boolean}*
 
 trace generated hydrogen for stubs
 
@@ -858,7 +858,7 @@ trace generated hydrogen for stubs
 - **readonly:** `false`
 
 
-### trace_phase *{String}*
+### trace_phase `HLZ` *{String}*
 
 trace generated IR for specified phases
 
@@ -867,7 +867,7 @@ trace generated IR for specified phases
 - **readonly:** `false`
 
 
-### trace_inlining *{Boolean}*
+### trace_inlining `false` *{Boolean}*
 
 trace inlining decisions
 
@@ -876,7 +876,7 @@ trace inlining decisions
 - **readonly:** `false`
 
 
-### trace_load_elimination *{Boolean}*
+### trace_load_elimination `false` *{Boolean}*
 
 trace load elimination
 
@@ -885,7 +885,7 @@ trace load elimination
 - **readonly:** `false`
 
 
-### trace_store_elimination *{Boolean}*
+### trace_store_elimination `false` *{Boolean}*
 
 trace store elimination
 
@@ -894,7 +894,7 @@ trace store elimination
 - **readonly:** `false`
 
 
-### trace_alloc *{Boolean}*
+### trace_alloc `false` *{Boolean}*
 
 trace register allocator
 
@@ -903,7 +903,7 @@ trace register allocator
 - **readonly:** `false`
 
 
-### trace_all_uses *{Boolean}*
+### trace_all_uses `false` *{Boolean}*
 
 trace all use positions
 
@@ -912,7 +912,7 @@ trace all use positions
 - **readonly:** `false`
 
 
-### trace_range *{Boolean}*
+### trace_range `false` *{Boolean}*
 
 trace range analysis
 
@@ -921,7 +921,7 @@ trace range analysis
 - **readonly:** `false`
 
 
-### trace_gvn *{Boolean}*
+### trace_gvn `false` *{Boolean}*
 
 trace global value numbering
 
@@ -930,7 +930,7 @@ trace global value numbering
 - **readonly:** `false`
 
 
-### trace_representation *{Boolean}*
+### trace_representation `false` *{Boolean}*
 
 trace representation types
 
@@ -939,7 +939,7 @@ trace representation types
 - **readonly:** `false`
 
 
-### trace_escape_analysis *{Boolean}*
+### trace_escape_analysis `false` *{Boolean}*
 
 trace hydrogen escape analysis
 
@@ -948,7 +948,7 @@ trace hydrogen escape analysis
 - **readonly:** `false`
 
 
-### trace_allocation_folding *{Boolean}*
+### trace_allocation_folding `false` *{Boolean}*
 
 trace allocation folding
 
@@ -957,7 +957,7 @@ trace allocation folding
 - **readonly:** `false`
 
 
-### trace_track_allocation_sites *{Boolean}*
+### trace_track_allocation_sites `false` *{Boolean}*
 
 trace the tracking of allocation sites
 
@@ -966,7 +966,7 @@ trace the tracking of allocation sites
 - **readonly:** `false`
 
 
-### trace_migration *{Boolean}*
+### trace_migration `false` *{Boolean}*
 
 trace object migration
 
@@ -975,7 +975,7 @@ trace object migration
 - **readonly:** `false`
 
 
-### trace_generalization *{Boolean}*
+### trace_generalization `false` *{Boolean}*
 
 trace map generalization
 
@@ -984,7 +984,7 @@ trace map generalization
 - **readonly:** `false`
 
 
-### stress_pointer_maps *{Boolean}*
+### stress_pointer_maps `false` *{Boolean}*
 
 pointer map for every instruction
 
@@ -993,7 +993,7 @@ pointer map for every instruction
 - **readonly:** `false`
 
 
-### stress_environments *{Boolean}*
+### stress_environments `false` *{Boolean}*
 
 environment for every instruction
 
@@ -1002,7 +1002,7 @@ environment for every instruction
 - **readonly:** `false`
 
 
-### deopt_every_n_times *{Integer}*
+### deopt_every_n_times `0` *{Integer}*
 
 deoptimize every n times a deopt point is passed
 
@@ -1011,7 +1011,7 @@ deoptimize every n times a deopt point is passed
 - **readonly:** `false`
 
 
-### deopt_every_n_garbage_collections *{Integer}*
+### deopt_every_n_garbage_collections `0` *{Integer}*
 
 deoptimize every n garbage collections
 
@@ -1020,7 +1020,7 @@ deoptimize every n garbage collections
 - **readonly:** `false`
 
 
-### print_deopt_stress *{Boolean}*
+### print_deopt_stress `false` *{Boolean}*
 
 print number of possible deopt points
 
@@ -1029,7 +1029,7 @@ print number of possible deopt points
 - **readonly:** `false`
 
 
-### trap_on_deopt *{Boolean}*
+### trap_on_deopt `false` *{Boolean}*
 
 put a break point before deoptimizing
 
@@ -1038,7 +1038,7 @@ put a break point before deoptimizing
 - **readonly:** `false`
 
 
-### trap_on_stub_deopt *{Boolean}*
+### trap_on_stub_deopt `false` *{Boolean}*
 
 put a break point before deoptimizing a stub
 
@@ -1047,7 +1047,7 @@ put a break point before deoptimizing a stub
 - **readonly:** `false`
 
 
-### deoptimize_uncommon_cases *{Boolean}*
+### deoptimize_uncommon_cases `true` *{Boolean}*
 
 deoptimize uncommon cases
 
@@ -1056,7 +1056,7 @@ deoptimize uncommon cases
 - **readonly:** `false`
 
 
-### polymorphic_inlining *{Boolean}*
+### polymorphic_inlining `true` *{Boolean}*
 
 polymorphic inlining
 
@@ -1065,7 +1065,7 @@ polymorphic inlining
 - **readonly:** `false`
 
 
-### use_osr *{Boolean}*
+### use_osr `true` *{Boolean}*
 
 use on-stack replacement
 
@@ -1074,7 +1074,7 @@ use on-stack replacement
 - **readonly:** `false`
 
 
-### array_bounds_checks_elimination *{Boolean}*
+### array_bounds_checks_elimination `true` *{Boolean}*
 
 perform array bounds checks elimination
 
@@ -1083,7 +1083,7 @@ perform array bounds checks elimination
 - **readonly:** `false`
 
 
-### trace_bce *{Boolean}*
+### trace_bce `false` *{Boolean}*
 
 trace array bounds check elimination
 
@@ -1092,7 +1092,7 @@ trace array bounds check elimination
 - **readonly:** `false`
 
 
-### array_bounds_checks_hoisting *{Boolean}*
+### array_bounds_checks_hoisting `false` *{Boolean}*
 
 perform array bounds checks hoisting
 
@@ -1101,7 +1101,7 @@ perform array bounds checks hoisting
 - **readonly:** `false`
 
 
-### array_index_dehoisting *{Boolean}*
+### array_index_dehoisting `true` *{Boolean}*
 
 perform array index dehoisting
 
@@ -1110,7 +1110,7 @@ perform array index dehoisting
 - **readonly:** `false`
 
 
-### analyze_environment_liveness *{Boolean}*
+### analyze_environment_liveness `true` *{Boolean}*
 
 analyze liveness of environment slots and zap dead values
 
@@ -1119,7 +1119,7 @@ analyze liveness of environment slots and zap dead values
 - **readonly:** `false`
 
 
-### load_elimination *{Boolean}*
+### load_elimination `true` *{Boolean}*
 
 use load elimination
 
@@ -1128,7 +1128,7 @@ use load elimination
 - **readonly:** `false`
 
 
-### check_elimination *{Boolean}*
+### check_elimination `true` *{Boolean}*
 
 use check elimination
 
@@ -1140,7 +1140,7 @@ use check elimination
 
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/hydrogen.cc#L4029)
 
-### store_elimination *{Boolean}*
+### store_elimination `false` *{Boolean}*
 
 use store elimination
 
@@ -1149,7 +1149,7 @@ use store elimination
 - **readonly:** `false`
 
 
-### dead_code_elimination *{Boolean}*
+### dead_code_elimination `true` *{Boolean}*
 
 use dead code elimination
 
@@ -1164,7 +1164,7 @@ use dead code elimination
 
 **Note**: not available below **node:** `0.10` - **v8:** `3.14`
 
-### fold_constants *{Boolean}*
+### fold_constants `true` *{Boolean}*
 
 use constant folding
 
@@ -1173,7 +1173,7 @@ use constant folding
 - **readonly:** `false`
 
 
-### trace_dead_code_elimination *{Boolean}*
+### trace_dead_code_elimination `false` *{Boolean}*
 
 trace dead code elimination
 
@@ -1182,7 +1182,7 @@ trace dead code elimination
 - **readonly:** `false`
 
 
-### unreachable_code_elimination *{Boolean}*
+### unreachable_code_elimination `true` *{Boolean}*
 
 eliminate unreachable code
 
@@ -1191,7 +1191,7 @@ eliminate unreachable code
 - **readonly:** `false`
 
 
-### trace_osr *{Boolean}*
+### trace_osr `false` *{Boolean}*
 
 trace on-stack replacement
 
@@ -1200,7 +1200,7 @@ trace on-stack replacement
 - **readonly:** `false`
 
 
-### stress_runs *{Integer}*
+### stress_runs `0` *{Integer}*
 
 number of stress runs
 
@@ -1209,7 +1209,7 @@ number of stress runs
 - **readonly:** `false`
 
 
-### optimize_closures *{Boolean}*
+### optimize_closures `true` *{Boolean}*
 
 optimize closures
 
@@ -1218,7 +1218,7 @@ optimize closures
 - **readonly:** `false`
 
 
-### lookup_sample_by_shared *{Boolean}*
+### lookup_sample_by_shared `true` *{Boolean}*
 
 when picking a function to optimize, watch for shared function info, not JSFunction itself
 
@@ -1227,7 +1227,7 @@ when picking a function to optimize, watch for shared function info, not JSFunct
 - **readonly:** `false`
 
 
-### cache_optimized_code *{Boolean}*
+### cache_optimized_code `true` *{Boolean}*
 
 cache optimized code for closures
 
@@ -1236,7 +1236,7 @@ cache optimized code for closures
 - **readonly:** `false`
 
 
-### flush_optimized_code_cache *{Boolean}*
+### flush_optimized_code_cache `true` *{Boolean}*
 
 flushes the cache of optimized code for closures on every GC
 
@@ -1245,7 +1245,7 @@ flushes the cache of optimized code for closures on every GC
 - **readonly:** `false`
 
 
-### inline_construct *{Boolean}*
+### inline_construct `true` *{Boolean}*
 
 inline constructor calls
 
@@ -1254,7 +1254,7 @@ inline constructor calls
 - **readonly:** `false`
 
 
-### inline_arguments *{Boolean}*
+### inline_arguments `true` *{Boolean}*
 
 inline functions with arguments object
 
@@ -1263,7 +1263,7 @@ inline functions with arguments object
 - **readonly:** `false`
 
 
-### inline_accessors *{Boolean}*
+### inline_accessors `true` *{Boolean}*
 
 inline JavaScript accessors
 
@@ -1272,7 +1272,7 @@ inline JavaScript accessors
 - **readonly:** `false`
 
 
-### escape_analysis_iterations *{Integer}*
+### escape_analysis_iterations `2` *{Integer}*
 
 maximum number of escape analysis fix-point iterations
 
@@ -1281,7 +1281,7 @@ maximum number of escape analysis fix-point iterations
 - **readonly:** `false`
 
 
-### optimize_for_in *{Boolean}*
+### optimize_for_in `true` *{Boolean}*
 
 optimize functions containing for-in loops
 
@@ -1290,7 +1290,7 @@ optimize functions containing for-in loops
 - **readonly:** `false`
 
 
-### opt_safe_uint32_operations *{Boolean}*
+### opt_safe_uint32_operations `true` *{Boolean}*
 
 allow uint32 values on optimize frames if they are used only in safe operations
 
@@ -1299,7 +1299,7 @@ allow uint32 values on optimize frames if they are used only in safe operations
 - **readonly:** `false`
 
 
-### concurrent_recompilation *{Boolean}*
+### concurrent_recompilation `true` *{Boolean}*
 
 optimizing hot functions asynchronously on a separate thread
 
@@ -1308,7 +1308,7 @@ optimizing hot functions asynchronously on a separate thread
 - **readonly:** `false`
 
 
-### trace_concurrent_recompilation *{Boolean}*
+### trace_concurrent_recompilation `false` *{Boolean}*
 
 track concurrent recompilation
 
@@ -1317,7 +1317,7 @@ track concurrent recompilation
 - **readonly:** `false`
 
 
-### concurrent_recompilation_queue_length *{Integer}*
+### concurrent_recompilation_queue_length `8` *{Integer}*
 
 the length of the concurrent compilation queue
 
@@ -1326,7 +1326,7 @@ the length of the concurrent compilation queue
 - **readonly:** `false`
 
 
-### concurrent_recompilation_delay *{Integer}*
+### concurrent_recompilation_delay `0` *{Integer}*
 
 artificial compilation delay in ms
 
@@ -1335,7 +1335,7 @@ artificial compilation delay in ms
 - **readonly:** `false`
 
 
-### block_concurrent_recompilation *{Boolean}*
+### block_concurrent_recompilation `false` *{Boolean}*
 
 block queued jobs until released
 
@@ -1344,7 +1344,7 @@ block queued jobs until released
 - **readonly:** `false`
 
 
-### concurrent_osr *{Boolean}*
+### concurrent_osr `false` *{Boolean}*
 
 concurrent on-stack replacement
 
@@ -1357,7 +1357,7 @@ concurrent on-stack replacement
 - concurrent_recompilation
 
 
-### omit_map_checks_for_leaf_maps *{Boolean}*
+### omit_map_checks_for_leaf_maps `true` *{Boolean}*
 
 do not emit check maps for constant values that have a leaf map, deoptimize the optimized code if the layout of the maps changes.
 
@@ -1366,7 +1366,7 @@ do not emit check maps for constant values that have a leaf map, deoptimize the 
 - **readonly:** `false`
 
 
-### typed_array_max_size_in_heap *{Integer}*
+### typed_array_max_size_in_heap `64` *{Integer}*
 
 threshold for in-heap typed array
 
@@ -1375,7 +1375,7 @@ threshold for in-heap typed array
 - **readonly:** `false`
 
 
-### frame_count *{Integer}*
+### frame_count `1` *{Integer}*
 
 number of stack frames inspected by the profiler
 
@@ -1384,7 +1384,7 @@ number of stack frames inspected by the profiler
 - **readonly:** `false`
 
 
-### interrupt_budget *{Integer}*
+### interrupt_budget `6144` *{Integer}*
 
 execution budget before interrupt is triggered
 
@@ -1393,7 +1393,7 @@ execution budget before interrupt is triggered
 - **readonly:** `false`
 
 
-### type_info_threshold *{Integer}*
+### type_info_threshold `25` *{Integer}*
 
 percentage of ICs that must have type info to allow optimization
 
@@ -1402,7 +1402,7 @@ percentage of ICs that must have type info to allow optimization
 - **readonly:** `false`
 
 
-### self_opt_count *{Integer}*
+### self_opt_count `130` *{Integer}*
 
 call count before self-optimization
 
@@ -1411,7 +1411,7 @@ call count before self-optimization
 - **readonly:** `false`
 
 
-### trace_opt_verbose *{Boolean}*
+### trace_opt_verbose `false` *{Boolean}*
 
 extra verbose compilation tracing
 
@@ -1424,7 +1424,7 @@ extra verbose compilation tracing
 - trace_opt
 
 
-### debug_code *{Boolean}*
+### debug_code `false` *{Boolean}*
 
 generate extra code (assertions) for debugging
 
@@ -1433,7 +1433,7 @@ generate extra code (assertions) for debugging
 - **readonly:** `false`
 
 
-### code_comments *{Boolean}*
+### code_comments `false` *{Boolean}*
 
 emit comments in code disassembly
 
@@ -1448,7 +1448,7 @@ emit comments in code disassembly
 
 **Note**: not available below **node:** `0.11` - **v8:** `3.25`
 
-### enable_sse2 *{Boolean}*
+### enable_sse2 `true` *{Boolean}*
 
 enable use of SSE2 instructions if available
 
@@ -1457,7 +1457,7 @@ enable use of SSE2 instructions if available
 - **readonly:** `false`
 
 
-### enable_sse3 *{Boolean}*
+### enable_sse3 `true` *{Boolean}*
 
 enable use of SSE3 instructions if available
 
@@ -1466,7 +1466,7 @@ enable use of SSE3 instructions if available
 - **readonly:** `false`
 
 
-### enable_sse4_1 *{Boolean}*
+### enable_sse4_1 `true` *{Boolean}*
 
 enable use of SSE4.1 instructions if available
 
@@ -1475,7 +1475,7 @@ enable use of SSE4.1 instructions if available
 - **readonly:** `false`
 
 
-### enable_cmov *{Boolean}*
+### enable_cmov `true` *{Boolean}*
 
 enable use of CMOV instruction if available
 
@@ -1484,7 +1484,7 @@ enable use of CMOV instruction if available
 - **readonly:** `false`
 
 
-### enable_sahf *{Boolean}*
+### enable_sahf `true` *{Boolean}*
 
 enable use of SAHF instruction if available (X64 only)
 
@@ -1493,7 +1493,7 @@ enable use of SAHF instruction if available (X64 only)
 - **readonly:** `false`
 
 
-### enable_vfp3 *{Boolean}*
+### enable_vfp3 `true` *{Boolean}*
 
 enable use of VFP3 instructions if available
 
@@ -1502,7 +1502,7 @@ enable use of VFP3 instructions if available
 - **readonly:** `false`
 
 
-### enable_armv7 *{Boolean}*
+### enable_armv7 `true` *{Boolean}*
 
 enable use of ARMv7 instructions if available (ARM only)
 
@@ -1511,7 +1511,7 @@ enable use of ARMv7 instructions if available (ARM only)
 - **readonly:** `false`
 
 
-### enable_neon *{Boolean}*
+### enable_neon `true` *{Boolean}*
 
 enable use of NEON instructions if available (ARM only)
 
@@ -1520,7 +1520,7 @@ enable use of NEON instructions if available (ARM only)
 - **readonly:** `false`
 
 
-### enable_sudiv *{Boolean}*
+### enable_sudiv `true` *{Boolean}*
 
 enable use of SDIV and UDIV instructions if available (ARM only)
 
@@ -1529,7 +1529,7 @@ enable use of SDIV and UDIV instructions if available (ARM only)
 - **readonly:** `false`
 
 
-### enable_movw_movt *{Boolean}*
+### enable_movw_movt `false` *{Boolean}*
 
 enable loading 32-bit constant by means of movw/movt instruction pairs (ARM only)
 
@@ -1538,7 +1538,7 @@ enable loading 32-bit constant by means of movw/movt instruction pairs (ARM only
 - **readonly:** `false`
 
 
-### enable_unaligned_accesses *{Boolean}*
+### enable_unaligned_accesses `true` *{Boolean}*
 
 enable unaligned accesses for ARMv7 (ARM only)
 
@@ -1547,7 +1547,7 @@ enable unaligned accesses for ARMv7 (ARM only)
 - **readonly:** `false`
 
 
-### enable_32dregs *{Boolean}*
+### enable_32dregs `true` *{Boolean}*
 
 enable use of d16-d31 registers on ARM - this requires VFP3
 
@@ -1556,7 +1556,7 @@ enable use of d16-d31 registers on ARM - this requires VFP3
 - **readonly:** `false`
 
 
-### enable_vldr_imm *{Boolean}*
+### enable_vldr_imm `false` *{Boolean}*
 
 enable use of constant pools for double immediate (ARM only)
 
@@ -1565,7 +1565,7 @@ enable use of constant pools for double immediate (ARM only)
 - **readonly:** `false`
 
 
-### force_long_branches *{Boolean}*
+### force_long_branches `false` *{Boolean}*
 
 force all emitted branches to be in long mode (MIPS only)
 
@@ -1574,7 +1574,7 @@ force all emitted branches to be in long mode (MIPS only)
 - **readonly:** `false`
 
 
-### expose_free_buffer *{Boolean}*
+### expose_free_buffer `false` *{Boolean}*
 
 expose freeBuffer extension
 
@@ -1583,7 +1583,7 @@ expose freeBuffer extension
 - **readonly:** `false`
 
 
-### expose_gc *{Boolean}*
+### expose_gc `false` *{Boolean}*
 
 expose gc extension
 
@@ -1595,7 +1595,7 @@ expose gc extension
 - **readonly:** `false`
 
 
-### expose_externalize_string *{Boolean}*
+### expose_externalize_string `false` *{Boolean}*
 
 expose externalize string extension
 
@@ -1604,7 +1604,7 @@ expose externalize string extension
 - **readonly:** `false`
 
 
-### expose_trigger_failure *{Boolean}*
+### expose_trigger_failure `false` *{Boolean}*
 
 expose trigger-failure extension
 
@@ -1613,7 +1613,7 @@ expose trigger-failure extension
 - **readonly:** `false`
 
 
-### stack_trace_limit *{Integer}*
+### stack_trace_limit `10` *{Integer}*
 
 number of stack frames to capture
 
@@ -1622,7 +1622,7 @@ number of stack frames to capture
 - **readonly:** `false`
 
 
-### builtins_in_stack_traces *{Boolean}*
+### builtins_in_stack_traces `false` *{Boolean}*
 
 show built-in functions in stack traces
 
@@ -1631,7 +1631,7 @@ show built-in functions in stack traces
 - **readonly:** `false`
 
 
-### disable_native_files *{Boolean}*
+### disable_native_files `false` *{Boolean}*
 
 disable builtin natives files
 
@@ -1640,7 +1640,7 @@ disable builtin natives files
 - **readonly:** `false`
 
 
-### inline_new *{Boolean}*
+### inline_new `true` *{Boolean}*
 
 use fast inline allocation
 
@@ -1649,7 +1649,7 @@ use fast inline allocation
 - **readonly:** `false`
 
 
-### trace_codegen *{Boolean}*
+### trace_codegen `false` *{Boolean}*
 
 print name of functions for which code is generated
 
@@ -1658,7 +1658,7 @@ print name of functions for which code is generated
 - **readonly:** `false`
 
 
-### trace *{Boolean}*
+### trace `false` *{Boolean}*
 
 trace function calls
 
@@ -1667,7 +1667,7 @@ trace function calls
 - **readonly:** `false`
 
 
-### mask_constants_with_cookie *{Boolean}*
+### mask_constants_with_cookie `true` *{Boolean}*
 
 use random jit cookie to mask large constants
 
@@ -1676,7 +1676,7 @@ use random jit cookie to mask large constants
 - **readonly:** `false`
 
 
-### lazy *{Boolean}*
+### lazy `true` *{Boolean}*
 
 use lazy compilation
 
@@ -1685,7 +1685,7 @@ use lazy compilation
 - **readonly:** `false`
 
 
-### trace_opt *{Boolean}*
+### trace_opt `false` *{Boolean}*
 
 trace lazy optimization
 
@@ -1694,7 +1694,7 @@ trace lazy optimization
 - **readonly:** `false`
 
 
-### trace_opt_stats *{Boolean}*
+### trace_opt_stats `false` *{Boolean}*
 
 trace lazy optimization statistics
 
@@ -1703,7 +1703,7 @@ trace lazy optimization statistics
 - **readonly:** `false`
 
 
-### opt *{Boolean}*
+### opt `true` *{Boolean}*
 
 use adaptive optimizations
 
@@ -1712,7 +1712,7 @@ use adaptive optimizations
 - **readonly:** `false`
 
 
-### always_opt *{Boolean}*
+### always_opt `false` *{Boolean}*
 
 always try to optimize functions
 
@@ -1722,7 +1722,7 @@ always try to optimize functions
 
 **Note**: not properly working below **node:** `0.10` - **v8:** `3.14`
 
-### always_osr *{Boolean}*
+### always_osr `false` *{Boolean}*
 
 always try to OSR functions
 
@@ -1741,7 +1741,7 @@ OSR (*On Stack Replacement*) is used to convert a running function’s interpret
 
 **Note**: available starting with **node:** `0.10` - **v8:** `3.14`
 
-### prepare_always_opt *{Boolean}*
+### prepare_always_opt `false` *{Boolean}*
 
 prepare for turning on always opt
 
@@ -1750,7 +1750,7 @@ prepare for turning on always opt
 - **readonly:** `false`
 
 
-### trace_deopt *{Boolean}*
+### trace_deopt `false` *{Boolean}*
 
 trace optimize function deoptimization
 
@@ -1759,7 +1759,7 @@ trace optimize function deoptimization
 - **readonly:** `false`
 
 
-### trace_stub_failures *{Boolean}*
+### trace_stub_failures `false` *{Boolean}*
 
 trace deoptimization of generated code stubs
 
@@ -1768,7 +1768,7 @@ trace deoptimization of generated code stubs
 - **readonly:** `false`
 
 
-### min_preparse_length *{Integer}*
+### min_preparse_length `1024` *{Integer}*
 
 minimum length for automatic enable preparsing
 
@@ -1777,7 +1777,7 @@ minimum length for automatic enable preparsing
 - **readonly:** `false`
 
 
-### always_full_compiler *{Boolean}*
+### always_full_compiler `false` *{Boolean}*
 
 try to use the dedicated run-once backend for all code
 
@@ -1786,7 +1786,7 @@ try to use the dedicated run-once backend for all code
 - **readonly:** `false`
 
 
-### max_opt_count *{Integer}*
+### max_opt_count `10` *{Integer}*
 
 maximum number of optimization attempts before giving up.
 
@@ -1795,7 +1795,7 @@ maximum number of optimization attempts before giving up.
 - **readonly:** `false`
 
 
-### compilation_cache *{Boolean}*
+### compilation_cache `true` *{Boolean}*
 
 enable compilation cache
 
@@ -1817,7 +1817,7 @@ used.
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/compilation-cache.h#L220)
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/debug.cc#L3292-L3301)
 
-### cache_prototype_transitions *{Boolean}*
+### cache_prototype_transitions `true` *{Boolean}*
 
 cache prototype transitions
 
@@ -1829,7 +1829,7 @@ cache prototype transitions
   
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/objects.cc#L12076)
 
-### cpu_profiler_sampling_interval *{Integer}*
+### cpu_profiler_sampling_interval `1000` *{Integer}*
 
 CPU profiler sampling interval in microseconds
 
@@ -1838,7 +1838,7 @@ CPU profiler sampling interval in microseconds
 - **readonly:** `false`
 
 
-### trace_debug_json *{Boolean}*
+### trace_debug_json `false` *{Boolean}*
 
 trace debugging JSON request/response
 
@@ -1847,7 +1847,7 @@ trace debugging JSON request/response
 - **readonly:** `false`
 
 
-### trace_js_array_abuse *{Boolean}*
+### trace_js_array_abuse `false` *{Boolean}*
 
 trace out-of-bounds accesses to JS arrays
 
@@ -1856,7 +1856,7 @@ trace out-of-bounds accesses to JS arrays
 - **readonly:** `false`
 
 
-### trace_external_array_abuse *{Boolean}*
+### trace_external_array_abuse `false` *{Boolean}*
 
 trace out-of-bounds-accesses to external arrays
 
@@ -1865,7 +1865,7 @@ trace out-of-bounds-accesses to external arrays
 - **readonly:** `false`
 
 
-### trace_array_abuse *{Boolean}*
+### trace_array_abuse `false` *{Boolean}*
 
 trace out-of-bounds accesses to all arrays
 
@@ -1879,7 +1879,7 @@ trace out-of-bounds accesses to all arrays
 - trace_external_array_abuse
 
 
-### debugger_auto_break *{Boolean}*
+### debugger_auto_break `true` *{Boolean}*
 
 automatically set the debug break flag when debugger commands are in the queue
 
@@ -1888,7 +1888,7 @@ automatically set the debug break flag when debugger commands are in the queue
 - **readonly:** `false`
 
 
-### enable_liveedit *{Boolean}*
+### enable_liveedit `true` *{Boolean}*
 
 enable liveedit experimental feature
 
@@ -1897,7 +1897,7 @@ enable liveedit experimental feature
 - **readonly:** `false`
 
 
-### hard_abort *{Boolean}*
+### hard_abort `true` *{Boolean}*
 
 abort by crashing
 
@@ -1906,7 +1906,7 @@ abort by crashing
 - **readonly:** `false`
 
 
-### stack_size *{Integer}*
+### stack_size `984` *{Integer}*
 
 default size of stack region v8 is allowed to use (in kBytes)
 
@@ -1915,7 +1915,7 @@ default size of stack region v8 is allowed to use (in kBytes)
 - **readonly:** `false`
 
 
-### max_stack_trace_source_length *{Integer}*
+### max_stack_trace_source_length `300` *{Integer}*
 
 maximum length of function source code printed in a stack trace.
 
@@ -1924,7 +1924,7 @@ maximum length of function source code printed in a stack trace.
 - **readonly:** `false`
 
 
-### always_inline_smi_code *{Boolean}*
+### always_inline_smi_code `false` *{Boolean}*
 
 always inline smi code in non-opt code
 
@@ -1933,7 +1933,7 @@ always inline smi code in non-opt code
 - **readonly:** `false`
 
 
-### max_new_space_size *{Integer}*
+### max_new_space_size `0` *{Integer}*
 
 max size of the new generation (in kBytes)
 
@@ -1942,7 +1942,7 @@ max size of the new generation (in kBytes)
 - **readonly:** `false`
 
 
-### max_old_space_size *{Integer}*
+### max_old_space_size `0` *{Integer}*
 
 max size of the old generation (in Mbytes)
 
@@ -1951,7 +1951,7 @@ max size of the old generation (in Mbytes)
 - **readonly:** `false`
 
 
-### max_executable_size *{Integer}*
+### max_executable_size `0` *{Integer}*
 
 max size of executable memory (in Mbytes)
 
@@ -1960,7 +1960,7 @@ max size of executable memory (in Mbytes)
 - **readonly:** `false`
 
 
-### gc_global *{Boolean}*
+### gc_global `false` *{Boolean}*
 
 always perform global GCs
 
@@ -1969,7 +1969,7 @@ always perform global GCs
 - **readonly:** `false`
 
 
-### gc_interval *{Integer}*
+### gc_interval `-1` *{Integer}*
 
 garbage collect after <n> allocations
 
@@ -1978,7 +1978,7 @@ garbage collect after <n> allocations
 - **readonly:** `false`
 
 
-### trace_gc *{Boolean}*
+### trace_gc `false` *{Boolean}*
 
 print one trace line following each garbage collection
 
@@ -1987,7 +1987,7 @@ print one trace line following each garbage collection
 - **readonly:** `false`
 
 
-### trace_gc_nvp *{Boolean}*
+### trace_gc_nvp `false` *{Boolean}*
 
 print one detailed trace line in name=value format after each garbage collection
 
@@ -1996,7 +1996,7 @@ print one detailed trace line in name=value format after each garbage collection
 - **readonly:** `false`
 
 
-### trace_gc_ignore_scavenger *{Boolean}*
+### trace_gc_ignore_scavenger `false` *{Boolean}*
 
 do not print trace line after scavenger collection
 
@@ -2005,7 +2005,7 @@ do not print trace line after scavenger collection
 - **readonly:** `false`
 
 
-### print_cumulative_gc_stat *{Boolean}*
+### print_cumulative_gc_stat `false` *{Boolean}*
 
 print cumulative GC statistics in name=value format on exit
 
@@ -2014,7 +2014,7 @@ print cumulative GC statistics in name=value format on exit
 - **readonly:** `false`
 
 
-### print_max_heap_committed *{Boolean}*
+### print_max_heap_committed `false` *{Boolean}*
 
 print statistics of the maximum memory committed for the heap in name=value format on exit
 
@@ -2023,7 +2023,7 @@ print statistics of the maximum memory committed for the heap in name=value form
 - **readonly:** `false`
 
 
-### trace_gc_verbose *{Boolean}*
+### trace_gc_verbose `false` *{Boolean}*
 
 print more details following each garbage collection
 
@@ -2032,7 +2032,7 @@ print more details following each garbage collection
 - **readonly:** `false`
 
 
-### trace_fragmentation *{Boolean}*
+### trace_fragmentation `false` *{Boolean}*
 
 report fragmentation for old pointer and data pages
 
@@ -2041,7 +2041,7 @@ report fragmentation for old pointer and data pages
 - **readonly:** `false`
 
 
-### trace_external_memory *{Boolean}*
+### trace_external_memory `false` *{Boolean}*
 
 print amount of external allocated memory after each time it is adjusted.
 
@@ -2050,7 +2050,7 @@ print amount of external allocated memory after each time it is adjusted.
 - **readonly:** `false`
 
 
-### collect_maps *{Boolean}*
+### collect_maps `true` *{Boolean}*
 
 garbage collect maps from which no objects can be reached
 
@@ -2059,7 +2059,7 @@ garbage collect maps from which no objects can be reached
 - **readonly:** `false`
 
 
-### weak_embedded_maps_in_optimized_code *{Boolean}*
+### weak_embedded_maps_in_optimized_code `true` *{Boolean}*
 
 make maps embedded in optimized code weak
 
@@ -2068,7 +2068,7 @@ make maps embedded in optimized code weak
 - **readonly:** `false`
 
 
-### weak_embedded_objects_in_optimized_code *{Boolean}*
+### weak_embedded_objects_in_optimized_code `true` *{Boolean}*
 
 make objects embedded in optimized code weak
 
@@ -2077,7 +2077,7 @@ make objects embedded in optimized code weak
 - **readonly:** `false`
 
 
-### flush_code *{Boolean}*
+### flush_code `true` *{Boolean}*
 
 flush code that we expect not to use again (during full gc)
 
@@ -2086,7 +2086,7 @@ flush code that we expect not to use again (during full gc)
 - **readonly:** `false`
 
 
-### flush_code_incrementally *{Boolean}*
+### flush_code_incrementally `true` *{Boolean}*
 
 flush code that we expect not to use again (incrementally)
 
@@ -2095,7 +2095,7 @@ flush code that we expect not to use again (incrementally)
 - **readonly:** `false`
 
 
-### trace_code_flushing *{Boolean}*
+### trace_code_flushing `false` *{Boolean}*
 
 trace code flushing progress
 
@@ -2104,7 +2104,7 @@ trace code flushing progress
 - **readonly:** `false`
 
 
-### age_code *{Boolean}*
+### age_code `true` *{Boolean}*
 
 track un-executed functions to age code and flush only old code (required for code flushing)
 
@@ -2113,7 +2113,7 @@ track un-executed functions to age code and flush only old code (required for co
 - **readonly:** `false`
 
 
-### incremental_marking *{Boolean}*
+### incremental_marking `true` *{Boolean}*
 
 use incremental marking
 
@@ -2122,7 +2122,7 @@ use incremental marking
 - **readonly:** `false`
 
 
-### incremental_marking_steps *{Boolean}*
+### incremental_marking_steps `true` *{Boolean}*
 
 do incremental marking steps
 
@@ -2131,7 +2131,7 @@ do incremental marking steps
 - **readonly:** `false`
 
 
-### trace_incremental_marking *{Boolean}*
+### trace_incremental_marking `false` *{Boolean}*
 
 trace progress of the incremental marking
 
@@ -2140,7 +2140,7 @@ trace progress of the incremental marking
 - **readonly:** `false`
 
 
-### track_gc_object_stats *{Boolean}*
+### track_gc_object_stats `false` *{Boolean}*
 
 track object counts and memory usage
 
@@ -2149,7 +2149,7 @@ track object counts and memory usage
 - **readonly:** `false`
 
 
-### parallel_sweeping *{Boolean}*
+### parallel_sweeping `true` *{Boolean}*
 
 enable parallel sweeping
 
@@ -2158,7 +2158,7 @@ enable parallel sweeping
 - **readonly:** `false`
 
 
-### concurrent_sweeping *{Boolean}*
+### concurrent_sweeping `false` *{Boolean}*
 
 enable concurrent sweeping
 
@@ -2174,7 +2174,7 @@ enable concurrent sweeping
 
 **Note**: not available below **node:** `0.11` - **v8:** `3.25`
 
-### sweeper_threads *{Integer}*
+### sweeper_threads `0` *{Integer}*
 
 number of parallel and concurrent sweeping threads
 
@@ -2183,7 +2183,7 @@ number of parallel and concurrent sweeping threads
 - **readonly:** `false`
 
 
-### job_based_sweeping *{Boolean}*
+### job_based_sweeping `false` *{Boolean}*
 
 enable job based sweeping
 
@@ -2192,7 +2192,7 @@ enable job based sweeping
 - **readonly:** `false`
 
 
-### heap_profiler_trace_objects *{Boolean}*
+### heap_profiler_trace_objects `false` *{Boolean}*
 
 Dump heap object allocations/movements/size_updates
 
@@ -2201,7 +2201,7 @@ Dump heap object allocations/movements/size_updates
 - **readonly:** `false`
 
 
-### use_idle_notification *{Boolean}*
+### use_idle_notification `true` *{Boolean}*
 
 Use idle notification to reduce memory footprint.
 
@@ -2210,7 +2210,7 @@ Use idle notification to reduce memory footprint.
 - **readonly:** `false`
 
 
-### use_ic *{Boolean}*
+### use_ic `true` *{Boolean}*
 
 use inline caching
 
@@ -2219,7 +2219,7 @@ use inline caching
 - **readonly:** `false`
 
 
-### native_code_counters *{Boolean}*
+### native_code_counters `false` *{Boolean}*
 
 generate extra code for manipulating stats counters
 
@@ -2228,7 +2228,7 @@ generate extra code for manipulating stats counters
 - **readonly:** `false`
 
 
-### always_compact *{Boolean}*
+### always_compact `false` *{Boolean}*
 
 Perform compaction on every full GC
 
@@ -2237,7 +2237,7 @@ Perform compaction on every full GC
 - **readonly:** `false`
 
 
-### lazy_sweeping *{Boolean}*
+### lazy_sweeping `true` *{Boolean}*
 
 Use lazy sweeping for old pointer and data spaces
 
@@ -2246,7 +2246,7 @@ Use lazy sweeping for old pointer and data spaces
 - **readonly:** `false`
 
 
-### never_compact *{Boolean}*
+### never_compact `false` *{Boolean}*
 
 Never perform compaction on full GC - testing only
 
@@ -2255,7 +2255,7 @@ Never perform compaction on full GC - testing only
 - **readonly:** `false`
 
 
-### compact_code_space *{Boolean}*
+### compact_code_space `true` *{Boolean}*
 
 Compact code space on full non-incremental collections
 
@@ -2264,7 +2264,7 @@ Compact code space on full non-incremental collections
 - **readonly:** `false`
 
 
-### incremental_code_compaction *{Boolean}*
+### incremental_code_compaction `true` *{Boolean}*
 
 Compact code space on full incremental collections
 
@@ -2273,7 +2273,7 @@ Compact code space on full incremental collections
 - **readonly:** `false`
 
 
-### cleanup_code_caches_at_gc *{Boolean}*
+### cleanup_code_caches_at_gc `true` *{Boolean}*
 
 Flush inline caches prior to mark compact collection and flush code caches in maps during mark compact cycle.
 
@@ -2282,7 +2282,7 @@ Flush inline caches prior to mark compact collection and flush code caches in ma
 - **readonly:** `false`
 
 
-### use_marking_progress_bar *{Boolean}*
+### use_marking_progress_bar `true` *{Boolean}*
 
 Use a progress bar to scan large objects in increments when incremental marking is active.
 
@@ -2291,7 +2291,7 @@ Use a progress bar to scan large objects in increments when incremental marking 
 - **readonly:** `false`
 
 
-### zap_code_space *{Boolean}*
+### zap_code_space `true` *{Boolean}*
 
 Zap free memory in code space with 0xCC while sweeping.
 
@@ -2300,7 +2300,7 @@ Zap free memory in code space with 0xCC while sweeping.
 - **readonly:** `false`
 
 
-### random_seed *{Integer}*
+### random_seed `0` *{Integer}*
 
 Default seed for initializing random generator (0, the default, means to use system random).
 
@@ -2309,7 +2309,7 @@ Default seed for initializing random generator (0, the default, means to use sys
 - **readonly:** `false`
 
 
-### use_verbose_printer *{Boolean}*
+### use_verbose_printer `true` *{Boolean}*
 
 allows verbose printing
 
@@ -2318,7 +2318,7 @@ allows verbose printing
 - **readonly:** `false`
 
 
-### allow_natives_syntax *{Boolean}*
+### allow_natives_syntax `false` *{Boolean}*
 
 allow natives syntax
 
@@ -2327,7 +2327,7 @@ allow natives syntax
 - **readonly:** `false`
 
 
-### trace_parse *{Boolean}*
+### trace_parse `false` *{Boolean}*
 
 trace parsing and preparsing
 
@@ -2336,7 +2336,7 @@ trace parsing and preparsing
 - **readonly:** `false`
 
 
-### trace_sim *{Boolean}*
+### trace_sim `false` *{Boolean}*
 
 Trace simulator execution
 
@@ -2345,7 +2345,7 @@ Trace simulator execution
 - **readonly:** `false`
 
 
-### debug_sim *{Boolean}*
+### debug_sim `false` *{Boolean}*
 
 Enable debugging the simulator
 
@@ -2361,7 +2361,7 @@ At this point this is only used inside the arm64 simulator.
 
 **Note**: not available below **node:** `0.11` - **v8:** `3.25`
 
-### check_icache *{Boolean}*
+### check_icache `false` *{Boolean}*
 
 Check icache flushes in ARM and MIPS simulator
 
@@ -2370,7 +2370,7 @@ Check icache flushes in ARM and MIPS simulator
 - **readonly:** `false`
 
 
-### stop_sim_at *{Integer}*
+### stop_sim_at `0` *{Integer}*
 
 Simulator stop after x number of instructions
 
@@ -2379,7 +2379,7 @@ Simulator stop after x number of instructions
 - **readonly:** `false`
 
 
-### sim_stack_alignment *{Integer}*
+### sim_stack_alignment `8` *{Integer}*
 
 Stack alingment in bytes in simulator (4 or 8, 8 is default)
 
@@ -2388,7 +2388,7 @@ Stack alingment in bytes in simulator (4 or 8, 8 is default)
 - **readonly:** `false`
 
 
-### sim_stack_size *{Integer}*
+### sim_stack_size `2048` *{Integer}*
 
 Stack size of the ARM64 simulator in kBytes (default is 2 MB)
 
@@ -2397,7 +2397,7 @@ Stack size of the ARM64 simulator in kBytes (default is 2 MB)
 - **readonly:** `false`
 
 
-### log_regs_modified *{Boolean}*
+### log_regs_modified `true` *{Boolean}*
 
 When logging register values, only print modified registers.
 
@@ -2406,7 +2406,7 @@ When logging register values, only print modified registers.
 - **readonly:** `false`
 
 
-### log_colour *{Boolean}*
+### log_colour `true` *{Boolean}*
 
 When logging, try to use coloured output.
 
@@ -2415,7 +2415,7 @@ When logging, try to use coloured output.
 - **readonly:** `false`
 
 
-### ignore_asm_unimplemented_break *{Boolean}*
+### ignore_asm_unimplemented_break `false` *{Boolean}*
 
 Don't break for ASM_UNIMPLEMENTED_BREAK macros.
 
@@ -2424,7 +2424,7 @@ Don't break for ASM_UNIMPLEMENTED_BREAK macros.
 - **readonly:** `false`
 
 
-### trace_sim_messages *{Boolean}*
+### trace_sim_messages `false` *{Boolean}*
 
 Trace simulator debug messages. Implied by --trace-sim.
 
@@ -2433,7 +2433,7 @@ Trace simulator debug messages. Implied by --trace-sim.
 - **readonly:** `false`
 
 
-### stack_trace_on_illegal *{Boolean}*
+### stack_trace_on_illegal `false` *{Boolean}*
 
 print stack trace when an illegal exception is thrown
 
@@ -2442,7 +2442,7 @@ print stack trace when an illegal exception is thrown
 - **readonly:** `false`
 
 
-### abort_on_uncaught_exception *{Boolean}*
+### abort_on_uncaught_exception `false` *{Boolean}*
 
 abort program (dump core) when an uncaught exception is thrown
 
@@ -2451,7 +2451,7 @@ abort program (dump core) when an uncaught exception is thrown
 - **readonly:** `false`
 
 
-### randomize_hashes *{Boolean}*
+### randomize_hashes `true` *{Boolean}*
 
 randomize hashes to avoid predictable hash collisions (with snapshots this option cannot override the baked-in seed)
 
@@ -2460,7 +2460,7 @@ randomize hashes to avoid predictable hash collisions (with snapshots this optio
 - **readonly:** `false`
 
 
-### hash_seed *{Integer}*
+### hash_seed `0` *{Integer}*
 
 Fixed seed to use to hash property keys (0 means random)(with snapshots this option cannot override the baked-in seed)
 
@@ -2469,7 +2469,7 @@ Fixed seed to use to hash property keys (0 means random)(with snapshots this opt
 - **readonly:** `false`
 
 
-### profile_deserialization *{Boolean}*
+### profile_deserialization `false` *{Boolean}*
 
 Print the time it takes to deserialize the snapshot.
 
@@ -2478,7 +2478,7 @@ Print the time it takes to deserialize the snapshot.
 - **readonly:** `false`
 
 
-### regexp_optimization *{Boolean}*
+### regexp_optimization `true` *{Boolean}*
 
 generate optimized regexp code
 
@@ -2487,7 +2487,7 @@ generate optimized regexp code
 - **readonly:** `false`
 
 
-### testing_string_flag *{String}*
+### testing_string_flag `Hello, world!` *{String}*
 
 string-flag
 
@@ -2496,7 +2496,7 @@ string-flag
 - **readonly:** `false`
 
 
-### testing_serialization_file *{String}*
+### testing_serialization_file `/tmp/serdes` *{String}*
 
 file in which to serialize heap
 
@@ -2505,7 +2505,7 @@ file in which to serialize heap
 - **readonly:** `false`
 
 
-### profile_hydrogen_code_stub_compilation *{Boolean}*
+### profile_hydrogen_code_stub_compilation `false` *{Boolean}*
 
 Print the time it takes to lazily compile hydrogen code stubs.
 
@@ -2514,7 +2514,7 @@ Print the time it takes to lazily compile hydrogen code stubs.
 - **readonly:** `false`
 
 
-### predictable *{Boolean}*
+### predictable `false` *{Boolean}*
 
 enable predictable mode
 
@@ -2530,7 +2530,7 @@ enable predictable mode
 - parallel_sweeping
 
 
-### help *{Boolean}*
+### help `false` *{Boolean}*
 
 Print usage message, including flags, on console
 
@@ -2539,7 +2539,7 @@ Print usage message, including flags, on console
 - **readonly:** `false`
 
 
-### dump_counters *{Boolean}*
+### dump_counters `false` *{Boolean}*
 
 Dump counters on exit
 
@@ -2548,7 +2548,7 @@ Dump counters on exit
 - **readonly:** `false`
 
 
-### map_counters *{String}*
+### map_counters `` *{String}*
 
 Map counters to a file
 
@@ -2557,7 +2557,7 @@ Map counters to a file
 - **readonly:** `false`
 
 
-### debug_compile_events *{Boolean}*
+### debug_compile_events `true` *{Boolean}*
 
 Enable debugger compile events
 
@@ -2571,7 +2571,7 @@ Enable debugger compile events
 
 **Note:** disabled by default on `WebOS`
 
-### debug_script_collected_events *{Boolean}*
+### debug_script_collected_events `true` *{Boolean}*
 
 Enable debugger script collected events
 
@@ -2580,7 +2580,7 @@ Enable debugger script collected events
 - **readonly:** `false`
 
 
-### gdbjit *{Boolean}*
+### gdbjit `false` *{Boolean}*
 
 enable GDBJIT interface (disables compacting GC)
 
@@ -2589,7 +2589,7 @@ enable GDBJIT interface (disables compacting GC)
 - **readonly:** `false`
 
 
-### gdbjit_full *{Boolean}*
+### gdbjit_full `false` *{Boolean}*
 
 enable GDBJIT interface for all code objects
 
@@ -2598,7 +2598,7 @@ enable GDBJIT interface for all code objects
 - **readonly:** `false`
 
 
-### gdbjit_dump *{Boolean}*
+### gdbjit_dump `false` *{Boolean}*
 
 dump elf objects with debug info to disk
 
@@ -2607,7 +2607,7 @@ dump elf objects with debug info to disk
 - **readonly:** `false`
 
 
-### gdbjit_dump_filter *{String}*
+### gdbjit_dump_filter `` *{String}*
 
 dump only objects containing this substring
 
@@ -2616,7 +2616,7 @@ dump only objects containing this substring
 - **readonly:** `false`
 
 
-### force_marking_deque_overflows *{Boolean}*
+### force_marking_deque_overflows `false` *{Boolean}*
 
 force overflows of marking deque by reducing it's size to 64 words
 
@@ -2625,7 +2625,7 @@ force overflows of marking deque by reducing it's size to 64 words
 - **readonly:** `false`
 
 
-### stress_compaction *{Boolean}*
+### stress_compaction `false` *{Boolean}*
 
 stress the GC compactor to flush out bugs (implies --force_marking_deque_overflows)
 
@@ -2634,7 +2634,7 @@ stress the GC compactor to flush out bugs (implies --force_marking_deque_overflo
 - **readonly:** `false`
 
 
-### print_source *{Boolean}*
+### print_source `false` *{Boolean}*
 
 pretty print source code
 
@@ -2643,7 +2643,7 @@ pretty print source code
 - **readonly:** `true`
 
 
-### print_builtin_source *{Boolean}*
+### print_builtin_source `false` *{Boolean}*
 
 pretty print source code for builtins
 
@@ -2652,7 +2652,7 @@ pretty print source code for builtins
 - **readonly:** `true`
 
 
-### print_ast *{Boolean}*
+### print_ast `false` *{Boolean}*
 
 print source AST
 
@@ -2661,7 +2661,7 @@ print source AST
 - **readonly:** `true`
 
 
-### print_builtin_ast *{Boolean}*
+### print_builtin_ast `false` *{Boolean}*
 
 print source AST for builtins
 
@@ -2670,7 +2670,7 @@ print source AST for builtins
 - **readonly:** `true`
 
 
-### stop_at *{String}*
+### stop_at `` *{String}*
 
 function name where to insert a breakpoint
 
@@ -2679,7 +2679,7 @@ function name where to insert a breakpoint
 - **readonly:** `true`
 
 
-### trap_on_abort *{Boolean}*
+### trap_on_abort `false` *{Boolean}*
 
 replace aborts by breakpoints
 
@@ -2688,7 +2688,7 @@ replace aborts by breakpoints
 - **readonly:** `true`
 
 
-### print_builtin_scopes *{Boolean}*
+### print_builtin_scopes `false` *{Boolean}*
 
 print scopes for builtins
 
@@ -2697,7 +2697,7 @@ print scopes for builtins
 - **readonly:** `true`
 
 
-### print_scopes *{Boolean}*
+### print_scopes `false` *{Boolean}*
 
 print scopes
 
@@ -2706,7 +2706,7 @@ print scopes
 - **readonly:** `true`
 
 
-### trace_contexts *{Boolean}*
+### trace_contexts `false` *{Boolean}*
 
 trace contexts operations
 
@@ -2715,7 +2715,7 @@ trace contexts operations
 - **readonly:** `true`
 
 
-### gc_greedy *{Boolean}*
+### gc_greedy `false` *{Boolean}*
 
 perform GC prior to some allocations
 
@@ -2724,7 +2724,7 @@ perform GC prior to some allocations
 - **readonly:** `true`
 
 
-### gc_verbose *{Boolean}*
+### gc_verbose `false` *{Boolean}*
 
 print stuff during garbage collection
 
@@ -2733,7 +2733,7 @@ print stuff during garbage collection
 - **readonly:** `true`
 
 
-### heap_stats *{Boolean}*
+### heap_stats `false` *{Boolean}*
 
 report heap statistics before and after GC
 
@@ -2742,7 +2742,7 @@ report heap statistics before and after GC
 - **readonly:** `true`
 
 
-### code_stats *{Boolean}*
+### code_stats `false` *{Boolean}*
 
 report code statistics after GC
 
@@ -2755,7 +2755,7 @@ report code statistics after GC
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L582)
 - [v8 source](https://github.com/v8/v8/blob/3.26.33/src/heap.cc#L4528-L4536)
 
-### verify_native_context_separation *{Boolean}*
+### verify_native_context_separation `false` *{Boolean}*
 
 verify that code holds on to at most one native context after GC
 
@@ -2764,7 +2764,7 @@ verify that code holds on to at most one native context after GC
 - **readonly:** `true`
 
 
-### print_handles *{Boolean}*
+### print_handles `false` *{Boolean}*
 
 report handles after GC
 
@@ -2773,7 +2773,7 @@ report handles after GC
 - **readonly:** `true`
 
 
-### print_global_handles *{Boolean}*
+### print_global_handles `false` *{Boolean}*
 
 report global handles after GC
 
@@ -2782,7 +2782,7 @@ report global handles after GC
 - **readonly:** `true`
 
 
-### trace_ic *{Boolean}*
+### trace_ic `false` *{Boolean}*
 
 trace inline cache state transitions
 
@@ -2791,7 +2791,7 @@ trace inline cache state transitions
 - **readonly:** `true`
 
 
-### print_interfaces *{Boolean}*
+### print_interfaces `false` *{Boolean}*
 
 print interfaces
 
@@ -2800,7 +2800,7 @@ print interfaces
 - **readonly:** `true`
 
 
-### print_interface_details *{Boolean}*
+### print_interface_details `false` *{Boolean}*
 
 print interface inference details
 
@@ -2809,7 +2809,7 @@ print interface inference details
 - **readonly:** `true`
 
 
-### print_interface_depth *{Integer}*
+### print_interface_depth `5` *{Integer}*
 
 depth for printing interfaces
 
@@ -2818,7 +2818,7 @@ depth for printing interfaces
 - **readonly:** `true`
 
 
-### trace_normalization *{Boolean}*
+### trace_normalization `false` *{Boolean}*
 
 prints when objects are turned into dictionaries.
 
@@ -2827,7 +2827,7 @@ prints when objects are turned into dictionaries.
 - **readonly:** `true`
 
 
-### trace_lazy *{Boolean}*
+### trace_lazy `false` *{Boolean}*
 
 trace lazy compilation
 
@@ -2836,7 +2836,7 @@ trace lazy compilation
 - **readonly:** `true`
 
 
-### collect_heap_spill_statistics *{Boolean}*
+### collect_heap_spill_statistics `false` *{Boolean}*
 
 report heap spill statistics along with heap_stats (requires heap_stats)
 
@@ -2845,7 +2845,7 @@ report heap spill statistics along with heap_stats (requires heap_stats)
 - **readonly:** `true`
 
 
-### trace_isolates *{Boolean}*
+### trace_isolates `false` *{Boolean}*
 
 trace isolate state changes
 
@@ -2854,7 +2854,7 @@ trace isolate state changes
 - **readonly:** `true`
 
 
-### regexp_possessive_quantifier *{Boolean}*
+### regexp_possessive_quantifier `false` *{Boolean}*
 
 enable possessive quantifier syntax for testing
 
@@ -2863,7 +2863,7 @@ enable possessive quantifier syntax for testing
 - **readonly:** `true`
 
 
-### trace_regexp_bytecodes *{Boolean}*
+### trace_regexp_bytecodes `false` *{Boolean}*
 
 trace regexp bytecode execution
 
@@ -2872,7 +2872,7 @@ trace regexp bytecode execution
 - **readonly:** `true`
 
 
-### trace_regexp_assembler *{Boolean}*
+### trace_regexp_assembler `false` *{Boolean}*
 
 trace regexp macro assembler calls.
 
@@ -2881,7 +2881,7 @@ trace regexp macro assembler calls.
 - **readonly:** `true`
 
 
-### log *{Boolean}*
+### log `false` *{Boolean}*
 
 Minimal logging (no API, code, GC, suspect, or handles samples).
 
@@ -2890,7 +2890,7 @@ Minimal logging (no API, code, GC, suspect, or handles samples).
 - **readonly:** `false`
 
 
-### log_all *{Boolean}*
+### log_all `false` *{Boolean}*
 
 Log all events to the log file.
 
@@ -2899,7 +2899,7 @@ Log all events to the log file.
 - **readonly:** `false`
 
 
-### log_runtime *{Boolean}*
+### log_runtime `false` *{Boolean}*
 
 Activate runtime system %Log call.
 
@@ -2908,7 +2908,7 @@ Activate runtime system %Log call.
 - **readonly:** `false`
 
 
-### log_api *{Boolean}*
+### log_api `false` *{Boolean}*
 
 Log API events to the log file.
 
@@ -2917,7 +2917,7 @@ Log API events to the log file.
 - **readonly:** `false`
 
 
-### log_code *{Boolean}*
+### log_code `false` *{Boolean}*
 
 Log code events to the log file without profiling.
 
@@ -2926,7 +2926,7 @@ Log code events to the log file without profiling.
 - **readonly:** `false`
 
 
-### log_gc *{Boolean}*
+### log_gc `false` *{Boolean}*
 
 Log heap samples on garbage collection for the hp2ps tool.
 
@@ -2935,7 +2935,7 @@ Log heap samples on garbage collection for the hp2ps tool.
 - **readonly:** `false`
 
 
-### log_handles *{Boolean}*
+### log_handles `false` *{Boolean}*
 
 Log global handle events.
 
@@ -2944,7 +2944,7 @@ Log global handle events.
 - **readonly:** `false`
 
 
-### log_snapshot_positions *{Boolean}*
+### log_snapshot_positions `false` *{Boolean}*
 
 log positions of (de)serialized objects in the snapshot.
 
@@ -2953,7 +2953,7 @@ log positions of (de)serialized objects in the snapshot.
 - **readonly:** `false`
 
 
-### log_suspect *{Boolean}*
+### log_suspect `false` *{Boolean}*
 
 Log suspect operations.
 
@@ -2962,7 +2962,7 @@ Log suspect operations.
 - **readonly:** `false`
 
 
-### prof *{Boolean}*
+### prof `false` *{Boolean}*
 
 Log statistical profiling information (implies --log-code).
 
@@ -2971,7 +2971,7 @@ Log statistical profiling information (implies --log-code).
 - **readonly:** `false`
 
 
-### prof_browser_mode *{Boolean}*
+### prof_browser_mode `true` *{Boolean}*
 
 Used with --prof, turns on browser-compatible mode for profiling.
 
@@ -2980,7 +2980,7 @@ Used with --prof, turns on browser-compatible mode for profiling.
 - **readonly:** `false`
 
 
-### log_regexp *{Boolean}*
+### log_regexp `false` *{Boolean}*
 
 Log regular expression execution.
 
@@ -2989,7 +2989,7 @@ Log regular expression execution.
 - **readonly:** `false`
 
 
-### logfile *{String}*
+### logfile `v8.log` *{String}*
 
 Specify the name of the log file.
 
@@ -2998,7 +2998,7 @@ Specify the name of the log file.
 - **readonly:** `false`
 
 
-### logfile_per_isolate *{Boolean}*
+### logfile_per_isolate `true` *{Boolean}*
 
 Separate log files for each isolate.
 
@@ -3007,7 +3007,7 @@ Separate log files for each isolate.
 - **readonly:** `false`
 
 
-### ll_prof *{Boolean}*
+### ll_prof `false` *{Boolean}*
 
 Enable low-level linux profiler.
 
@@ -3016,7 +3016,7 @@ Enable low-level linux profiler.
 - **readonly:** `false`
 
 
-### perf_basic_prof *{Boolean}*
+### perf_basic_prof `false` *{Boolean}*
 
 Enable perf linux profiler (basic support).
 
@@ -3025,7 +3025,7 @@ Enable perf linux profiler (basic support).
 - **readonly:** `false`
 
 
-### perf_jit_prof *{Boolean}*
+### perf_jit_prof `false` *{Boolean}*
 
 Enable perf linux profiler (experimental annotate support).
 
@@ -3034,7 +3034,7 @@ Enable perf linux profiler (experimental annotate support).
 - **readonly:** `false`
 
 
-### gc_fake_mmap *{String}*
+### gc_fake_mmap `/tmp/__v8_gc__` *{String}*
 
 Specify the name of the file for fake gc mmap used in ll_prof
 
@@ -3043,7 +3043,7 @@ Specify the name of the file for fake gc mmap used in ll_prof
 - **readonly:** `false`
 
 
-### log_internal_timer_events *{Boolean}*
+### log_internal_timer_events `false` *{Boolean}*
 
 Time internal events.
 
@@ -3056,7 +3056,7 @@ Time internal events.
 - prof
 
 
-### log_timer_events *{Boolean}*
+### log_timer_events `false` *{Boolean}*
 
 Time events including external callbacks.
 
@@ -3069,7 +3069,7 @@ Time events including external callbacks.
 - log_internal_timer_events
 
 
-### log_instruction_stats *{Boolean}*
+### log_instruction_stats `false` *{Boolean}*
 
 Log AArch64 instruction statistics.
 
@@ -3078,7 +3078,7 @@ Log AArch64 instruction statistics.
 - **readonly:** `false`
 
 
-### log_instruction_file *{String}*
+### log_instruction_file `arm64_inst.csv` *{String}*
 
 AArch64 instruction statistics log file.
 
@@ -3087,7 +3087,7 @@ AArch64 instruction statistics log file.
 - **readonly:** `false`
 
 
-### log_instruction_period *{Integer}*
+### log_instruction_period `4194304` *{Integer}*
 
 AArch64 instruction statistics logging period.
 
@@ -3096,7 +3096,7 @@ AArch64 instruction statistics logging period.
 - **readonly:** `false`
 
 
-### redirect_code_traces *{Boolean}*
+### redirect_code_traces `false` *{Boolean}*
 
 output deopt information and disassembly into file code-<pid>-<isolate id>.asm
 
@@ -3105,7 +3105,7 @@ output deopt information and disassembly into file code-<pid>-<isolate id>.asm
 - **readonly:** `false`
 
 
-### hydrogen_track_positions *{Boolean}*
+### hydrogen_track_positions `false` *{Boolean}*
 
 track source code positions when building IR
 
@@ -3114,7 +3114,7 @@ track source code positions when building IR
 - **readonly:** `false`
 
 
-### trace_elements_transitions *{Boolean}*
+### trace_elements_transitions `false` *{Boolean}*
 
 trace elements transitions
 
@@ -3123,7 +3123,7 @@ trace elements transitions
 - **readonly:** `true`
 
 
-### trace_creation_allocation_sites *{Boolean}*
+### trace_creation_allocation_sites `false` *{Boolean}*
 
 trace the creation of allocation sites
 
@@ -3132,7 +3132,7 @@ trace the creation of allocation sites
 - **readonly:** `true`
 
 
-### print_code_stubs *{Boolean}*
+### print_code_stubs `false` *{Boolean}*
 
 print code stubs
 
@@ -3141,7 +3141,7 @@ print code stubs
 - **readonly:** `true`
 
 
-### test_secondary_stub_cache *{Boolean}*
+### test_secondary_stub_cache `false` *{Boolean}*
 
 test secondary stub cache by disabling the primary one
 
@@ -3150,7 +3150,7 @@ test secondary stub cache by disabling the primary one
 - **readonly:** `true`
 
 
-### test_primary_stub_cache *{Boolean}*
+### test_primary_stub_cache `false` *{Boolean}*
 
 test primary stub cache by disabling the secondary one
 
@@ -3159,7 +3159,7 @@ test primary stub cache by disabling the secondary one
 - **readonly:** `true`
 
 
-### print_code *{Boolean}*
+### print_code `false` *{Boolean}*
 
 print generated code
 
@@ -3168,7 +3168,7 @@ print generated code
 - **readonly:** `true`
 
 
-### print_opt_code *{Boolean}*
+### print_opt_code `false` *{Boolean}*
 
 print optimized code
 
@@ -3177,7 +3177,7 @@ print optimized code
 - **readonly:** `true`
 
 
-### print_unopt_code *{Boolean}*
+### print_unopt_code `false` *{Boolean}*
 
 print unoptimized code before printing optimized code based on it
 
@@ -3186,7 +3186,7 @@ print unoptimized code before printing optimized code based on it
 - **readonly:** `true`
 
 
-### print_code_verbose *{Boolean}*
+### print_code_verbose `false` *{Boolean}*
 
 print more information for code
 
@@ -3195,7 +3195,7 @@ print more information for code
 - **readonly:** `true`
 
 
-### print_builtin_code *{Boolean}*
+### print_builtin_code `false` *{Boolean}*
 
 print generated code for builtins
 
@@ -3204,7 +3204,7 @@ print generated code for builtins
 - **readonly:** `true`
 
 
-### enable_ool_constant_pool *{Boolean}*
+### enable_ool_constant_pool `false` *{Boolean}*
 
 enable use of out-of-line constant pools (ARM only)
 

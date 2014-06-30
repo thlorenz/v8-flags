@@ -19,7 +19,7 @@ function configurable(v) {
 function docsFor(v) {
   return [
     ''
-  , '### ' + v.name + ' *{' + v.type + '}*'
+  , '### ' + v.name + ' `' + v.default + '` *{' + v.type + '}*'
   , ''
   , v.description
   , ''

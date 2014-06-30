@@ -7,6 +7,28 @@
 
 namespace i = v8::internal;
 
+void ensureBoolean(v8::Local<v8::Value> arg, const char* error) {
+  if (arg->IsBoolean()) return;
+  NanThrowError(error, -1);
+  /*NanThrowError("Need to supply argument of type "
+       " when setting '"  "' flag!", -1);*/
+}
+
+void ensureInt32(v8::Local<v8::Value> arg, const char* error) {
+  if (arg->IsInt32()) return;
+  NanThrowError(error, -1);
+}
+
+void ensureNumber(v8::Local<v8::Value> arg, const char* error) {
+  if (arg->IsNumber()) return;
+  NanThrowError(error, -1);
+}
+
+void ensureString(v8::Local<v8::Value> arg, const char* error) {
+  if (arg->IsString()) return;
+  NanThrowError(error, -1);
+}
+
 bool convert(v8::Handle<v8::Boolean> arg) {
   return arg->BooleanValue();
 }
@@ -47,33 +69,37 @@ bool is_null(const char* val) {
 #undef DEFINE_args
 #undef FLAG
 
-#define DEFINE_bool(nam, def, cmt)   FLAG(Boolean, nam)
-#define DEFINE_int(nam, def, cmt)    FLAG(Integer, nam)
-#define DEFINE_float(nam, def, cmt)  FLAG(Number, nam)
-#define DEFINE_string(nam, def, cmt) FLAG(String, nam)
+#define S(x) #x
+#define DEFINE_bool(nam, def, cmt)   FLAG(Boolean, nam, Boolean)
+#define DEFINE_int(nam, def, cmt)    FLAG(Integer, nam, Int32)
+#define DEFINE_float(nam, def, cmt)  FLAG(Number, nam, Number)
+#define DEFINE_string(nam, def, cmt) FLAG(String, nam, String)
 #define DEFINE_implication(x, y)
 #define DEFINE_neg_implication(x, y)
 #define DEFINE_maybe_bool(name, def)
 
-#define FLAG_FULL(type, nam)                                \
-  NAN_METHOD(Get_##nam) {                                   \
-    NanScope();                                             \
-    if (is_null(i::FLAG_##nam)) {                           \
-      NanReturnUndefined();                                 \
-    } else {                                                \
-      NanReturnValue(NanNew<v8::type>(i::FLAG_##nam));      \
-    }                                                       \
-  }                                                         \
-                                                            \
-  NAN_METHOD(Set_##nam) {                                   \
-    NanScope();                                             \
-    v8::Handle<v8::type> flag =  args[0]->To##type();       \
-    i::FLAG_##nam = convert(flag);                          \
-    NanReturnUndefined();                                   \
+#define FLAG_FULL(type, nam, istype)                     \
+  NAN_METHOD(Access_##nam) {                             \
+    NanScope();                                          \
+    if (args.Length()) {                                 \
+      ensure##istype(args[0],                            \
+         "Need to supply argument of type " S(type)      \
+        " when setting '" S(nam) "' flag!");             \
+                                                         \
+      v8::Handle<v8::type> flag =  args[0]->To##type();  \
+      i::FLAG_##nam = convert(flag);                     \
+      NanReturnUndefined();                              \
+    } else {                                             \
+     if (is_null(i::FLAG_##nam)) {                       \
+        NanReturnUndefined();                            \
+      } else {                                           \
+        NanReturnValue(NanNew<v8::type>(i::FLAG_##nam)); \
+      }                                                  \
+    }                                                    \
   }
 
-#define FLAG_READONLY(type, nam)                       \
-  NAN_METHOD(Get_##nam) {                              \
+#define FLAG_READONLY(type, nam, istype)                       \
+  NAN_METHOD(Access_##nam) {                           \
     NanScope();                                        \
     if (is_null(i::FLAG_##nam)) {                      \
       NanReturnUndefined();                            \
@@ -87,14 +113,11 @@ bool is_null(const char* val) {
 #undef FLAG_FULL
 #undef FLAG_READONLY
 #undef FLAG
-#define S(x) #x
 
-#define FLAG_FULL(type, nam)                                                                        \
-  exports->Set(NanNew<v8::String>(S(nam)), NanNew<v8::FunctionTemplate>(Get_##nam)->GetFunction()); \
-  exports->Set(NanNew<v8::String>("set_" S(nam)), NanNew<v8::FunctionTemplate>(Set_##nam)->GetFunction());
+#define FLAG_FULL(type, nam, istype) \
+  exports->Set(NanNew<v8::String>(S(nam)), NanNew<v8::FunctionTemplate>(Access_##nam)->GetFunction());
 
-#define FLAG_READONLY(type, nam) \
-  exports->Set(NanNew<v8::String>(S(nam)), NanNew<v8::FunctionTemplate>(Get_##nam)->GetFunction());
+#define FLAG_READONLY(type, nam, istype) FLAG_FULL(type, nam, istype)
 
 void init(v8::Handle<v8::Object> exports) {
   #include "v8_flag_definitions.h"

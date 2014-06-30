@@ -28,15 +28,26 @@ function exists(t, flag) {
   return true;
 }
 
+function throwsInitially(t, p, name, message) {
+  try {
+    require( p)
+    t.fail('requiring initially should have thrown')
+  } catch (err) {
+    t.equal(err.name, name, 'throws ' + name)
+    t.similar(err.message, new RegExp(message), message)
+  }
+}
+
+
 function unverified(flag, enabled) {
   test('\n' + flag + ' - NOT VERIFIED', function (t) {
     if (!exists(t, flag)) return t.end();
     if (enabled) {
       t.ok(flags[flag](), 'enabled by default')
-      t.doesNotThrow(flags['set_' + flag].bind(flags, false), 'can be disabled')
+      t.doesNotThrow(flags[flag].bind(flags, false), 'can be disabled')
     } else {
       t.ok(!flags[flag](), 'disabled by default')
-      t.doesNotThrow(flags['set_' + flag].bind(flags, true), 'can be enabled')
+      t.doesNotThrow(flags[flag].bind(flags, true), 'can be enabled')
     }
     t.end()
   })
@@ -65,7 +76,7 @@ test('\nexpose_gc -- NOT CONFIGURABLE', function (t) {
   t.ok(!flags.expose_gc(), 'not enabled by default')
   t.ok(!gc(), 'not exposed by default')
 
-  flags.set_expose_gc(true)
+  flags.expose_gc(true)
   t.ok(!refresh(p)(), 'enabling does NOT expose it')
   t.end()
 })
@@ -75,15 +86,9 @@ test('\nallow_natives_syntax', function (t) {
 
   t.ok(!flags.allow_natives_syntax(), 'not enabled by default')
 
-  try {
-    require( p)
-    t.fail('requiring without natives syntax allowed should have thrown')
-  } catch (err) {
-    t.equal(err.name, 'SyntaxError', 'throws SyntaxError')
-    t.similar(err.message, /Unexpected token %/, 'Unexpected token %')
-  }
+  throwsInitially(t, p, 'SyntaxError', 'Unexpected token %')
 
-  flags.set_allow_natives_syntax(true)
+  flags.allow_natives_syntax(true)
   
   var heap = require(p)();
   t.ok(heap.before > 0 && heap.after < heap.before, 'enabling allows native syntax to get heap and trigger garbage collection')
@@ -106,7 +111,7 @@ test('\nalways_opt', function (t) {
   optimizations = refresh(p)();
   t.equal(optimizations, 0, 'does not optimize sample function on third try')
 
-  flags.set_always_opt(true)
+  flags.always_opt(true)
   optimizations = refresh(p)();
   if (semver.gte(v8, '3.14.5')) 
     t.equal(optimizations, 1, 'optimizes function once always_opt is enabled')
@@ -124,3 +129,14 @@ unverified('dead_code_elimination', true)
 unverified('debug_compile_events', true)
 unverified('debug_sim', false)
 
+test('\nharmony_scoping', function (t) {
+  var p = './fixtures/harmony_scoping'
+  t.ok(!flags.harmony_scoping(), 'not enabled by default')
+  throwsInitially(t, p, 'SyntaxError', 'Unexpected strict mode reserved word')
+
+  flags.harmony_scoping(true)
+  var e = require(p)
+  t.ok(e.a_is_undefined, 'block scoped var is not defined outside its scope')
+  t.ok(e.b_is_defined, 'script level scoped var is defined')
+  t.end()
+})

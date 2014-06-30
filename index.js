@@ -8,9 +8,11 @@ var v8_flags = require('./build/Release/v8_flags')
 var notConfigurable = [
     'expose_gc'
   , 'expose_gc_as'
+  , 'expose_natives_as'
   , 'debugger'
   , 'debugger_agent'
   , 'debugger_port'
+  , 'expose_debug_as'
 ]
 
 var flags = exports.flags = v8_flags;

@@ -9,7 +9,7 @@ fi
 
 export PATH=$DIR/node_modules/.bin:$PATH
 
-set -e
+set -e;
 
 if [[ -e $TRAVIS ]]
 then
@@ -17,5 +17,5 @@ then
   tap $DIR/test/*.js
 else
   nave use $1 npm install
-  nave use $1 node $DIR/test/index.js
+  for t in $DIR/test/*.js; do nave use $1 node $t; done
 fi

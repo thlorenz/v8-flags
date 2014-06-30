@@ -1,6 +1,6 @@
 {
   "name": "v8-flags",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Configures v8 flags at runtime.",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,12 @@
     "semver": "~2.3.1",
     "tap": "~0.4.11"
   },
-  "keywords": [ "v8", "flags", "configure", "tune" ],
+  "keywords": [
+    "v8",
+    "flags",
+    "configure",
+    "tune"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",

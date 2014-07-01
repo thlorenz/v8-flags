@@ -1,6 +1,6 @@
 {
   "name": "v8-flags",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Configures v8 flags at runtime.",
   "main": "index.js",
   "scripts": {

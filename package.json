@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/thlorenz/v8-flags",
   "dependencies": {
-    "nan": "~1.2.0"
+    "nan": "~1.6.0"
   },
   "devDependencies": {
     "doctoc": "~0.7.1",
